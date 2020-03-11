@@ -1,3 +1,10 @@
- <mat-toolbar color="primary">
-  <span>CaVargas.com</span>
-</mat-toolbar>
+<app-navbar>
+  <ng-container menu>
+    <h2>My Menu Ps</h2>
+  </ng-container>
+  <ng-container content>
+    <div class="principal">
+      <router-outlet></router-outlet>
+    </div>
+  </ng-container>
+</app-navbar>
