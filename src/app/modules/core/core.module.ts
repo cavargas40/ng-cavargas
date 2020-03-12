@@ -10,9 +10,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavItemComponent } from './navbar/nav-item/nav-item.component';
 import { NavUserComponent } from './navbar/nav-user/nav-user.component';
+import { NavToolbarComponent } from './navbar/nav-toolbar/nav-toolbar.component';
 
 @NgModule({
-  declarations: [NavbarComponent, NavItemComponent, NavUserComponent],
+  declarations: [NavbarComponent, NavItemComponent, NavUserComponent, NavToolbarComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

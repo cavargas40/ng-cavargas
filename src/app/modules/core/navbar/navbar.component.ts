@@ -8,8 +8,18 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   @Input() opened: boolean = true;
+  public screenWidth: number;
 
-  constructor() {}
+  constructor() {
+    this.screenWidth = window.innerWidth;
+    window.onresize = () => {
+      this.screenWidth = window.innerWidth;
+    };
+  }
 
   ngOnInit(): void {}
+
+  get isBigScreen(): boolean {
+    return this.screenWidth > 900;
+  }
 }

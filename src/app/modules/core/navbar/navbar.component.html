@@ -1,8 +1,18 @@
 <mat-sidenav-container class="main-container">
-  <mat-sidenav mode="side" [(opened)]="opened" class="navbar">
+  <mat-sidenav
+    #sidenav
+    [opened]="isBigScreen"
+    class="navbar"
+    [mode]="isBigScreen ? 'side' : 'push'"
+    (click)="isBigScreen ? null : sidenav.close()"
+  >
     <ng-content select="[menu]"></ng-content>
   </mat-sidenav>
+
   <mat-sidenav-content>
+    <div *ngIf="!isBigScreen">
+      <app-nav-toolbar [sidenav]="sidenav"></app-nav-toolbar>
+    </div>
     <ng-content select="[content]"></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
