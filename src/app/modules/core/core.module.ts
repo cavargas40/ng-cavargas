@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 import { NavItemComponent } from './navbar/nav-item/nav-item.component';
 import { NavUserComponent } from './navbar/nav-user/nav-user.component';
 
@@ -13,8 +14,9 @@ import { NavUserComponent } from './navbar/nav-user/nav-user.component';
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatIconModule
   ],
-  exports: [NavbarComponent, NavUserComponent]
+  exports: [NavbarComponent, NavUserComponent, NavItemComponent]
 })
 export class CoreModule {}

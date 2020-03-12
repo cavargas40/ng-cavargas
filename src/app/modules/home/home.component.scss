@@ -1,0 +1,21 @@
+.container {
+  height: 100%;
+  position: relative;
+}
+
+.vertical-center {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+
+.main-name {
+  font-size: 60px;
+  color: #ff724c;
+  font-family: 'Oxygen', Helvetica, sans-serif;
+}
