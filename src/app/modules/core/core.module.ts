@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule } from '@angular/router';
+
+import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
+
+import { NavbarComponent } from './navbar/navbar.component';
 import { NavItemComponent } from './navbar/nav-item/nav-item.component';
 import { NavUserComponent } from './navbar/nav-user/nav-user.component';
 
@@ -15,7 +18,8 @@ import { NavUserComponent } from './navbar/nav-user/nav-user.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    RouterModule
   ],
   exports: [NavbarComponent, NavUserComponent, NavItemComponent]
 })
