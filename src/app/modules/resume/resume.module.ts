@@ -3,13 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { ResumeRoutingModule } from './resume-routing.module';
 import { ResumeComponent } from './resume.component';
-
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [ResumeComponent],
-  imports: [
-    CommonModule,
-    ResumeRoutingModule
-  ]
+  imports: [CommonModule, ResumeRoutingModule, SharedModule]
 })
-export class ResumeModule { }
+export class ResumeModule {}
