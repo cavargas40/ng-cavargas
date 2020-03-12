@@ -35,3 +35,23 @@
 .career {
   font-size: 1vw;
 }
+
+@media (max-width: 900px) {
+  .main-name {
+    font-size: 5vw;
+  }
+
+  .career {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-name {
+    font-size: 7vw;
+  }
+
+  .career {
+    font-size: 3vw;
+  }
+}
