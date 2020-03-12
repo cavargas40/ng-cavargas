@@ -44,14 +44,18 @@
   .career {
     font-size: 2vw;
   }
+
+  .principal {
+    background-size: 76vh 86vh;
+  }
 }
 
 @media (max-width: 500px) {
   .main-name {
-    font-size: 7vw;
+    font-size: 7.9vw;
   }
 
   .career {
-    font-size: 3vw;
+    font-size: 5vw;
   }
 }
