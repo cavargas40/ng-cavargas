@@ -1,0 +1,45 @@
+.info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-title {
+  color: #ff724c;
+  display: inline-block;
+  font-family: 'Oxygen', Helvetica, sans-serif;
+  font-weight: 700;
+  margin-right: 12px;
+}
+
+.list-value {
+  color: #fff;
+}
+
+ul.social-links {
+  display: block;
+  list-style: none;
+  margin: -5px 0 5px;
+  padding: 0;
+  text-align: left;
+}
+
+ul.social-links li {
+  float: left;
+}
+
+ul.social-links li a {
+  display: inline-block;
+  margin: 0 1px;
+  width: 34px;
+  height: 34px;
+  color: #e5e5e5;
+  background-color: transparent;
+  border: 1px solid #555;
+  text-align: center;
+}
+
+ul.social-links li a img {
+  width: 30px;
+  height: 31px;
+}
