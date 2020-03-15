@@ -7,8 +7,10 @@
     (click)="isBigScreen ? null : sidenav.close()"
   >
     <ng-content select="[menu]"></ng-content>
+    <div class="language-selector">
+      <app-nav-language-switcher></app-nav-language-switcher>
+    </div>
   </mat-sidenav>
-
   <mat-sidenav-content>
     <div *ngIf="!isBigScreen">
       <app-nav-toolbar [sidenav]="sidenav"></app-nav-toolbar>

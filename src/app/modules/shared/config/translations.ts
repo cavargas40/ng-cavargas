@@ -7,13 +7,14 @@ export function createTranslateLoader(http: HttpClient) {
 }
 
 export function languageConfiguration(translateService: TranslateService) {
-  const defaultLang = 'ja';
+  const defaultLang = 'en';
   if (!localStorage.getItem('lang')) {
     const [lang] = navigator.language.split('-');
+    const selectedLang = /(es|en|pt|ja|)/gi.test(lang) ? lang : defaultLang;
     translateService.addLangs(['es', 'en', 'pt', 'ja']);
-    // translateService.setDefaultLang(defaultLang);
-    translateService.use(/(es|en|pt|ja|)/gi.test(lang) ? lang : defaultLang);
+    translateService.use(selectedLang);
     translateService.use(defaultLang);
+    localStorage.setItem('lang', selectedLang);
   } else {
     translateService.use(localStorage.getItem('lang'));
   }
