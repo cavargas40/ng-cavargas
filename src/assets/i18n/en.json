@@ -1,3 +1,18 @@
 {
-  "NAME": "Carlos Vargas"
+  "NAME": "Carlos Vargas",
+  "CAREER": "Fullstack Web Developer",
+  "MENU": {
+    "HOME": "Home",
+    "ABOUT_ME": "About Me",
+    "RESUME": "Resume",
+    "CONTACT": "Contact"
+  },
+  "ABOUT_ME": {
+    "FIRSTLY": "I'm an experienced Software Developer with skills in frontend and backend development, I've spent the last 10 years improving my abilities. I love solving challenging problems creating tools that make life easier for people.",
+    "SECONDLY": "Furthermore, I'm a Computer Systems Engineer, experienced with software engineering projects under PMI and SCRUM methodologies. very committed to the duties that correspond to me, of excellent character and teamwork without problems, I stand out in the development of web applications (Fullstack Developer) with solid knowledge in different technologies that I have known throughout my career.",
+    "AGE": "Age",
+    "RESIDENCE": "Residence",
+    "EMAIL": "Email",
+    "PHONE": "Phone"
+  }
 }

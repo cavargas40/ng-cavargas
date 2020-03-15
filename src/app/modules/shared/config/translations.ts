@@ -7,13 +7,13 @@ export function createTranslateLoader(http: HttpClient) {
 }
 
 export function languageConfiguration(translateService: TranslateService) {
-  const defaultLang = 'en';
+  const defaultLang = 'ja';
   if (!localStorage.getItem('lang')) {
     const [lang] = navigator.language.split('-');
-    console.log('browser lang', lang);
     translateService.addLangs(['es', 'en', 'pt', 'ja']);
-    translateService.setDefaultLang(defaultLang);
+    // translateService.setDefaultLang(defaultLang);
     translateService.use(/(es|en|pt|ja|)/gi.test(lang) ? lang : defaultLang);
+    translateService.use(defaultLang);
   } else {
     translateService.use(localStorage.getItem('lang'));
   }

@@ -3,25 +3,25 @@
     <li routerLinkActive="active">
       <a class="link" [routerLink]="['home']">
         <mat-icon class="icon">home</mat-icon>
-        Home
+        {{ 'MENU.HOME' | translate }}
       </a>
     </li>
     <li routerLinkActive="active">
       <a class="link" [routerLink]="['about-me']">
         <mat-icon class="icon">portrait</mat-icon>
-        About Me
+        {{ 'MENU.ABOUT_ME' | translate }}
       </a>
     </li>
     <li routerLinkActive="active">
       <a class="link" [routerLink]="['resume']">
         <mat-icon class="icon">note</mat-icon>
-        Resume
+        {{ 'MENU.RESUME' | translate }}
       </a>
     </li>
     <li routerLinkActive="active">
       <a class="link" [routerLink]="['contact']">
         <mat-icon class="icon">contacts</mat-icon>
-        Contact
+        {{ 'MENU.CONTACT' | translate }}
       </a>
     </li>
   </ul>
