@@ -15,5 +15,50 @@
     "RESIDENCE": "Residence",
     "EMAIL": "Email",
     "PHONE": "Phone"
+  },
+  "RESUME": {
+    "EXPERIENCE": "Experience",
+    "EDUCATION": "Education",
+    "SKILLS": "Skills",
+    "TIME_LINE": {
+      "EXPERIENCE": {
+        "2020": {
+          "TITLE": "Jan 2020 - Current",
+          "POSITION": "Freelancer",
+          "COMPANY": "Independent",
+          "DETAIL": "Working for interesting projects in some platforms like Freelancer.com, Upwork, Fiveer, PeoplePerHour, Skyword, Guru.com"
+        },
+        "2017_2019": {
+          "TITLE": "Feb 2017 - Dec 2019",
+          "POSITION": "Fullstack Developer",
+          "COMPANY": "Rappi",
+          "DETAIL": "Fullstack developer for internal challenging projects of Rappi, using technologies in frontend like Angular, VueJs, React and in backend like (Nodejs (express, adonisjs), Kotlin, Golang, SQL DBs (Postgres, MySql), NoSql DBs (MongoDB, DynamoDB)) cache manager (Redis, MemCached), Containers (Docker, Compose) CI/CD pipelines (Jenkins) everything applying micro services architectures."
+        },
+        "2014_2016": {
+          "TITLE": "Jul 2014 - Aug 2016",
+          "POSITION": "Junior Developer",
+          "COMPANY": "SINCOSOFT",
+          "DETAIL": "Development of Web applications in .NET in C #, ASPX, js ajax, html, css, jquery for the company's ERP (Project Management, Accounting Module), Data layer development in Sql server 2014 and TransactSQL, We managed this project with the agile development framework, SCRUM."
+        },
+        "2013_2014": {
+          "TITLE": "Aug 2013 - Feb 2014",
+          "POSITION": "Engineer Developer",
+          "COMPANY": "Globalsoft Wigilabs",
+          "DETAIL": "Application Development and Web Services in asp.net MVC 4, Development of the data layer in Sql server 2012 and TransactSQL, Application server management in Windows Azure. (storage, databases, web services, web applications)."
+        },
+        "2011_2013": {
+          "TITLE": "Dec 2011 - Aug 2013",
+          "POSITION": "Support and Testing Requirements Analyst",
+          "COMPANY": "National University of Colombia",
+          "DETAIL": "Creation of requirements for new developments or system adjustments, Testing of the developments carried out, Support for system users with SQL statements. (ORACLE Database Engine)"
+        },
+        "2010_2011": {
+          "TITLE": "Oct 2010 - Oct 2011",
+          "POSITION": "Information Systems Analyst and Developer",
+          "COMPANY": "Promacom Pak Ltda",
+          "DETAIL": "Microsoft Windows Server 2008 R2 Standard server administrator, in charge of the company's technical infrastructure support, Web application development with html, css, js, flash, php and MySQL."
+        }
+      }
+    }
   }
 }

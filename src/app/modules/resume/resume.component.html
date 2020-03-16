@@ -1,1 +1,23 @@
-<app-under-construction></app-under-construction>
+<div class="container">
+  <div class="left-top-rox-corner"></div>
+  <div class="row">
+    <div class="col s12 center-align">
+      <h1 class="title scale-transition">{{ 'MENU.RESUME' | translate }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col m12 l12 xl12">
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="{{ 'RESUME.EXPERIENCE' | translate }}">
+          <app-time-line [timeline]="experienceTimeLine"></app-time-line>
+        </mat-tab>
+        <mat-tab label="{{ 'RESUME.EDUCATION' | translate }}">
+          <app-under-construction></app-under-construction>
+        </mat-tab>
+        <mat-tab label="{{ 'RESUME.SKILLS' | translate }}">
+          <app-under-construction></app-under-construction>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>

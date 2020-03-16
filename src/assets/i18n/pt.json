@@ -15,5 +15,50 @@
     "RESIDENCE": "Residência",
     "EMAIL": "O email",
     "PHONE": "Telefone"
+  },
+  "RESUME": {
+    "EXPERIENCE": "Experiência",
+    "EDUCATION": "Educação",
+    "SKILLS": "Habilidades",
+    "TIME_LINE": {
+      "EXPERIENCE": {
+        "2020": {
+          "TITLE": "Jan 2020 - Atual",
+          "POSITION": "Freelancer",
+          "COMPANY": "Independente",
+          "DETAIL": "Trabalhando em projetos interessantes em algumas plataformas como Freelancer.com, Upwork, Fiveer, PeoplePerHour, Skyword, Guru.com"
+        },
+        "2017_2019": {
+          "TITLE": "Fev 2017 - Dez 2019",
+          "POSITION": "Desenvolvedor Full Stack",
+          "COMPANY": "Rappi",
+          "DETAIL": "Desenvolvedor fullstack para projetos desafiadores internos do Rappi, usando tecnologias em front-end como Angular, VueJs, React e em back-end como (Nodejs (express, adonisjs), Kotlin, Golang, SQL DBs (Postgres, MySql), NoSql DBs (MongoDB, DynamoDB) ) gerenciador de cache (Redis, MemCached), pipelines de CI / CD de contêineres (Docker, Compose) (Jenkins), tudo aplicando arquiteturas de microsserviços."
+        },
+        "2014_2016": {
+          "TITLE": "Jul 2014 - Ago 2016",
+          "POSITION": "Desenvolvedor Junior",
+          "COMPANY": "SINCOSOFT",
+          "DETAIL": "Desenvolvimento de aplicativos Web em .NET em C #, ASPX, js ajax, html, css, jquery para o ERP da empresa (Gerenciamento de projetos, módulo de contabilidade), desenvolvimento da camada de dados no Sql server 2014 e TransactSQL, gerenciamos este projeto com o ágil estrutura de desenvolvimento, SCRUM."
+        },
+        "2013_2014": {
+          "TITLE": "Ago 2013 - Fev 2014",
+          "POSITION": "Engenheiro Desenvolvedor",
+          "COMPANY": "Globalsoft Wigilabs",
+          "DETAIL": "Desenvolvimento de aplicativos e serviços Web no asp.net MVC 4, Desenvolvimento da camada de dados no Sql server 2012 e TransactSQL, Gerenciamento de servidor de aplicativos no Windows Azure. (armazenamento, bancos de dados, serviços web, aplicativos web)."
+        },
+        "2011_2013": {
+          "TITLE": "Dez 2011 - Ago 2013",
+          "POSITION": "Analista de Requisitos de Suporte e Teste",
+          "COMPANY": "Universidade Nacional da Colômbia",
+          "DETAIL": "Criação de requisitos para novos desenvolvimentos ou ajustes do sistema, Teste dos desenvolvimentos realizados, Suporte para usuários do sistema com instruções SQL. (Mecanismo de banco de dados ORACLE)"
+        },
+        "2010_2011": {
+          "TITLE": "Outu 2010 - Outu 2011",
+          "POSITION": "Analista e Desenvolvedor de Sistemas de Informação",
+          "COMPANY": "Promacom Pak Ltda",
+          "DETAIL": "Administrador de servidor Microsoft Windows Server 2008 R2 Standard, responsável pelo suporte à infraestrutura técnica da empresa, desenvolvimento de aplicativos Web com html, css, js, flash, php e MySQL."
+        }
+      }
+    }
   }
 }

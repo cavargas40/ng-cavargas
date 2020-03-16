@@ -1,0 +1,22 @@
+<div class="timeline-container">
+  <div class="timeline">
+    <ng-container *ngFor="let time of formattedTimeline">
+      <h2 class="timeline__item timeline__item--year">
+        {{ timeline[time].title | translate }}
+      </h2>
+
+      <div
+        class="timeline__item pointer"
+        matTooltip="{{ timeline[time].data.description | translate }}"
+        matTooltipPosition="above"
+      >
+        <h4 class="timeline__position">
+          {{ timeline[time].data.position | translate }}
+        </h4>
+        <span class="timeline__company">{{
+          timeline[time].data.company | translate
+        }}</span>
+      </div>
+    </ng-container>
+  </div>
+</div>
