@@ -23,7 +23,7 @@
     "TIME_LINE": {
       "EXPERIENCE": {
         "2020": {
-          "TITLE": "一月 2020 - ニュース",
+          "TITLE": "1月 2020 - ニュース",
           "POSITION": "フリーランサー",
           "COMPANY": "独立",
           "DETAIL": "Freelancer.com、Upwork、Fiveer、PeoplePerHour、Skyword、Guru.comなどの一部のプラットフォームで興味深いプロジェクトに取り組む。"
@@ -37,7 +37,7 @@
         "2014_2016": {
           "TITLE": "7月 2014 - 8月 2016",
           "POSITION": "ジュニア開発者",
-          "COMPANY": "シンコソフト",
+          "COMPANY": "SINCOSOFT",
           "DETAIL": "C＃、ASPX、js ajax、html、css、会社のERP（プロジェクト管理、会計モジュール）のjquery、SQL 2014サーバーおよびTransactSQLのデータレイヤー開発,.NETでのWebアプリケーションの開発 。プロジェクト全体は、アジャイル開発フレームワークであるSCRUMで管理。"
         },
         "2013_2014": {
@@ -49,7 +49,7 @@
         "2011_2013": {
           "TITLE": "12月 2011 - 8月 2013",
           "POSITION": "サポートアナリストおよびテスト要件",
-          "COMPANY": "コロンビア国立大学",
+          "COMPANY": "National University of Colombia",
           "DETAIL": "新規開発またはシステム調整の要件の作成、実行された開発のテスト、SQLステートメントによるシステムユーザーのサポート。 （ORACLEデータベースエンジン）"
         },
         "2010_2011": {
@@ -57,6 +57,26 @@
           "POSITION": "情報システムアナリストおよび開発者",
           "COMPANY": "Promacom Pak Ltda",
           "DETAIL": "Microsoft Windows Server 2008 R2 Standardサーバー管理者。会社の技術インフラストラクチャサポート、html、css、js、flash、php、MySQLを使用したWebアプリケーションの開発を担当しています。"
+        }
+      },
+      "EDUCATION": {
+        "JAN_2018_NOV_2018": {
+          "TITLE": "1月 2018 - 11月 2018",
+          "POSITION": "上中級英語",
+          "COMPANY": "Seafield School of English",
+          "DETAIL": "ニュージーランド、オークランドでの一般英語学習."
+        },
+        "JAN_2013_DEC_2016": {
+          "TITLE": "1月 2018 - 11月 2018",
+          "POSITION": "コンピューターシステムエンジニア",
+          "COMPANY": "Politecnico Grancolombiano",
+          "DETAIL": "コンピュータシステムエンジニアの学士号"
+        },
+        "JAN_2009_DEC_2011": {
+          "TITLE": "1月 2009 - 11月 2011",
+          "POSITION": "情報システムの分析と開発の技術者",
+          "COMPANY": "National Learning Service (SENA)",
+          "DETAIL": "情報システムの分析と開発の技術者学士号"
         }
       }
     }

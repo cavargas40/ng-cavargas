@@ -58,6 +58,26 @@
           "COMPANY": "Promacom Pak Ltda",
           "DETAIL": "Microsoft Windows Server 2008 R2 Standard server administrator, in charge of the company's technical infrastructure support, Web application development with html, css, js, flash, php and MySQL."
         }
+      },
+      "EDUCATION": {
+        "JAN_2018_NOV_2018": {
+          "TITLE": "Jan 2018 - Nov 2018",
+          "POSITION": "Upper Intermediate English",
+          "COMPANY": "Seafield School of English",
+          "DETAIL": "General English studies in New Zealand, Auckland."
+        },
+        "JAN_2013_DEC_2016": {
+          "TITLE": "Jan 2018 - Nov 2018",
+          "POSITION": "Computer Systems Engineer",
+          "COMPANY": "Politecnico Grancolombiano",
+          "DETAIL": "Computer Systems Engineer Bachelor's degree"
+        },
+        "JAN_2009_DEC_2011": {
+          "TITLE": "Jan 2009 - Nov 2011",
+          "POSITION": "Technologist in Analysis and Development of Information Systems",
+          "COMPANY": "National Learning Service (SENA)",
+          "DETAIL": "Technologist in Analysis and Development of Information Systems Bachelor's degree"
+        }
       }
     }
   }

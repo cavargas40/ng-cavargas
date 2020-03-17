@@ -7,14 +7,27 @@
   </div>
   <div class="row">
     <div class="col m12 l12 xl12">
-      <mat-tab-group mat-align-tabs="center">
-        <mat-tab label="{{ 'RESUME.EXPERIENCE' | translate }}">
+      <mat-tab-group
+        mat-align-tabs="center"
+        (selectedIndexChange)="selectTab($event)"
+        [selectedIndex]="selectedTabIndex"
+      >
+        <mat-tab
+          label="{{ 'RESUME.EXPERIENCE' | translate }}"
+          (click)="selectTab('experience')"
+        >
           <app-time-line [timeline]="experienceTimeLine"></app-time-line>
         </mat-tab>
-        <mat-tab label="{{ 'RESUME.EDUCATION' | translate }}">
-          <app-under-construction></app-under-construction>
+        <mat-tab
+          label="{{ 'RESUME.EDUCATION' | translate }}"
+          (click)="selectTab('education')"
+        >
+          <app-time-line [timeline]="educationTimeLine"></app-time-line>
         </mat-tab>
-        <mat-tab label="{{ 'RESUME.SKILLS' | translate }}">
+        <mat-tab
+          label="{{ 'RESUME.SKILLS' | translate }}"
+          (click)="selectTab('skills')"
+        >
           <app-under-construction></app-under-construction>
         </mat-tab>
       </mat-tab-group>
