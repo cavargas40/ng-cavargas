@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MatDividerModule } from '@angular/material/divider';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
@@ -15,7 +16,7 @@ import { SkillBarComponent } from './skill-bar/skill-bar.component';
     DividerComponent,
     SkillBarComponent
   ],
-  imports: [CommonModule, MatDividerModule, MatProgressBarModule, MatCardModule],
+  imports: [CommonModule, MatDividerModule, MatProgressBarModule, MatCardModule, FlexLayoutModule],
   exports: [UnderConstructionComponent, DividerComponent, SkillBarComponent]
 })
 export class SharedModule {}

@@ -1,4 +1,7 @@
 import { NgModule } from '@angular/core';
+
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { CommonModule } from '@angular/common';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTooltipModule } from '@angular/material/tooltip';
@@ -20,7 +23,8 @@ import { SkillsComponent } from './skills/skills.component';
       extend: true
     }),
     MatTabsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    FlexLayoutModule
   ]
 })
 export class ResumeModule {}
