@@ -28,8 +28,11 @@ export class ResumeComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params: Params) => {
       const selectedPath = this.router.url.split('/').pop();
-      this.selectedTabIndex =
-        this.TAB_INDEX.find(({ name }) => name === selectedPath).id - 1;
+      const indexes = this.TAB_INDEX.map(({ name }) => name);
+      if (indexes.includes(selectedPath)) {
+        this.selectedTabIndex =
+          this.TAB_INDEX.find(({ name }) => name === selectedPath).id - 1;
+      }
     });
   }
 

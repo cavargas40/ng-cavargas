@@ -1,3 +1,17 @@
-<p>
-  skill-bar works!
-</p>
+<mat-card class="card">
+  <mat-card-header>
+    <div
+      mat-card-avatar
+      [ngStyle]="{
+        'background-image': 'url(/assets/images/skills/' + skill?.img + ')',
+        'background-size': 'cover'
+      }"
+    ></div>
+    <mat-card-title>{{ skill?.name }}</mat-card-title>
+    <mat-card-subtitle>{{ skill?.type }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-progress-bar mode="determinate" [value]="skill.percentage"></mat-progress-bar>
+    <p>{{ skill.percentage }}%</p>
+  </mat-card-content>
+</mat-card>
