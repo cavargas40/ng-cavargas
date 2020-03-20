@@ -1,1 +1,6 @@
-<app-skill-bar *ngFor="let skill of skills" [skill]="skill"> </app-skill-bar>
+<div
+  style="  display: inline-flex;
+flex-flow: row wrap;"
+>
+  <app-skill-bar *ngFor="let skill of skills" [skill]="skill"> </app-skill-bar>
+</div>
