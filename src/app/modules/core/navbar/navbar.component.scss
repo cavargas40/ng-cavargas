@@ -16,3 +16,13 @@
   bottom: 0px;
   width: 100%;
 }
+
+mat-sidenav-content {
+  margin-left: 10vw !important;
+}
+
+@media (max-width: 900px) {
+  mat-sidenav-content {
+    margin-left: auto !important;
+  }
+}

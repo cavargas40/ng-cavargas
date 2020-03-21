@@ -29,7 +29,7 @@
     "@ngrx/store-devtools": "^9.0.0",
     "@ngx-translate/core": "^12.1.2",
     "@ngx-translate/http-loader": "^4.0.0",
-    "materialize-css": "^1.0.0-rc.2",
+    "ngx-captcha": "^8.0.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

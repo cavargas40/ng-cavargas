@@ -80,5 +80,28 @@
         }
       }
     }
+  },
+  "CONTACT": {
+    "GET_IN_TOUCH": "Get in Touch",
+    "TOUCH_INFO": "In case you need to contact me just use one of the next options.",
+    "AVAILABLE": "Freelance Available",
+    "FORM": "Contact Form",
+    "CONTACTED_SUCCESS": "Contact form successfully submitted. Thank you, I will get back to you soon!",
+    "EX_NAME": "Ex. Carlos Andres",
+    "EX_EMAIL": "Ex. cavargas40@gmail.com"
+  },
+  "COMMON": {
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "MESSAGE": "Message"
+  },
+  "BUTTON": {
+    "SEND_MESSAGE": "Send Message"
+  },
+  "VALIDATORS": {
+    "NAME_REQUIRED": "Name is <strong>required</strong>",
+    "EMAIL_INVALID": "Please enter a <strong>valid</strong> email address",
+    "EMAIL_REQUIRED": "Email is <strong>required</strong>",
+    "MESSAGE_REQUIRED": "Message is <strong>required</strong>"
   }
 }

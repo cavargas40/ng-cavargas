@@ -80,5 +80,28 @@
         }
       }
     }
+  },
+  "CONTACT": {
+    "GET_IN_TOUCH": "連絡する",
+    "TOUCH_INFO": "お問い合わせは、次のオプションのいずれかを使用してください。",
+    "AVAILABLE": "フリーランス利用可能",
+    "FORM": "お問い合わせフォーム",
+    "CONTACTED_SUCCESS": "フォームは、正常に送信されました。 ありがとうございます。",
+    "EX_NAME": "例 Carlos Andres",
+    "EX_EMAIL": "例 cavargas40@gmail.com"
+  },
+  "COMMON": {
+    "NAME": "名前",
+    "EMAIL": "Eメール",
+    "MESSAGE": "メッセージ"
+  },
+  "BUTTON": {
+    "SEND_MESSAGE": "メッセージを送る"
+  },
+  "VALIDATORS": {
+    "NAME_REQUIRED": "名前は<strong>必須</ strong>です",
+    "EMAIL_INVALID": "<strong>有効な</ strong>メールアドレスを入力してください",
+    "EMAIL_REQUIRED": "メールは<strong>必須</ strong>です",
+    "MESSAGE_REQUIRED": "メッセージは<strong>必須</ strong>です"
   }
 }

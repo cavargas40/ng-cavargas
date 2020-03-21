@@ -3,7 +3,7 @@
     #sidenav
     [opened]="isBigScreen"
     class="navbar"
-    [mode]="isBigScreen ? 'side' : 'push'"
+    [mode]="'side'"
     (click)="isBigScreen ? null : sidenav.close()"
   >
     <ng-content select="[menu]"></ng-content>

@@ -1,0 +1,63 @@
+.contact-info-block {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 10px 10px 10px 0;
+}
+
+.contact-info-block .ci-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  color: #ff724c;
+}
+
+.ci-text {
+  position: relative;
+  padding-left: 50px;
+  display: inline-block;
+  font-family: 'Oxygen', Helvetica, sans-serif;
+  font-weight: 700;
+  margin-right: 12px;
+  color: #fff;
+}
+
+.link {
+  color: #ff724c;
+  display: inline-block;
+  font-family: 'Oxygen', Helvetica, sans-serif;
+  font-weight: 700;
+  margin-right: 12px;
+  display: inline-block;
+  margin: 0 1px;
+  width: 34px;
+  height: 34px;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h3 {
+  color: #fff;
+}
+
+.contacted {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  margin: 10px;
+  padding: 20px;
+}
+
+.form-field {
+  width: 90%;
+  margin: 10px;
+}
+
+.form {
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 1px #ff724c;
+  border-radius: 3px;
+}

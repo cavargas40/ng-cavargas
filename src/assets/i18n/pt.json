@@ -80,5 +80,28 @@
         }
       }
     }
+  },
+  "CONTACT": {
+    "GET_IN_TOUCH": "Entrar em contato",
+    "TOUCH_INFO": "Caso você precise entrar em contato, basta usar uma das próximas opções.",
+    "AVAILABLE": "Freelance Disponível",
+    "FORM": "Formulário de Contato",
+    "CONTACTED_SUCCESS": "Formulário de contato enviado com sucesso. Obrigado, em breve voltarei a você!",
+    "EX_NAME": "Ex. Carlos Andres",
+    "EX_EMAIL": "Ex. cavargas40@gmail.com"
+  },
+  "COMMON": {
+    "NAME": "Nome",
+    "EMAIL": "O email",
+    "MESSAGE": "Mensagem"
+  },
+  "BUTTON": {
+    "SEND_MESSAGE": "Enviar mensagem"
+  },
+  "VALIDATORS": {
+    "NAME_REQUIRED": "O nome é <strong>obrigatório</strong>",
+    "EMAIL_INVALID": "Digite um endereço de e-mail <strong>válido</strong>",
+    "EMAIL_REQUIRED": "O e-mail é <strong>obrigatório</strong>",
+    "MESSAGE_REQUIRED": "A mensagem é <strong>necessária</strong>"
   }
 }
