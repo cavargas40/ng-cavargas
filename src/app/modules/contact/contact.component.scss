@@ -61,3 +61,13 @@ h3 {
   box-shadow: 2px 2px 2px 1px #ff724c;
   border-radius: 3px;
 }
+
+.captcha {
+  margin-left: 7vw;
+}
+
+@media (max-width: 900px) {
+  .captcha {
+    margin-left: 1vw;
+  }
+}
