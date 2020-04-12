@@ -22,9 +22,9 @@ export class LanguageSwitcherComponent implements OnInit {
     this.loadLanguage();
   }
 
-  changeLanguage(language: string) {
-    this.translateService.use(language);
-    localStorage.setItem('lang', language);
+  changeLanguage() {
+    this.translateService.use(this.selectedLanguage);
+    localStorage.setItem('lang', this.selectedLanguage);
     this.loadLanguage();
   }
 

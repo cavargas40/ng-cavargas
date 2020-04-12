@@ -83,8 +83,8 @@
     }
   },
   "CONTACT": {
-    "GET_IN_TOUCH": "Ponerse en Contacto",
-    "TOUCH_INFO": "En caso de que necesite contactarme, use una de las siguientes opciones.",
+    "GET_IN_TOUCH": "Como contactarme?",
+    "TOUCH_INFO": "En caso de que necesites contactarme, usa una de las siguientes opciones:",
     "AVAILABLE": "Freelance disponible",
     "FORM": "Formulario de contacto",
     "CONTACTED_SUCCESS": "Formulario de contacto enviado correctamente. ¡Gracias, me pondré en contacto con usted pronto!",
@@ -102,7 +102,7 @@
   "VALIDATORS": {
     "NAME_REQUIRED": "Nombre es <strong>requerido</strong>",
     "EMAIL_INVALID": "Por favor ingrese un correo electrónico <strong>valido</strong>",
-    "EMAIL_REQUIRED": "correo electrónico es <strong>requerido</strong>",
+    "EMAIL_REQUIRED": "Correo electrónico es <strong>requerido</strong>",
     "MESSAGE_REQUIRED": "Mensaje es <strong>requerido</strong>"
   }
 }

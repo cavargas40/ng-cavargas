@@ -1,5 +1,28 @@
-<!-- <button mat-button [matMenuTriggerFor]="aboveMenu">Above</button> -->
-<a class="pointer option">
+<section class="language-switcher">
+  <div class="navigation__icon">
+    <ng-select
+      [items]="languages"
+      bindLabel="name"
+      bindValue="id"
+      [(ngModel)]="selectedLanguage"
+      [clearable]="false"
+      (change)="changeLanguage()"
+    >
+    </ng-select>
+
+    <!-- <select
+      class="language__actual"
+      [(ngModel)]="selectedLanguage"
+
+    >
+      <option *ngFor="let language of languages" [value]="language.id">
+        {{ language?.name }}
+      </option>
+    </select> -->
+  </div>
+</section>
+
+<!-- <a class="pointer option">
   <img
     class="responsive flag-img"
     src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/{{
@@ -8,7 +31,7 @@
   />
 </a>
 
-<!-- <mat-menu #aboveMenu="matMenu" xPosition="after"> -->
+
   <a
     class="lang-style"
     *ngFor="let language of languages"
@@ -21,5 +44,4 @@
         language.flag
       }}.svg"
     />
-  </a>
-<!-- </mat-menu> -->
+  </a> -->

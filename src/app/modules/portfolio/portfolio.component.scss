@@ -1,9 +1,13 @@
 @import '~app/styles/abstracts/variables';
+@import '~app/styles/abstracts/mixins';
 
 .portfolio {
   background-color: $color-white;
   padding: 5rem;
   text-align: center;
+  @include responsive(phone) {
+    padding: 3rem;
+  }
 
   &__container {
     width: 100%;
@@ -12,9 +16,22 @@
     grid-template-rows: repeat(8, 5vw);
     gap: 1.5rem;
     padding: 1.5rem;
+
+    @include responsive(phone) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
+    @include responsive(phone) {
+      flex: 0 1 50%;
+
+      :last-child {
+        flex: 0 1 100%;
+      }
+    }
+
     &--1 {
       grid-column: 1 / span 2;
       grid-row: 1 / span 3;

@@ -1,7 +1,12 @@
 @import '~app/styles/abstracts/variables';
+@import '~app/styles/abstracts/mixins';
 
 .resume {
   padding: 8rem;
+
+  @include responsive(phone) {
+    padding: 4rem;
+  }
 
   background-image: linear-gradient(
       to right bottom,

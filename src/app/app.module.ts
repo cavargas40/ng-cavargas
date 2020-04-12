@@ -3,7 +3,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgsRevealModule } from 'ngx-scrollreveal';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 import { CoreModule } from 'app/core/core.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -39,6 +41,8 @@ import { ContactModule } from './modules/contact/contact.module';
     ResumeModule,
     PortfolioModule,
     ContactModule,
+    FormsModule,
+    NgSelectModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

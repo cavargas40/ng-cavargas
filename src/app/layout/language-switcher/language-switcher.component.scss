@@ -1,0 +1,29 @@
+@import '~app/styles/abstracts/variables';
+
+.language-switcher {
+  position: fixed;
+
+  top: 6.5rem;
+  right: 6.5rem;
+  z-index: 1000;
+}
+
+.navigation__icon {
+  padding: 1rem;
+  opacity: 0.6;
+
+  font-weight: 600;
+  font-size: 1rem;
+  color: $color-grey-dark;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+}

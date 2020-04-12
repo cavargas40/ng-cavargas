@@ -58,3 +58,9 @@ Base + Typography > General Layout + Grid > Page Layout > Components
     }
   }
 }
+
+@mixin rtl {
+  @at-root [dir="rtl"] #{&} {
+      @content
+  }
+}

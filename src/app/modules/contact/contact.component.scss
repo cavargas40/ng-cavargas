@@ -1,7 +1,12 @@
 @import '~app/styles/abstracts/variables';
+@import '~app/styles/abstracts/mixins';
 
 .contact {
   padding: 8rem;
+
+  @include responsive(phone) {
+    padding: 4rem;
+  }
 
   background-image: linear-gradient(
       to right bottom,
@@ -23,87 +28,120 @@
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+    @include responsive(tab-port) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__get-in-touch {
+    &--title {
+      color: $color-white;
+    }
+  }
 
+  &__list {
+    list-style: none;
+    font-size: $default-font-size;
+    color: $color-white;
+
+    @include responsive(phone) {
+      padding-top: 0;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 1 0 50%;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+
+    @include responsive(phone) {
+      flex: 1 0 100%;
+    }
+  }
+
+  &__title {
+    color: $color-secondary;
+    margin-right: 1.5rem;
+  }
+
+  &__available {
+    color: $color-white;
+    font-size: 3rem;
   }
 
   &__form {
+    background-color: rgba($color-white, 0.8);
+    padding: 3rem;
 
+    .form {
+      width: inherit;
+      &__group:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      &__input {
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, 0.5);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        transition: all 0.3s;
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+          border-bottom: 3px solid $color-primary;
+        }
+
+        &:focus:invalid {
+          border-bottom: 3px solid $color-secondary-dark;
+        }
+
+        &::-webkit-input-placeholder {
+          color: $color-grey-dark-2;
+        }
+      }
+
+      &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $color-secondary;
+        margin-top: 0.7rem;
+        display: block;
+        transition: all 0.3s;
+      }
+
+      &__error {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $color-secondary-dark;
+      }
+    }
+  }
+
+  &__form-title {
+    color: $color-white;
   }
 }
 
-.contact-info-block {
-  position: relative;
-  text-align: left;
-  width: 100%;
-  display: block;
-  margin: 0;
-  padding: 10px 10px 10px 0;
-}
+.recaptcha {
+  @include responsive(tab-port) {
+    transform: scale(0.7);
+  }
 
-.contact-info-block .ci-icon {
-  position: absolute;
-  top: 50%;
-  margin-top: -15px;
-  color: #ff724c;
-}
-
-.ci-text {
-  position: relative;
-  padding-left: 50px;
-  display: inline-block;
-  font-family: 'Oxygen', Helvetica, sans-serif;
-  font-weight: 700;
-  margin-right: 12px;
-  color: #fff;
-}
-
-.link {
-  color: #ff724c;
-  display: inline-block;
-  font-family: 'Oxygen', Helvetica, sans-serif;
-  font-weight: 700;
-  margin-right: 12px;
-  display: inline-block;
-  margin: 0 1px;
-  width: 34px;
-  height: 34px;
-  background-color: transparent;
-  text-align: center;
-  text-decoration: underline;
-}
-
-h3 {
-  color: #fff;
-}
-
-.contacted {
-  color: #3c763d;
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
-  margin: 10px;
-  padding: 20px;
-}
-
-.form-field {
-  width: 90%;
-  margin: 10px;
-}
-
-.form {
-  background-color: #fff;
-  box-shadow: 2px 2px 2px 1px #ff724c;
-  border-radius: 3px;
-}
-
-.captcha {
-  margin-left: 7vw;
-}
-
-@media (max-width: 900px) {
-  .captcha {
-    margin-left: 1vw;
+  @include responsive(phone) {
+    margin-left: -5rem;
+    transform: scale(0.5);
   }
 }
+

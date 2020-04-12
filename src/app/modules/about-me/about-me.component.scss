@@ -1,4 +1,5 @@
 @import '~app/styles/abstracts/variables';
+@import '~app/styles/abstracts/mixins';
 
 .about-me {
   position: relative;
@@ -6,6 +7,11 @@
   background-color: #fff;
 
   display: flex;
+
+  @include responsive(phone) {
+    padding: 4rem;
+    flex-direction: column;
+  }
 
   &__item {
     height: auto;

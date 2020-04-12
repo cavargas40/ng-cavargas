@@ -9,11 +9,11 @@
       <h3 class="contact__get-in-touch--title">
         {{ 'CONTACT.GET_IN_TOUCH' | translate }}
       </h3>
-      <p class="contact_get-in-touch--info">
+      <p class="paragraph paragraph--white">
         {{ 'CONTACT.TOUCH_INFO' | translate }}
       </p>
       <ul class="contact__list">
-        <li class="contact__list contact__item">
+        <li class="contact__item">
           <span class="contact__title">
             {{ 'ABOUT_ME.RESIDENCE' | translate }}
           </span>
@@ -21,7 +21,7 @@
             Bogota, Colombia
           </span>
         </li>
-        <li class="contact__list contact__item">
+        <li class="contact__item">
           <span class="contact__title">
             {{ 'ABOUT_ME.EMAIL' | translate }}
           </span>
@@ -29,7 +29,7 @@
             Bogota, Colombia
           </span>
         </li>
-        <li class="contact__list contact__item">
+        <li class="contact__item">
           <span class="contact__title">
             {{ 'ABOUT_ME.PHONE' | translate }}
           </span>
@@ -37,15 +37,14 @@
             +57 301 352 77 74
           </span>
         </li>
-        <li>
-          <span class="contact_available">
+        <li class="contact__item">
+          <span class="contact__available">
             {{ 'CONTACT.AVAILABLE' | translate }}
           </span>
         </li>
       </ul>
     </div>
     <div class="contact__form">
-      <h3 class="contact__form-title">{{ 'CONTACT.FORM' | translate }}</h3>
       <div
         class="contact__contacted"
         *ngIf="contacted"
@@ -59,167 +58,94 @@
         (ngSubmit)="contactMe()"
         class="form"
       >
-        <div class="center-align">
-          <mat-form-field class="form-field">
-            <mat-label>{{ 'COMMON.NAME' | translate }}</mat-label>
-            <input
-              matInput
-              placeholder="{{ 'CONTACT.EX_NAME' | translate }}"
-              formControlName="name"
-              class="form-control"
-            />
-            <mat-error
-              *ngIf="formGroup.controls.name.hasError('required')"
-              [innerHTML]="'VALIDATORS.NAME_REQUIRED' | translate"
-            >
-            </mat-error>
-          </mat-form-field>
+        <div class="form__group">
+          <label for="name" class="form__label">
+            {{ 'COMMON.NAME' | translate }}
+          </label>
+          <input
+            type="text"
+            class="form__input"
+            placeholder="{{ 'CONTACT.EX_NAME' | translate }}"
+            formControlName="name"
+            id="name"
+            required
+          />
+          <ng-container
+            *ngIf="
+              formGroup.controls.name.hasError('required') &&
+              formGroup.controls.name.touched
+            "
+          >
+            <span class="form__error" [innerHTML]="'VALIDATORS.NAME_REQUIRED' | translate"></span>
+          </ng-container>
         </div>
-        <div class="center-align">
-          <mat-form-field class="form-field">
-            <mat-label>{{ 'COMMON.EMAIL' | translate }}</mat-label>
-            <input
-              matInput
-              placeholder="{{ 'CONTACT.EX_EMAIL' | translate }}"
-              formControlName="email"
-              class="form-control"
-            />
-            <mat-error
-              *ngIf="
-                formGroup.controls.email.hasError('email') &&
-                !formGroup.controls.name.hasError('required')
-              "
-              [innerHTML]="'VALIDATORS.EMAIL_INVALID' | translate"
-            >
-            </mat-error>
-            <mat-error
-              *ngIf="formGroup.controls.email.hasError('required')"
-              [innerHTML]="'VALIDATORS.EMAIL_REQUIRED' | translate"
-            >
-            </mat-error>
-          </mat-form-field>
+        <div class="form__group">
+          <label for="email" class="form__label">
+            {{ 'COMMON.EMAIL' | translate }}
+          </label>
+          <input
+            type="text"
+            class="form__input"
+            placeholder="{{ 'CONTACT.EX_EMAIL' | translate }}"
+            formControlName="email"
+            id="email"
+            required
+          />
+          <ng-container
+            *ngIf="
+              formGroup.controls.email.hasError('email') &&
+              !formGroup.controls.name.hasError('required')
+            "
+          >
+            <span class="form__error" [innerHTML]="'VALIDATORS.EMAIL_INVALID' | translate"></span>
+          </ng-container>
+          <ng-container
+            *ngIf="
+              formGroup.controls.email.hasError('required') &&
+              formGroup.controls.email.touched
+            "
+          >
+            <span class="form__error" [innerHTML]="'VALIDATORS.EMAIL_REQUIRED' | translate"></span>
+          </ng-container>
         </div>
-        <div class="center-align">
-          <mat-form-field class="form-field">
-            <mat-label>{{ 'COMMON.MESSAGE' | translate }}</mat-label>
-            <textarea matInput formControlName="message"></textarea>
-            <mat-error
-              *ngIf="formGroup.controls.message.hasError('required')"
-              [innerHTML]="'VALIDATORS.MESSAGE_REQUIRED' | translate"
-            >
-            </mat-error>
-          </mat-form-field>
+        <div class="form__group">
+          <label for="message" class="form__label">
+            {{ 'COMMON.MESSAGE' | translate }}
+          </label>
+          <textarea
+            id="message"
+            class="form__input"
+            formControlName="message"
+          ></textarea>
+          <ng-container
+            *ngIf="
+              formGroup.controls.message.hasError('required') &&
+              formGroup.controls.message.touched
+            "
+          >
+            <span class="form__error" [innerHTML]="'VALIDATORS.MESSAGE_REQUIRED' | translate"
+            ></span>
+          </ng-container>
         </div>
-        <div class="center-align">
-          <div class="captcha">
-            <ngx-recaptcha2
-              #captchaElem
-              [siteKey]="siteKey"
-              [hl]="lang"
-              formControlName="recaptcha"
-            >
-            </ngx-recaptcha2>
-          </div>
+        <div class="form__group recaptcha">
+          <ngx-recaptcha2
+            #captchaElem
+            [siteKey]="siteKey"
+            [hl]="lang"
+            formControlName="recaptcha"
+          >
+          </ngx-recaptcha2>
         </div>
-
-        <div class="center-align" style="padding: 10px;">
+        <div class="form__group">
           <button
             type="submit"
-            mat-raised-button
-            color="warn"
+            class="btn btn--secondary"
             [disabled]="!formGroup.valid"
           >
-            {{ 'BUTTON.SEND_MESSAGE' | translate }}
+            {{ 'BUTTON.SEND_MESSAGE' | translate }} &rarr;
           </button>
         </div>
       </form>
     </div>
   </div>
 </section>
-
-<!--
-        <form
-          [formGroup]="formGroup"
-          *ngIf="formGroup"
-          (ngSubmit)="contactMe()"
-          class="form"
-        >
-          <div class="center-align">
-            <mat-form-field class="form-field">
-              <mat-label>{{ 'COMMON.NAME' | translate }}</mat-label>
-              <input
-                matInput
-                placeholder="{{ 'CONTACT.EX_NAME' | translate }}"
-                formControlName="name"
-                class="form-control"
-              />
-              <mat-error
-                *ngIf="formGroup.controls.name.hasError('required')"
-                [innerHTML]="'VALIDATORS.NAME_REQUIRED' | translate"
-              >
-              </mat-error>
-            </mat-form-field>
-          </div>
-          <div class="center-align">
-            <mat-form-field class="form-field">
-              <mat-label>{{ 'COMMON.EMAIL' | translate }}</mat-label>
-              <input
-                matInput
-                placeholder="{{ 'CONTACT.EX_EMAIL' | translate }}"
-                formControlName="email"
-                class="form-control"
-              />
-              <mat-error
-                *ngIf="
-                  formGroup.controls.email.hasError('email') &&
-                  !formGroup.controls.name.hasError('required')
-                "
-                [innerHTML]="'VALIDATORS.EMAIL_INVALID' | translate"
-              >
-              </mat-error>
-              <mat-error
-                *ngIf="formGroup.controls.email.hasError('required')"
-                [innerHTML]="'VALIDATORS.EMAIL_REQUIRED' | translate"
-              >
-              </mat-error>
-            </mat-form-field>
-          </div>
-          <div class="center-align">
-            <mat-form-field class="form-field">
-              <mat-label>{{ 'COMMON.MESSAGE' | translate }}</mat-label>
-              <textarea matInput formControlName="message"></textarea>
-              <mat-error
-                *ngIf="formGroup.controls.message.hasError('required')"
-                [innerHTML]="'VALIDATORS.MESSAGE_REQUIRED' | translate"
-              >
-              </mat-error>
-            </mat-form-field>
-          </div>
-          <div class="center-align">
-            <div class="captcha">
-              <ngx-recaptcha2
-                #captchaElem
-                [siteKey]="siteKey"
-                [hl]="lang"
-                formControlName="recaptcha"
-              >
-              </ngx-recaptcha2>
-            </div>
-          </div>
-
-          <div class="center-align" style="padding: 10px">
-            <button
-              type="submit"
-              mat-raised-button
-              color="warn"
-              [disabled]="!formGroup.valid"
-            >
-              {{ 'BUTTON.SEND_MESSAGE' | translate }}
-            </button>
-          </div>
-        </form>
-      </div>
-      <div fxFlex="10" fxHide.xs="true"></div>
-    </div>
-  </div>
-</div> -->
