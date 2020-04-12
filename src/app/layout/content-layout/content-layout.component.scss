@@ -1,0 +1,6 @@
+@import '~app/styles/abstracts/variables';
+
+.head {
+  background-image: linear-gradient(to left top, $color-secondary-dark, $color-tertiary);
+  background-repeat: no-repeat;
+}

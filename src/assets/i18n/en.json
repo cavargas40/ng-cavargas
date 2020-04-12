@@ -6,7 +6,8 @@
     "HOME": "Home",
     "ABOUT_ME": "About Me",
     "RESUME": "Resume",
-    "CONTACT": "Contact"
+    "CONTACT": "Contact",
+    "PORTFOLIO": "Portfolio"
   },
   "ABOUT_ME": {
     "FIRSTLY": "I'm an experienced Software Developer with skills in frontend and backend development, I've spent the last 10 years improving my abilities. I love solving challenging problems creating tools that make life easier for people.",

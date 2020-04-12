@@ -1,3 +1,39 @@
+@import '~app/styles/abstracts/variables';
+
+.contact {
+  padding: 8rem;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.8),
+      rgba($color-secondary, 0.8)
+    ),
+    url('assets/images/code.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__container {
+    width: 100%;
+    margin-top: 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  &__get-in-touch {
+
+  }
+
+  &__form {
+
+  }
+}
+
 .contact-info-block {
   position: relative;
   text-align: left;

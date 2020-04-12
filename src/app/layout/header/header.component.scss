@@ -1,0 +1,20 @@
+@import '~app/styles/abstracts/variables';
+
+.header {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &__text-box {
+    z-index: 2 !important;
+  }
+
+  &__profile-picture {
+    margin-top: 1rem;
+    border-radius: 50%;
+    animation: moveInBottom 1s ease-out;
+  }
+}

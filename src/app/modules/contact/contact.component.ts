@@ -2,14 +2,14 @@ import { Component, OnInit, ChangeDetectorRef, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReCaptcha2Component } from 'ngx-captcha';
 
-import { ContactService } from './services/contact.service';
+import { ContactService } from 'app/data/service/contact.service';
 import { environment } from '../../../environments/environment';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
   @ViewChild('captchaElem', { static: false }) captchaElem: ReCaptcha2Component;
@@ -39,7 +39,7 @@ export class ContactComponent implements OnInit {
       name: [null, [Validators.required]],
       email: [null, [Validators.required, Validators.email]],
       message: [null, [Validators.required]],
-      recaptcha: ['', [Validators.required]]
+      recaptcha: ['', [Validators.required]],
     });
   }
 
@@ -48,7 +48,7 @@ export class ContactComponent implements OnInit {
       this.contactService.sendMessage(this.formGroup.value).subscribe(() => {
         this.contacted = true;
         this.formGroup.reset();
-        Object.keys(this.formGroup.controls).forEach(key => {
+        Object.keys(this.formGroup.controls).forEach((key) => {
           this.formGroup.get(key).setErrors(null);
         });
         this.captchaElem.resetCaptcha();

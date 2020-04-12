@@ -6,7 +6,8 @@
     "HOME": "Inicio",
     "ABOUT_ME": "Acerca de Mi",
     "RESUME": "Currículum",
-    "CONTACT": "Contacto"
+    "CONTACT": "Contacto",
+    "PORTFOLIO": "Portafolio"
   },
   "ABOUT_ME": {
     "FIRSTLY": "Soy un desarrollador de software experimentado con habilidades en desarrollo frontend y backend, he pasado los últimos 10 años mejorando mis habilidades. Me encanta resolver problemas desafiantes creando herramientas que faciliten la vida de las personas.",

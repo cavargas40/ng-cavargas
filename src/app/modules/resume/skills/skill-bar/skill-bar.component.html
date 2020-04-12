@@ -1,0 +1,22 @@
+<div class="skill">
+  <figure class="skill__avatar">
+    <img
+      class="skill__avatar-img"
+      src="assets/images/skills/{{ skill?.img }}"
+      alt="{{ skill?.name }}"
+    />
+  </figure>
+  <div class="skill__title">
+    {{ skill?.name }}
+  </div>
+  <div class="skill__subtitle">
+    {{ skill?.type }}
+  </div>
+  <div class="skill__content">
+    <mat-progress-bar
+      mode="determinate"
+      [value]="skill.percentage"
+    ></mat-progress-bar>
+    <p>{{ skill.percentage }}%</p>
+  </div>
+</div>

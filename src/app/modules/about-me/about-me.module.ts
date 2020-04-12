@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AboutMeRoutingModule } from './about-me-routing.module';
 import { AboutMeComponent } from './about-me.component';
@@ -14,9 +13,9 @@ import { TranslateModule } from '@ngx-translate/core';
     AboutMeRoutingModule,
     SharedModule,
     TranslateModule.forChild({
-      extend: true
+      extend: true,
     }),
-    FlexLayoutModule
-  ]
+  ],
+  exports: [AboutMeComponent],
 })
 export class AboutMeModule {}

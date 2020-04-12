@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { languageConfiguration } from './modules/shared/config/translations';
+import { languageConfiguration } from './core/config/translations';
 
 @Component({
   selector: 'app-root',

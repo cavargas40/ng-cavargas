@@ -1,103 +1,97 @@
-<div
-  fxLayout="row wrap"
-  fxLayout.xs="column"
-  fxLayoutAlign="space-around center"
->
-  <div class="left-top-rox-corner"></div>
-  <div fxFlex="100" class="row">
-    <div fxflexfill fxlayoutalign="center center" class="col center-align">
-      <h1 class="title scale-transition">{{ 'MENU.ABOUT_ME' | translate }}</h1>
-    </div>
+<section class="about-me">
+  <figure class="about-me__item">
+    <img class="about-me__picture" src="/assets/images/about-me.jpg" />
+  </figure>
+  <div class="about-me__box">
+    <h1 class="heading-primary">
+      <span class="heading-primary--sub--secondary center-text">
+        {{ 'MENU.ABOUT_ME' | translate }}
+      </span>
+    </h1>
+    <p class="paragraph paragraph--dark mt-medium">
+      {{ 'ABOUT_ME.FIRSTLY' | translate }}
+    </p>
+    <p class="paragraph paragraph--dark">
+      {{ 'ABOUT_ME.SECONDLY' | translate }}
+    </p>
+    <ul class="about-me__info-list">
+      <li class="about-me__info-item">
+        <span class="about-me__title">{{ 'ABOUT_ME.AGE' | translate }}</span>
+        <span class="about-me__value">{{ age }}</span>
+      </li>
+      <li class="about-me__info-item">
+        <span class="about-me__title">
+          {{ 'ABOUT_ME.RESIDENCE' | translate }}
+        </span>
+        <span class="about-me__value">Bogota, Colombia</span>
+      </li>
+      <li class="about-me__info-item">
+        <span class="about-me__title">{{ 'ABOUT_ME.EMAIL' | translate }}</span>
+        <span class="about-me__value">
+          <a class="about-me__title link" href="mailto:email@example.com">
+            cavargas40@gmail.com
+          </a>
+        </span>
+      </li>
+      <li class="about-me__info-item">
+        <span class="about-me__title">{{ 'ABOUT_ME.PHONE' | translate }}</span>
+        <span class="about-me__value">+57 301 352 77 74</span>
+      </li>
+    </ul>
+    <ul class="about-me__social-list">
+      <li>
+        <a
+          class="about-me__social-list-btn"
+          target="_blank"
+          href="https://www.linkedin.com/in/carlos-andres-vargas-lopez-459914105/"
+          title="LinkedIn"
+        >
+          <img
+            class="about-me__social-list-img"
+            src="assets/images/social-media/linkedin.svg"
+          />
+        </a>
+      </li>
+      <li>
+        <a
+          class="about-me__social-list-btn"
+          target="_blank"
+          href="https://github.com/cavargas40"
+          title="Github"
+        >
+          <img
+            class="about-me__social-list-img"
+            src="assets/images/social-media/github.svg"
+          />
+        </a>
+      </li>
+      <li>
+        <a
+          class="about-me__social-list-btn"
+          target="_blank"
+          href="https://www.facebook.com/CaVargasLo"
+          title="Facebook"
+        >
+          <img
+            class="about-me__social-list-img"
+            src="/assets/images/social-media/facebook.svg"
+          />
+        </a>
+      </li>
+    </ul>
   </div>
-  <div fxFlex="90" class="row">
-    <div fxLayout="row wrap" fxLayout.xs="column">
-      <div fxFlex="10" fxHide.xs="true"></div>
-      <div fxFlex="40%" fxFlex.xs="100%" class="col center-align">
-        <div fxflexfill fxlayoutalign="center center">
-          <img class="responsive-img" src="/assets/images/about-me.jpg" />
-        </div>
-      </div>
-      <div fxFlex="40%" fxFlex.xs="100%" class="col">
-        <p class="white-text">
-          {{ 'ABOUT_ME.FIRSTLY' | translate }}
-        </p>
-        <p>
-          {{ 'ABOUT_ME.SECONDLY' | translate }}
-        </p>
-        <div>
-          <ul class="info-list">
-            <li>
-              <span class="list-title">{{ 'ABOUT_ME.AGE' | translate }}</span>
-              <span class="list-value">{{ age }}</span>
-            </li>
-            <li>
-              <span class="list-title">
-                {{ 'ABOUT_ME.RESIDENCE' | translate }}
-              </span>
-              <span class="list-value">Bogota, Colombia</span>
-            </li>
-            <li>
-              <span class="list-title">{{ 'ABOUT_ME.EMAIL' | translate }}</span>
-              <span class="list-value">
-                <a class="list-title link" href="mailto:email@example.com">
-                  cavargas40@gmail.com
-                </a>
-              </span>
-            </li>
-            <li>
-              <span class="list-title">{{ 'ABOUT_ME.PHONE' | translate }}</span>
-              <span class="list-value">+57 301 352 77 74</span>
-            </li>
-            <li>
-              <span class="list-title"></span>
-              <span class="list-value"></span>
-            </li>
-          </ul>
-          <ul class="social-links">
-            <li>
-              <a
-                class="tip social-button"
-                target="_blank"
-                href="https://www.linkedin.com/in/carlos-andres-vargas-lopez-459914105/"
-                title="LinkedIn"
-              >
-                <img src="/assets/images/social-media/linkedin.svg" />
-              </a>
-            </li>
-            <li>
-              <a
-                class="tip social-button"
-                target="_blank"
-                href="https://github.com/cavargas40"
-                title="Github"
-              >
-                <img src="/assets/images/social-media/github.svg" />
-              </a>
-            </li>
-            <li>
-              <a
-                class="tip social-button"
-                target="_blank"
-                href="https://www.facebook.com/CaVargasLo"
-                title="Facebook"
-              >
-                <img src="/assets/images/social-media/facebook.svg" />
-              </a>
-            </li>
-            <li>
-              <a
-                class="tip social-button"
-                target="_blank"
-                href="https://twitter.com/cavargas40"
-                title="Twitter"
-              >
-                <img src="/assets/images/social-media/twitter.svg" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div fxFlex="10" fxHide.xs="true"></div>
-    </div>
-  </div>
-</div>
+</section>
+
+<!--
+<ul class="social-links">
+  <li>
+    <a
+      class="tip social-button"
+      target="_blank"
+      href="https://twitter.com/cavargas40"
+      title="Twitter"
+    >
+      <img src="/assets/images/social-media/twitter.svg" />
+    </a>
+  </li>
+</ul> -->

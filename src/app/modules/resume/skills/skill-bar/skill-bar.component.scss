@@ -1,0 +1,52 @@
+@import '~app/styles/abstracts/variables';
+
+.skill {
+  background-color: rgba(#fff, 0.3);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5vw repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+
+  &__avatar {
+    height: auto;
+
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  &__avatar-img {
+    width: 80%;
+    object-fit: cover;
+    display: block;
+    max-width: 9rem;
+
+    margin-left: 2.5rem;
+    margin-top: 4rem;
+  }
+
+  &__title {
+    grid-column: 2 / -1;
+    font-size: 2rem;
+    color: $color-primary-dark;
+  }
+
+  &__subtitle {
+    grid-column: 2 / -1;
+    margin-top: -7rem;
+    font-size: 1.2rem;
+  }
+
+  &__content {
+    grid-column: 1 / -1;
+    width: 80%;
+
+    p {
+      float: right;
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -5,11 +5,7 @@
         {{ timeline[time].title | translate }}
       </h2>
 
-      <div
-        class="timeline__item pointer"
-        matTooltip="{{ timeline[time].data.description | translate }}"
-        matTooltipPosition="above"
-      >
+      <div class="timeline__item pointer">
         <h4 class="timeline__position">
           {{ timeline[time].data.position | translate }}
         </h4>

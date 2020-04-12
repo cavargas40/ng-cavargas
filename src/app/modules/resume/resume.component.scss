@@ -1,21 +1,68 @@
-/* Styles for tab labels */
-.mat-tab-label {
-  min-width: 25px !important;
-  padding: 5px;
-  background-color: transparent;
-  color: #ff724c;
-  font-weight: 700;
-}
-/* Styles for the active tab label */
-.mat-tab-label.mat-tab-label-active {
-  min-width: 25px !important;
-  padding: 5px;
-  background-color: transparent;
-  color: #ff724c;
-  font-weight: 700;
+@import '~app/styles/abstracts/variables';
+
+.resume {
+  padding: 8rem;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.5),
+      rgba($color-secondary, 0.5)
+    ),
+    url('assets/images/macbook_nice.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__tabs {
+    list-style: none;
+    padding: 3rem;
+    font-size: $default-font-size;
+
+    display: flex;
+
+    li {
+      padding: 2rem;
+      color: $color-white;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &.active {
+        border-bottom: 3px solid $color-secondary;
+      }
+
+      &:hover {
+        background-color: rgba($color-white, 0.3);
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
 }
 
-/* Styles for the ink bar */
-.mat-ink-bar {
-  background-color: #ff724c !important;
-}
+// /* Styles for tab labels */
+// .mat-tab-label {
+//   min-width: 25px !important;
+//   padding: 5px;
+//   background-color: transparent;
+//   color: #ff724c;
+//   font-weight: 700;
+// }
+// /* Styles for the active tab label */
+// .mat-tab-label.mat-tab-label-active {
+//   min-width: 25px !important;
+//   padding: 5px;
+//   background-color: transparent;
+//   color: #ff724c;
+//   font-weight: 700;
+// }
+
+// /* Styles for the ink bar */
+// .mat-ink-bar {
+//   background-color: #ff724c !important;
+// }

@@ -1,66 +1,143 @@
-<div
-  fxLayout="row wrap"
-  fxLayout.xs="column"
-  fxLayoutAlign="space-around center"
->
-  <div class="left-top-rox-corner"></div>
-  <div fxFlex="100" class="row">
-    <div fxflexfill fxlayoutalign="center center" class="col center-align">
-      <h1 class="title scale-transition">{{ 'MENU.CONTACT' | translate }}</h1>
+<section class="contact">
+  <h1 class="heading-primary">
+    <span class="heading-primary--sub--light">
+      {{ 'MENU.CONTACT' | translate }}
+    </span>
+  </h1>
+  <div class="contact__container">
+    <div class="contact__get-in-touch">
+      <h3 class="contact__get-in-touch--title">
+        {{ 'CONTACT.GET_IN_TOUCH' | translate }}
+      </h3>
+      <p class="contact_get-in-touch--info">
+        {{ 'CONTACT.TOUCH_INFO' | translate }}
+      </p>
+      <ul class="contact__list">
+        <li class="contact__list contact__item">
+          <span class="contact__title">
+            {{ 'ABOUT_ME.RESIDENCE' | translate }}
+          </span>
+          <span class="contact__value">
+            Bogota, Colombia
+          </span>
+        </li>
+        <li class="contact__list contact__item">
+          <span class="contact__title">
+            {{ 'ABOUT_ME.EMAIL' | translate }}
+          </span>
+          <span class="contact__value">
+            Bogota, Colombia
+          </span>
+        </li>
+        <li class="contact__list contact__item">
+          <span class="contact__title">
+            {{ 'ABOUT_ME.PHONE' | translate }}
+          </span>
+          <span class="contact__value">
+            +57 301 352 77 74
+          </span>
+        </li>
+        <li>
+          <span class="contact_available">
+            {{ 'CONTACT.AVAILABLE' | translate }}
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="contact__form">
+      <h3 class="contact__form-title">{{ 'CONTACT.FORM' | translate }}</h3>
+      <div
+        class="contact__contacted"
+        *ngIf="contacted"
+        (click)="contacted = !contacted"
+      >
+        {{ 'CONTACT.CONTACTED_SUCCESS' | translate }}
+      </div>
+      <form
+        [formGroup]="formGroup"
+        *ngIf="formGroup"
+        (ngSubmit)="contactMe()"
+        class="form"
+      >
+        <div class="center-align">
+          <mat-form-field class="form-field">
+            <mat-label>{{ 'COMMON.NAME' | translate }}</mat-label>
+            <input
+              matInput
+              placeholder="{{ 'CONTACT.EX_NAME' | translate }}"
+              formControlName="name"
+              class="form-control"
+            />
+            <mat-error
+              *ngIf="formGroup.controls.name.hasError('required')"
+              [innerHTML]="'VALIDATORS.NAME_REQUIRED' | translate"
+            >
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="center-align">
+          <mat-form-field class="form-field">
+            <mat-label>{{ 'COMMON.EMAIL' | translate }}</mat-label>
+            <input
+              matInput
+              placeholder="{{ 'CONTACT.EX_EMAIL' | translate }}"
+              formControlName="email"
+              class="form-control"
+            />
+            <mat-error
+              *ngIf="
+                formGroup.controls.email.hasError('email') &&
+                !formGroup.controls.name.hasError('required')
+              "
+              [innerHTML]="'VALIDATORS.EMAIL_INVALID' | translate"
+            >
+            </mat-error>
+            <mat-error
+              *ngIf="formGroup.controls.email.hasError('required')"
+              [innerHTML]="'VALIDATORS.EMAIL_REQUIRED' | translate"
+            >
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="center-align">
+          <mat-form-field class="form-field">
+            <mat-label>{{ 'COMMON.MESSAGE' | translate }}</mat-label>
+            <textarea matInput formControlName="message"></textarea>
+            <mat-error
+              *ngIf="formGroup.controls.message.hasError('required')"
+              [innerHTML]="'VALIDATORS.MESSAGE_REQUIRED' | translate"
+            >
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="center-align">
+          <div class="captcha">
+            <ngx-recaptcha2
+              #captchaElem
+              [siteKey]="siteKey"
+              [hl]="lang"
+              formControlName="recaptcha"
+            >
+            </ngx-recaptcha2>
+          </div>
+        </div>
+
+        <div class="center-align" style="padding: 10px;">
+          <button
+            type="submit"
+            mat-raised-button
+            color="warn"
+            [disabled]="!formGroup.valid"
+          >
+            {{ 'BUTTON.SEND_MESSAGE' | translate }}
+          </button>
+        </div>
+      </form>
     </div>
   </div>
-  <div fxFlex="90" class="row">
-    <div fxLayout="row wrap" fxLayout.xs="column">
-      <div fxFlex="10" fxHide.xs="true"></div>
-      <div fxFlex="40%" class="col">
-        <h3>{{ 'CONTACT.GET_IN_TOUCH' | translate }}</h3>
-        <p>
-          {{ 'CONTACT.TOUCH_INFO' | translate }}
-        </p>
-        <div class="contact-info-block">
-          <div class="ci-icon">
-            <mat-icon>location_on</mat-icon>
-          </div>
-          <div class="ci-text">
-            Bogota, Colombia
-          </div>
-        </div>
-        <div class="contact-info-block">
-          <div class="ci-icon">
-            <mat-icon>email</mat-icon>
-          </div>
-          <div class="ci-text">
-            <a class="list-title link" href="mailto:email@example.com">
-              cavargas40@gmail.com
-            </a>
-          </div>
-        </div>
-        <div class="contact-info-block">
-          <div class="ci-icon">
-            <mat-icon>phone</mat-icon>
-          </div>
-          <div class="ci-text">
-            +57 301 352 77 74
-          </div>
-        </div>
-        <div class="contact-info-block">
-          <div class="ci-icon">
-            <mat-icon>check_circle</mat-icon>
-          </div>
-          <div class="ci-text">
-            {{ 'CONTACT.AVAILABLE' | translate }}
-          </div>
-        </div>
-      </div>
-      <div fxFlex="40%" class="col">
-        <h3>{{ 'CONTACT.FORM' | translate }}</h3>
-        <div
-          class="center-align contacted pointer"
-          *ngIf="contacted"
-          (click)="contacted = !contacted"
-        >
-          {{ 'CONTACT.CONTACTED_SUCCESS' | translate }}
-        </div>
+</section>
+
+<!--
         <form
           [formGroup]="formGroup"
           *ngIf="formGroup"
@@ -145,4 +222,4 @@
       <div fxFlex="10" fxHide.xs="true"></div>
     </div>
   </div>
-</div>
+</div> -->

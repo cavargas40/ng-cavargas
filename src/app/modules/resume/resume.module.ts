@@ -1,30 +1,25 @@
 import { NgModule } from '@angular/core';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
-
 import { CommonModule } from '@angular/common';
-import { MatTabsModule } from '@angular/material/tabs';
-import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { ResumeRoutingModule } from './resume-routing.module';
 import { ResumeComponent } from './resume.component';
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from 'app/shared/shared.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { TimeLineComponent } from './time-line/time-line.component';
 import { SkillsComponent } from './skills/skills.component';
+import { SkillBarComponent } from 'app/modules/resume/skills/skill-bar/skill-bar.component';
 
 @NgModule({
-  declarations: [ResumeComponent, TimeLineComponent, SkillsComponent],
+  declarations: [ResumeComponent, TimeLineComponent, SkillsComponent, SkillBarComponent],
   imports: [
     CommonModule,
     ResumeRoutingModule,
-    SharedModule,
     TranslateModule.forChild({
-      extend: true
+      extend: true,
     }),
-    MatTabsModule,
-    MatTooltipModule,
-    FlexLayoutModule
-  ]
+    SharedModule,
+  ],
+  exports: [ResumeComponent],
 })
 export class ResumeModule {}

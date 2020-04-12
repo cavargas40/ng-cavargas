@@ -28,11 +28,11 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/scripts/pace.min.js"
+              "src/assets/scripts/pace.min.js",
+              "node_modules/scrollreveal/dist/scrollreveal.js"
             ]
           },
           "configurations": {
@@ -95,10 +95,10 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           }
         },
         "lint": {

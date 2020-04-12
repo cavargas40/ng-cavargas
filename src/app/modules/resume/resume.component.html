@@ -1,14 +1,43 @@
-<div
-  fxLayout="row wrap"
-  fxLayout.xs="column"
-  fxLayoutAlign="space-around center"
->
-  <div class="left-top-rox-corner"></div>
-  <div fxFlex="100" class="row">
-    <div fxflexfill fxlayoutalign="center center" class="col center-align">
-      <h1 class="title scale-transition">{{ 'MENU.RESUME' | translate }}</h1>
-    </div>
+<section class="resume">
+  <h1 class="heading-primary">
+    <span class="heading-primary--sub--light">
+      {{ 'MENU.RESUME' | translate }}
+    </span>
+  </h1>
+  <ul class="resume__tabs">
+    <li
+      (click)="selectTab('experience')"
+      [ngClass]="{ active: selectedTab === 'experience' }"
+    >
+      {{ 'RESUME.EXPERIENCE' | translate }}
+    </li>
+    <li
+      (click)="selectTab('education')"
+      [ngClass]="{ active: selectedTab === 'education' }"
+    >
+      {{ 'RESUME.EDUCATION' | translate }}
+    </li>
+    <li
+      (click)="selectTab('skills')"
+      [ngClass]="{ active: selectedTab === 'skills' }"
+    >
+      {{ 'RESUME.SKILLS' | translate }}
+    </li>
+  </ul>
+  <div class="resume__content">
+    <ng-container *ngIf="selectedTab === 'experience'">
+      <app-time-line [timeline]="experienceTimeLine"></app-time-line>
+    </ng-container>
+    <ng-container *ngIf="selectedTab === 'education'">
+      <app-time-line [timeline]="educationTimeLine"></app-time-line>
+    </ng-container>
+    <ng-container *ngIf="selectedTab === 'skills'">
+      <app-skills></app-skills>
+    </ng-container>
   </div>
+</section>
+
+<!--
   <div fxFlex="75" class="row">
     <div class="col">
       <mat-tab-group
@@ -37,4 +66,4 @@
       </mat-tab-group>
     </div>
   </div>
-</div>
+</div> -->
