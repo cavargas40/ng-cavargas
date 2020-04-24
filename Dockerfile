@@ -2,7 +2,7 @@
 FROM node:13.12.0-alpine3.10 as build
 WORKDIR /usr/src/app
 COPY package.json ./
-RUN npm i
+RUN npm ci
 COPY . .
 RUN npm run build
 
