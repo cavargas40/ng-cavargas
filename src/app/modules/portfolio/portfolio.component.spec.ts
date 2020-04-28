@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PortfolioComponent } from './portfolio.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('PortfolioComponent', () => {
   let component: PortfolioComponent;
@@ -8,9 +9,9 @@ describe('PortfolioComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PortfolioComponent ]
-    })
-    .compileComponents();
+      declarations: [PortfolioComponent],
+      imports: [TranslateModule.forRoot()],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

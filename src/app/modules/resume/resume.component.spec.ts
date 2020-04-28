@@ -1,5 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { TranslateModule } from '@ngx-translate/core';
+
 import { ResumeComponent } from './resume.component';
 
 describe('ResumeComponent', () => {
@@ -8,7 +10,8 @@ describe('ResumeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResumeComponent ]
+      declarations: [ ResumeComponent ],
+      imports: [TranslateModule.forRoot()]
     })
     .compileComponents();
   }));

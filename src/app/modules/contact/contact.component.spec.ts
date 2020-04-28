@@ -1,6 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { TranslateModule } from '@ngx-translate/core';
 
 import { ContactComponent } from './contact.component';
+import { NgxCaptchaModule } from 'ngx-captcha';
 
 describe('ContactComponent', () => {
   let component: ContactComponent;
@@ -8,9 +13,15 @@ describe('ContactComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContactComponent ]
-    })
-    .compileComponents();
+      declarations: [ContactComponent],
+      imports: [
+        FormsModule,
+        ReactiveFormsModule,
+        HttpClientTestingModule,
+        TranslateModule.forRoot(),
+        NgxCaptchaModule,
+      ],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

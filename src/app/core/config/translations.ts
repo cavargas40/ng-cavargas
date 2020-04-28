@@ -10,10 +10,9 @@ export function languageConfiguration(translateService: TranslateService) {
   const defaultLang = 'en';
   if (!localStorage.getItem('lang')) {
     const [lang] = navigator.language.split('-');
-    const selectedLang = /(es|en|pt|ja|)/gi.test(lang) ? lang : defaultLang;
+    const selectedLang = /(es|en|pt|ja)/gi.test(lang) ? lang : defaultLang;
     translateService.addLangs(['es', 'en', 'pt', 'ja']);
     translateService.use(selectedLang);
-    translateService.use(defaultLang);
     localStorage.setItem('lang', selectedLang);
   } else {
     translateService.use(localStorage.getItem('lang'));
