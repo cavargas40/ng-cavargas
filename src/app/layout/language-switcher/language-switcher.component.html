@@ -7,41 +7,9 @@
       [(ngModel)]="selectedLanguage"
       [clearable]="false"
       (change)="changeLanguage()"
+      appearance="outline"
+      [searchable]="false"
     >
     </ng-select>
-
-    <!-- <select
-      class="language__actual"
-      [(ngModel)]="selectedLanguage"
-
-    >
-      <option *ngFor="let language of languages" [value]="language.id">
-        {{ language?.name }}
-      </option>
-    </select> -->
   </div>
 </section>
-
-<!-- <a class="pointer option">
-  <img
-    class="responsive flag-img"
-    src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/{{
-      currentFlag
-    }}.svg"
-  />
-</a>
-
-
-  <a
-    class="lang-style"
-    *ngFor="let language of languages"
-    mat-menu-item
-    (click)="changeLanguage(language.id)"
-  >
-    <img
-      class="responsive flag-img"
-      src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/{{
-        language.flag
-      }}.svg"
-    />
-  </a> -->
