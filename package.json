@@ -29,6 +29,7 @@
     "@ngrx/store-devtools": "^9.1.0",
     "@ngx-translate/core": "^12.1.2",
     "@ngx-translate/http-loader": "^4.0.0",
+    "ng-mocks": "^9.2.0",
     "ngx-captcha": "^8.0.1",
     "ngx-scrollreveal": "^3.0.0",
     "rxjs": "~6.5.5",

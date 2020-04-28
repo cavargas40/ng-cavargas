@@ -3,9 +3,8 @@ import { async, TestBed } from '@angular/core/testing';
 import { createTranslateLoader, languageConfiguration } from './translations';
 import {
   HttpClientTestingModule,
-  HttpTestingController,
 } from '@angular/common/http/testing';
-import { HttpClient, HttpHandler } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import {
   TranslateModule,
   TranslateService,
@@ -33,21 +32,17 @@ describe('translations config', () => {
   it('should set language in local storage', () => {
     localStorage.removeItem('lang');
 
+    defineNavigatorLanguage('en-US');
     const translateService = TestBed.inject(TranslateService);
     languageConfiguration(translateService);
 
     expect(localStorage.getItem('lang')).toBe('en');
   });
 
-  it('Should select a default language if the user is not from a language defined', () => {
-    console.log('before', navigator.language);
-    Object.defineProperty(navigator, 'language', {
-      get: () => 'de-DE',
-    });
-
+  it('should select a default language', () => {
     localStorage.removeItem('lang');
 
-    console.log('after', navigator.language);
+    defineNavigatorLanguage('de-DE');
 
     const translateService = TestBed.inject(TranslateService);
     languageConfiguration(translateService);
@@ -55,13 +50,32 @@ describe('translations config', () => {
     expect(localStorage.getItem('lang')).toBe('en');
   });
 
-  it('should load translate language as english', () => {
-    localStorage.setItem('lang', 'en');
+  it('should load translate language as Spanish', () => {
+    localStorage.setItem('lang', 'es');
 
     const translateService = TestBed.inject(TranslateService);
     languageConfiguration(translateService);
     const lang = translateService.currentLang;
 
-    expect(lang).toBe('en');
+    expect(lang).toBe('es');
+  });
+
+  it('should load Japanese as a currentLanguage', () => {
+    localStorage.removeItem('lang');
+
+    defineNavigatorLanguage('ja-TY');
+
+    const translateService = TestBed.inject(TranslateService);
+    languageConfiguration(translateService);
+    const lang = translateService.currentLang;
+
+    expect(lang).toBe('ja');
   });
 });
+
+const defineNavigatorLanguage = (lang: string) => {
+  Object.defineProperty(navigator, 'language', {
+    get: () => lang,
+    configurable: true,
+  });
+}
