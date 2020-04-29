@@ -10,10 +10,9 @@ describe('ResumeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResumeComponent ],
-      imports: [TranslateModule.forRoot()]
-    })
-    .compileComponents();
+      declarations: [ResumeComponent],
+      imports: [TranslateModule.forRoot()],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -24,5 +23,11 @@ describe('ResumeComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should change the tab', () => {
+    component.selectTab('education');
+
+    expect(component.selectedTab).toBe('education');
   });
 });

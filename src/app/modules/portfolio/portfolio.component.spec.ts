@@ -23,4 +23,12 @@ describe('PortfolioComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should open a link', () => {
+    spyOn(window, 'open');
+
+    component.goToLink('https://www.google.com');
+
+    expect(window.open).toHaveBeenCalled();
+  });
 });

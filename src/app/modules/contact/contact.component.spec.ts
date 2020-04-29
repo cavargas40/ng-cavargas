@@ -14,11 +14,18 @@ import { NgxCaptchaModule } from 'ngx-captcha';
 import { ContactComponent } from './contact.component';
 import { CommonModule } from '@angular/common';
 import { ContactService } from 'app/data/service/contact.service';
+import { of } from 'rxjs';
 
 describe('ContactComponent', () => {
   let component: ContactComponent;
   let fixture: ComponentFixture<ContactComponent>;
   const formBuilder: FormBuilder = new FormBuilder();
+
+  let contactServiceStub: Partial<ContactService>;
+
+  contactServiceStub = {
+    sendMessage: () => of([]),
+  };
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -31,7 +38,13 @@ describe('ContactComponent', () => {
         TranslateModule.forRoot(),
         MockModule(NgxCaptchaModule),
       ],
-      providers: [TranslateService, ContactService],
+      providers: [
+        TranslateService,
+        {
+          provide: ContactService,
+          useValue: contactServiceStub,
+        },
+      ],
     }).compileComponents();
   }));
 
@@ -99,7 +112,27 @@ describe('ContactComponent', () => {
   });
 
   it('should try to contact', () => {
-    //mock of the service
+    const form = component.formGroup;
+    expect(form.valid).toBeFalsy();
 
-  })
+    const nameInput = form.controls.name;
+    const emailInput = form.controls.email;
+    const messageInput = form.controls.message;
+    const recaptchaInput = form.controls.recaptcha;
+
+    nameInput.setValue('Carlos Vargas');
+    emailInput.setValue('cavargas40@gmail.com');
+    messageInput.setValue('New message to contact with Myself');
+    recaptchaInput.setValue('348765378hdkfghifdgh447568934hfjdgj=');
+
+    component.contactMe();
+
+    expect(component.contacted).toBe(true);
+  });
+
+  it('should fail the contact ', () => {
+    component.contactMe();
+
+    expect(component.contacted).toBe(false);
+  });
 });
