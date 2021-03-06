@@ -12,6 +12,11 @@ const routes: Routes = [
     path: 'welcome',
     component: ContentLayoutComponent,
   },
+  {
+    path: 'crypto',
+    loadChildren: () =>
+      import('./modules/crypto/crypto.module').then((m) => m.CryptoModule),
+  },
   // {
   //   path: 'home',
   //   loadChildren: () =>

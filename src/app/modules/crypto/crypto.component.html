@@ -1,0 +1,53 @@
+<section class="crypto">
+  <form class="form">
+    <div class="form__group">
+      <label class="form__label" for="message">Message</label>
+      <textarea
+        class="form__textarea"
+        id="message"
+        [(ngModel)]="message"
+        [ngModelOptions]="{ standalone: true }"
+      ></textarea>
+    </div>
+
+    <div class="form__group">
+      <label class="form__label" for="passphrase">Passphrase</label>
+      <input
+        type="password"
+        class="form__textarea"
+        id="passphrase"
+        [(ngModel)]="passphrase"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+
+    <div class="form__group">
+      <ul class="form__radio-list">
+        <li class="form__radio-group" *ngFor="let currentMode of modes">
+          <input
+            id="{{ currentMode }}"
+            class="form__radio-button"
+            type="radio"
+            [(ngModel)]="mode"
+            name="list_name"
+            value="{{ currentMode }}"
+            [ngModelOptions]="{ standalone: true }"
+          />
+          <label class="form__radio-label" for="{{ currentMode }}">
+            {{ currentMode | uppercase }}
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="form__group">
+      <button class="btn btn--secondary" (click)="crypt()">
+        {{ mode | uppercase }}
+      </button>
+    </div>
+  </form>
+
+  <div class="crypto__result paragraph--dark">
+    {{ result }}
+  </div>
+</section>
