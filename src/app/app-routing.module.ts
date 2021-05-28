@@ -17,6 +17,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./modules/crypto/crypto.module').then((m) => m.CryptoModule),
   },
+  {
+    path: '3d',
+    loadChildren: () =>
+      import('./modules/m3d/m3d.module').then((m) => m.M3dModule),
+  },
   // {
   //   path: 'home',
   //   loadChildren: () =>
@@ -56,7 +61,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
