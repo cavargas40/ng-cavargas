@@ -1,63 +1,155 @@
 {
   "NAME": "Carlos Vargas",
-  "CAREER": "Fullstack Web Developer",
+  "CAREER": "Senior Fullstack & AI-Augmented Software Engineer",
   "LANGUAGE": "Language",
+  "STORY": {
+    "CHAPTER_00": {
+      "TAG": "CHAPTER 00 // SIGNAL_INITIALIZATION",
+      "TITLE": "Carlos Vargas // Senior Fullstack & AI Systems Engineer",
+      "SUBTITLE": "Architecting resilient web platforms, high-concurrency microservices, and deterministic AI harnesses.",
+      "COMMAND_PROMPT": "cavargas@matrix-core:~/harness",
+      "SYSTEM_READY": "STATUS: ALL SYSTEMS OPERATIONAL",
+      "SCROLL_HINT": "SCROLL TO INITIALIZE SIGNAL"
+    },
+    "CHAPTER_01": {
+      "TAG": "CHAPTER 01 // THE_CRAFT_AND_EVOLUTION",
+      "TITLE": "Engineering Craft & Architectural Evolution",
+      "SUBTITLE": "Over a decade of engineering evolution—from transactional relational cores to hyper-scale polyglot services and spec-driven AI harnesses."
+    },
+    "CHAPTER_02": {
+      "TAG": "CHAPTER 02 // SPEC-DRIVEN_AI_HARNESS_ENGINE",
+      "TITLE": "Engineering with AI Harnesses & Specifications",
+      "SUBTITLE": "Select any stage in the execution harness below to inspect how specifications govern code generation."
+    },
+    "CHAPTER_03": {
+      "TAG": "CHAPTER 03 // PRODUCTION_CASE_FILES",
+      "TITLE": "Production Case Files & Proven Systems",
+      "SUBTITLE": "Dossiers of mission-critical systems engineered for scale, transactional accuracy, and AI augmentation."
+    },
+    "CHAPTER_04": {
+      "TAG": "CHAPTER 04 // OPEN_TRANSMISSION_CHANNEL",
+      "TITLE": "Open Direct Transmission",
+      "SUBTITLE": "No legacy forms or captchas. Copy my direct signal address or initiate a transmission below.",
+      "COPY_CMD": "$ copy cavargas40@gmail.com",
+      "LAUNCH_CMD": "> LAUNCH_MAIL_CLIENT()",
+      "CONFIRM_COPIED": "SIGNAL COPIED TO CLIPBOARD"
+    }
+  },
+  "HERO": {
+    "BADGE": "Senior Software Engineer • AI & Distributed Systems",
+    "SUMMARY": "Architecting resilient web platforms, high-concurrency microservices, and deterministic AI-augmented engineering workflows driven by specifications and agent harnesses.",
+    "CTA_WORK": "Explore Engineering Work",
+    "CTA_CONTACT": "Get in Touch",
+    "ARCH_TITLE": "Spec-Driven AI Engineering Harness",
+    "ARCH_SUBTITLE": "Context -> Specification -> Agent Execution -> Automated Verification"
+  },
   "MENU": {
     "HOME": "Home",
-    "ABOUT_ME": "About Me",
-    "RESUME": "Resume",
+    "ABOUT_ME": "About",
+    "RESUME": "Experience & Capabilities",
     "CONTACT": "Contact",
-    "PORTFOLIO": "Portfolio"
+    "PORTFOLIO": "Engineering Work & AI"
   },
   "ABOUT_ME": {
-    "FIRSTLY": "I'm an experienced Software Developer with skills in frontend and backend development, I've spent the last 10 years improving my abilities. I love solving challenging problems creating tools that make life easier for people.",
-    "SECONDLY": "Furthermore, I'm a Computer Systems Engineer, experienced with software engineering projects under PMI and SCRUM methodologies. very committed to the duties that correspond to me, of excellent character and teamwork without problems, I stand out in the development of web applications (Fullstack Developer) with solid knowledge in different technologies that I have known throughout my career.",
-    "AGE": "Age",
-    "RESIDENCE": "Residence",
+    "EYEBROW": "Engineering Profile",
+    "FIRSTLY": "I am a Senior Fullstack Software Engineer with over a decade of hands-on experience designing, building, and scaling production web applications and distributed backend services. I focus on turning complex domain problems into clean, maintainable architectures.",
+    "SECONDLY": "As a Computer Systems Engineer experienced in agile delivery and modern software craftsmanship, I combine deep fullstack foundations (Angular, React, Node.js, Golang, SQL/NoSQL) with AI-augmented engineering—using structured specifications, context engineering, and agent harnesses to deliver reliable, well-tested software.",
     "EMAIL": "Email",
-    "PHONE": "Phone"
+    "EXPERIENCE_LABEL": "Experience",
+    "EXPERIENCE_VALUE": "14+ Years in Software Engineering",
+    "FOCUS_LABEL": "Core Focus",
+    "FOCUS_VALUE": "Fullstack Architecture, Microservices & AI Engineering",
+    "METHODOLOGY_LABEL": "Workflow",
+    "METHODOLOGY_VALUE": "Spec-Driven AI Harnesses & Automated Quality Gates",
+    "ERAS": {
+      "ERA_01": {
+        "TAG": "ERA 01 // 2010–2016",
+        "BADGE": "CORE_RIGOR",
+        "TITLE": "Enterprise & Relational Foundations",
+        "DESCRIPTION": "Computer Systems Engineer trained in strict transactional integrity, .NET/C#, SQL Server, and Windows Azure—architecting ERP and accounting systems where every query matters."
+      },
+      "ERA_02": {
+        "TAG": "ERA 02 // 2017–2022",
+        "BADGE": "HYPER_SCALE",
+        "TITLE": "Polyglot Microservices & Reactive Web",
+        "DESCRIPTION": "Scaled high-concurrency distributed services in Golang, Node.js, and Kotlin alongside Angular, React, and Vue platforms for hyper-growth LATAM operations at Rappi."
+      },
+      "ERA_03": {
+        "TAG": "ERA 03 // PRESENT",
+        "BADGE": "AI_HARNESS",
+        "TITLE": "Spec-Driven AI Engineering",
+        "DESCRIPTION": "Transforming AI from unpredictable autocomplete into an engineering discipline using curated context boundaries, formal behavioral specs, and automated verification harnesses."
+      }
+    }
+  },
+  "CAPABILITIES": {
+    "EYEBROW": "Core Competencies",
+    "SUBTITLE": "Production-proven capabilities across AI-augmented workflows, frontend architecture, distributed backends, and cloud infrastructure.",
+    "PILLARS": {
+      "AI": {
+        "TITLE": "AI-Augmented Engineering & Harnesses",
+        "SUBTITLE": "Spec-Driven AI Development",
+        "DESCRIPTION": "Engineering deterministic AI coding workflows using OpenSpec, custom agent harnesses, curated repository context, and strict automated test verification."
+      },
+      "FRONTEND": {
+        "TITLE": "Frontend Architecture",
+        "SUBTITLE": "Reactive & Scalable Web UI",
+        "DESCRIPTION": "Building responsive, accessible single-page applications with modern Angular (Signals, Standalone), React, Vue.js, TypeScript, and modular SCSS design systems."
+      },
+      "BACKEND": {
+        "TITLE": "Backend & Distributed Systems",
+        "SUBTITLE": "Microservices & High-Concurrency APIs",
+        "DESCRIPTION": "Designing resilient services and APIs using Node.js, Golang, Kotlin, and .NET/C#, backed by event-driven and microservice patterns."
+      },
+      "CLOUD": {
+        "TITLE": "Cloud, Data & DevOps",
+        "SUBTITLE": "Persistence, Caching & Delivery",
+        "DESCRIPTION": "Operating relational and NoSQL data stores (PostgreSQL, MySQL, SQL Server, MongoDB, DynamoDB), Redis caching layers, Docker containers, and CI/CD pipelines."
+      }
+    }
   },
   "RESUME": {
+    "EYEBROW": "Career Trajectory",
     "EXPERIENCE": "Experience",
     "EDUCATION": "Education",
-    "SKILLS": "Skills",
+    "SKILLS": "Capabilities",
     "TIME_LINE": {
       "EXPERIENCE": {
         "2020": {
-          "TITLE": "Jan 2020 - Current",
-          "POSITION": "Freelancer",
-          "COMPANY": "Independent",
-          "DETAIL": "Working for interesting projects in some platforms like Freelancer.com, Upwork, Fiveer, PeoplePerHour, Skyword, Guru.com"
+          "TITLE": "Jan 2020 - Present",
+          "POSITION": "Senior Fullstack & AI-Augmented Software Engineer",
+          "COMPANY": "Independent / Consulting",
+          "DETAIL": "Architecting and delivering fullstack web platforms and cloud-native services for international clients, integrating spec-driven AI engineering workflows, agent harnesses, modern Angular/React frontends, and scalable Node.js/Go backends."
         },
         "2017_2019": {
           "TITLE": "Feb 2017 - Dec 2019",
-          "POSITION": "Fullstack Developer",
+          "POSITION": "Fullstack Software Engineer",
           "COMPANY": "Rappi",
-          "DETAIL": "Fullstack developer for internal challenging projects of Rappi, using technologies in frontend like Angular, VueJs, React and in backend like (Nodejs (express, adonisjs), Kotlin, Golang, SQL DBs (Postgres, MySql), NoSql DBs (MongoDB, DynamoDB)) cache manager (Redis, MemCached), Containers (Docker, Compose) CI/CD pipelines (Jenkins) everything applying micro services architectures."
+          "DETAIL": "Engineered high-concurrency internal platforms and microservices at Rappi using Angular, Vue.js, and React on the frontend, and Node.js (Express, AdonisJS), Kotlin, and Golang on the backend, backed by PostgreSQL, MySQL, MongoDB, DynamoDB, Redis/Memcached, Docker, and Jenkins CI/CD."
         },
         "2014_2016": {
           "TITLE": "Jul 2014 - Aug 2016",
-          "POSITION": "Junior Developer",
+          "POSITION": "Software Developer",
           "COMPANY": "SINCOSOFT",
-          "DETAIL": "Development of Web applications in .NET in C #, ASPX, js ajax, html, css, jquery for the company's ERP (Project Management, Accounting Module), Data layer development in Sql server 2014 and TransactSQL, We managed this project with the agile development framework, SCRUM."
+          "DETAIL": "Developed enterprise ERP web modules (Project Management and Accounting) using .NET, C#, ASPX, JavaScript, and HTML/CSS, and engineered the relational data layer in SQL Server 2014 and Transact-SQL under SCRUM."
         },
         "2013_2014": {
           "TITLE": "Aug 2013 - Feb 2014",
-          "POSITION": "Engineer Developer",
+          "POSITION": "Software Engineer Developer",
           "COMPANY": "Globalsoft Wigilabs",
-          "DETAIL": "Application Development and Web Services in asp.net MVC 4, Development of the data layer in Sql server 2012 and TransactSQL, Application server management in Windows Azure. (storage, databases, web services, web applications)."
+          "DETAIL": "Built web applications and REST/SOAP services in ASP.NET MVC 4 with a SQL Server 2012 / Transact-SQL data layer, managing cloud deployments, storage, and databases on Windows Azure."
         },
         "2011_2013": {
           "TITLE": "Dec 2011 - Aug 2013",
-          "POSITION": "Support and Testing Requirements Analyst",
+          "POSITION": "Requirements & QA Testing Analyst",
           "COMPANY": "National University of Colombia",
-          "DETAIL": "Creation of requirements for new developments or system adjustments, Testing of the developments carried out, Support for system users with SQL statements. (ORACLE Database Engine)"
+          "DETAIL": "Authored software requirements specifications for new systems, executed functional and regression testing, and supported production operations on Oracle SQL databases."
         },
         "2010_2011": {
           "TITLE": "Oct 2010 - Oct 2011",
-          "POSITION": "Information Systems Analyst and Developer",
+          "POSITION": "Information Systems Analyst & Developer",
           "COMPANY": "Promacom Pak Ltda",
-          "DETAIL": "Microsoft Windows Server 2008 R2 Standard server administrator, in charge of the company's technical infrastructure support, Web application development with html, css, js, flash, php and MySQL."
+          "DETAIL": "Administered Windows Server 2008 R2 infrastructure and developed internal web applications using HTML, CSS, JavaScript, PHP, and MySQL."
         }
       },
       "EDUCATION": {
@@ -65,31 +157,106 @@
           "TITLE": "Jan 2018 - Nov 2018",
           "POSITION": "Upper Intermediate English",
           "COMPANY": "Seafield School of English",
-          "DETAIL": "General English studies in New Zealand, Auckland."
+          "DETAIL": "Academic and general English studies in Auckland, New Zealand."
         },
         "JAN_2013_DEC_2016": {
-          "TITLE": "Jan 2018 - Nov 2018",
+          "TITLE": "Jan 2013 - Dec 2016",
           "POSITION": "Computer Systems Engineer",
           "COMPANY": "Politecnico Grancolombiano",
-          "DETAIL": "Computer Systems Engineer Bachelor's degree"
+          "DETAIL": "Bachelor's degree in Computer Systems Engineering."
         },
         "JAN_2009_DEC_2011": {
           "TITLE": "Jan 2009 - Nov 2011",
           "POSITION": "Technologist in Analysis and Development of Information Systems",
           "COMPANY": "National Learning Service (SENA)",
-          "DETAIL": "Technologist in Analysis and Development of Information Systems Bachelor's degree"
+          "DETAIL": "Degree in Information Systems Analysis and Software Development."
         }
       }
     }
   },
+  "PORTFOLIO": {
+    "EYEBROW": "Selected Engineering Work",
+    "SUBTITLE": "Real-world systems architecture, distributed platforms, and spec-driven AI engineering case studies.",
+    "FILTERS": {
+      "ALL": "All Systems",
+      "AI": "AI & Spec Harnesses",
+      "DISTRIBUTED": "Distributed & ERP",
+      "FULLSTACK": "Fullstack Platforms"
+    },
+    "AI_SHOWCASE": {
+      "BADGE": "AI Engineering Methodology",
+      "TITLE": "Spec-Driven AI Engineering & Agent Harnesses",
+      "DESCRIPTION": "Rather than treating AI as ad-hoc autocomplete, I engineer structured agent harnesses where architectural context, behavioral specifications, and verification gates govern every code change.",
+      "STEPS": {
+        "CONTEXT": {
+          "TITLE": "Context & Guardrails",
+          "SUBTITLE": "Repository Context & Constraints",
+          "DESCRIPTION": "Encode repository architecture, styling budgets, i18n rules, and module boundaries into machine-readable project context."
+        },
+        "SPEC": {
+          "TITLE": "Behavioral Specifications",
+          "SUBTITLE": "SHALL/MUST Contracts & Scenarios",
+          "DESCRIPTION": "Define testable SHALL/MUST requirements and WHEN/THEN acceptance scenarios before writing implementation code."
+        },
+        "HARNESS": {
+          "TITLE": "Agent Harness Execution",
+          "SUBTITLE": "Scoped Task Orchestration",
+          "DESCRIPTION": "Orchestrate scoped implementation tasks through deterministic agent workflows with explicit design contracts."
+        },
+        "VERIFY": {
+          "TITLE": "Automated Verification",
+          "SUBTITLE": "Automated Test & Budget Gates",
+          "DESCRIPTION": "Validate every task against unit test suites, strict TypeScript checks, and production bundle budgets."
+        }
+      }
+    },
+    "LABELS": {
+      "PROBLEM": "Challenge",
+      "ARCHITECTURE": "Architecture & Approach",
+      "IMPACT": "Engineering Outcome",
+      "SOURCE": "View Repository"
+    },
+    "CASES": {
+      "AI_HARNESS": {
+        "BADGE": "AI Engineering & Architecture",
+        "TITLE": "Spec-Driven AI Engineering & Agent Harness Platform",
+        "PROBLEM": "Unstructured AI prompting leads to architectural drift, broken regressions, and inconsistent multi-locale updates across complex frontends.",
+        "ARCHITECTURE": "Implemented an OpenSpec-driven workflow (`config.yaml` context harness, delta specs, technical design docs, and tracked tasks) governing a modern Angular 19 architecture.",
+        "IMPACT": "Achieved deterministic multi-step modernization, 100% 4-locale i18n parity, and strict compliance with 6KB component style budgets."
+      },
+      "RAPPI_PLATFORM": {
+        "BADGE": "Distributed Microservices",
+        "TITLE": "High-Concurrency Internal Operations Ecosystem (Rappi)",
+        "PROBLEM": "Rapidly scaling operations across LATAM required resilient internal tools and low-latency backend services capable of handling heavy real-time traffic.",
+        "ARCHITECTURE": "Polyglot microservices in Golang, Kotlin, and Node.js (Express/AdonisJS) paired with Angular/React/Vue frontends, Redis/Memcached caching, PostgreSQL/MongoDB/DynamoDB, and Docker/Jenkins CI/CD.",
+        "IMPACT": "Delivered fault-tolerant internal tooling and service pipelines supporting high-velocity engineering and operational teams."
+      },
+      "POLYGLOT_WEB": {
+        "BADGE": "Fullstack Web Architecture",
+        "TITLE": "Multi-Client Reactive Web Applications & Internationalization",
+        "PROBLEM": "Global web applications require fast initial loads, responsive layouts across devices, and seamless runtime localization.",
+        "ARCHITECTURE": "Modular frontend architecture using Angular, RxJS, and native IntersectionObserver motion directives with dynamic JSON translation loaders across English, Spanish, Portuguese, and Japanese.",
+        "IMPACT": "Zero-reload locale switching, accessible responsive layouts from mobile to ultra-wide desktops, and maintainable module boundaries."
+      },
+      "ENTERPRISE_ERP": {
+        "BADGE": "Enterprise Core Systems",
+        "TITLE": "Enterprise Project Management & Accounting ERP",
+        "PROBLEM": "Complex financial and project accounting workflows demanded strict transactional integrity and responsive web reporting.",
+        "ARCHITECTURE": "Multi-tier .NET / C# web architecture backed by SQL Server and optimized Transact-SQL stored procedures, delivered iteratively under SCRUM.",
+        "IMPACT": "Streamlined core accounting and project tracking operations with reliable relational data modeling and cloud-ready deployment."
+      }
+    }
+  },
   "CONTACT": {
-    "GET_IN_TOUCH": "How to contact me?",
-    "TOUCH_INFO": "In case you need to contact me just use one of the next options.",
-    "AVAILABLE": "Freelance Available",
-    "FORM": "Contact Form",
-    "CONTACTED_SUCCESS": "Contact form successfully submitted. Thank you, I will get back to you soon!",
-    "EX_NAME": "Ex. Carlos Andres",
-    "EX_EMAIL": "Ex. cavargas40@gmail.com"
+    "GET_IN_TOUCH": "Let's Build Something Resilient",
+    "TOUCH_INFO": "Available for senior fullstack architecture, distributed systems, and AI-augmented engineering roles or consulting.",
+    "AVAILABLE": "Open to Opportunities",
+    "COPY_EMAIL": "Click to Copy",
+    "COPIED": "Copied to Clipboard!"
+  },
+  "FOOTER": {
+    "TAGLINE": "Senior Fullstack & AI-Augmented Software Engineer — Engineered with Angular & OpenSpec.",
+    "RIGHTS": "All rights reserved."
   },
   "COMMON": {
     "NAME": "Name",
@@ -97,12 +264,6 @@
     "MESSAGE": "Message"
   },
   "BUTTON": {
-    "SEND_MESSAGE": "Send Message"
-  },
-  "VALIDATORS": {
-    "NAME_REQUIRED": "Name is <strong>required</strong>",
-    "EMAIL_INVALID": "Please enter a <strong>valid</strong> email address",
-    "EMAIL_REQUIRED": "Email is <strong>required</strong>",
-    "MESSAGE_REQUIRED": "Message is <strong>required</strong>"
+    "SEND_MESSAGE": "Send Direct Email"
   }
 }

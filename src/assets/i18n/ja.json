@@ -1,108 +1,269 @@
 {
   "NAME": "カルロス・バルガス",
-  "CAREER": "フルスタックWeb開発者",
+  "CAREER": "シニアフルスタック＆AIソフトウェアエンジニア",
   "LANGUAGE": "言語",
+  "STORY": {
+    "CHAPTER_00": {
+      "TAG": "CHAPTER 00 // SIGNAL_INITIALIZATION",
+      "TITLE": "Carlos Vargas // シニアフルスタック＆AIシステムエンジニア",
+      "SUBTITLE": "高信頼なWebプラットフォーム、高並行マイクロサービス、仕様主導型AIハーネスの設計・構築。",
+      "COMMAND_PROMPT": "cavargas@matrix-core:~/harness",
+      "SYSTEM_READY": "STATUS: ALL SYSTEMS OPERATIONAL",
+      "SCROLL_HINT": "スクロールして信号を初期化"
+    },
+    "CHAPTER_01": {
+      "TAG": "CHAPTER 01 // THE_CRAFT_AND_EVOLUTION",
+      "TITLE": "エンジニアリングの軌跡と技術的進化",
+      "SUBTITLE": "トランザクション指向のリレーショナル基盤からハイパースケールな分散サービス、仕様主導型AIハーネスに至る10年以上の進化。"
+    },
+    "CHAPTER_02": {
+      "TAG": "CHAPTER 02 // SPEC-DRIVEN_AI_HARNESS_ENGINE",
+      "TITLE": "AIハーネスと仕様に基づくエンジニアリング",
+      "SUBTITLE": "以下の実行パイプラインを選択し、仕様がどのようにコード生成を制御するかを確認できます。"
+    },
+    "CHAPTER_03": {
+      "TAG": "CHAPTER 03 // PRODUCTION_CASE_FILES",
+      "TITLE": "本番運用の実績とシステム事例",
+      "SUBTITLE": "スケーラビリティ、トランザクション精度、AI拡張性を重視して設計された基幹システムの事例。"
+    },
+    "CHAPTER_04": {
+      "TAG": "CHAPTER 04 // OPEN_TRANSMISSION_CHANNEL",
+      "TITLE": "ダイレクト通信チャネルの確立",
+      "SUBTITLE": "レガシーフォームや認証は不要です。直接シグナルアドレスをコピーするか、以下から通信を開始してください。",
+      "COPY_CMD": "$ copy cavargas40@gmail.com",
+      "LAUNCH_CMD": "> LAUNCH_MAIL_CLIENT()",
+      "CONFIRM_COPIED": "シグナルをクリップボードにコピーしました"
+    }
+  },
+  "HERO": {
+    "BADGE": "シニアソフトウェアエンジニア • AI＆分散システム",
+    "SUMMARY": "仕様駆動開発（Spec-Driven Development）とエージェントハーネスを活用し、堅牢なWebプラットフォーム、高並行マイクロサービス、再現性の高いAIエンジニアリングワークフローを構築します。",
+    "CTA_WORK": "エンジニアリング事例を見る",
+    "CTA_CONTACT": "お問い合わせ",
+    "ARCH_TITLE": "仕様駆動AIエンジニアリング・ハーネス",
+    "ARCH_SUBTITLE": "コンテキスト -> 仕様策定 -> エージェント実行 -> 自動検証"
+  },
   "MENU": {
     "HOME": "ホーム",
-    "ABOUT_ME": "私について",
-    "RESUME": "履歴書",
+    "ABOUT_ME": "プロフィール",
+    "RESUME": "経歴・スキル",
     "CONTACT": "連絡先",
-    "PORTFOLIO": "ポートフォリオ"
+    "PORTFOLIO": "実績・AI活用"
   },
   "ABOUT_ME": {
-    "FIRSTLY": "私は、フロントエンドおよびバックエンド開発のスキルを持つ経験豊富なソフトウェア開発者であり、過去10年間、自分の能力向上に励んできました。 私は、人々の生活をより楽にできるツールを作成する上で生じる問題の解決や困難な問題に挑戦することが好きです。",
-    "SECONDLY": "さらに、私はコンピューターシステムエンジニアであり、PMIおよびSCRUM方法論の下でのソフトウェアエンジニアリングプロジェクトの経験があります。 自分自身の仕事には情熱を持って取り組み、チームの一員として働くことにおいても問題なくこなすことができます。また、私は自身のキャリアを通じて得たさまざまな技術の確かな知識を持つWebアプリケーション（Fullstack Developer）の開発にも優れています。",
-    "AGE": "年齢",
-    "RESIDENCE": "レジデンス",
-    "EMAIL": "Eメール",
-    "PHONE": "電話"
+    "EYEBROW": "エンジニアリング・プロフィール",
+    "FIRSTLY": "10年以上にわたり本番環境のWebアプリケーションと分散バックエンドサービスの設計・構築・スケーリングを手掛けてきたシニアフルスタックエンジニアです。複雑なドメイン課題をクリーンで保守性の高いアーキテクチャへと落とし込むことを得意としています。",
+    "SECONDLY": "コンピュータシステムエンジニアとしてアジャイル開発の豊富な経験を持ち、フルスタック技術（Angular、React、Node.js、Golang、SQL/NoSQL）とAI支援エンジニアリングを融合。構造化された仕様書、コンテキストエンジニアリング、エージェントハーネスを用いて高品質なソフトウェアを提供します。",
+    "EMAIL": "メール",
+    "EXPERIENCE_LABEL": "実務経験",
+    "EXPERIENCE_VALUE": "ソフトウェアエンジニアリング歴 14年以上",
+    "FOCUS_LABEL": "専門領域",
+    "FOCUS_VALUE": "フルスタック設計・マイクロサービス・AIエンジニアリング",
+    "METHODOLOGY_LABEL": "開発手法",
+    "METHODOLOGY_VALUE": "仕様駆動AIハーネス＆自動品質ゲート",
+    "ERAS": {
+      "ERA_01": {
+        "TAG": "ERA 01 // 2010–2016",
+        "BADGE": "CORE_RIGOR",
+        "TITLE": "エンタープライズとリレーショナルの基盤",
+        "DESCRIPTION": "厳格なトランザクション整合性、.NET/C#、SQL Server、Windows Azureの専門教育を受けたコンピュータシステムエンジニアとして、高信頼なERPおよび会計システムを設計。"
+      },
+      "ERA_02": {
+        "TAG": "ERA 02 // 2017–2022",
+        "BADGE": "HYPER_SCALE",
+        "TITLE": "多言語マイクロサービスとリアクティブWeb",
+        "DESCRIPTION": "RappiのLATAM急成長期において、Golang、Node.js、Kotlinによる高並行分散サービスと、Angular、React、Vueプラットフォームを大規模にスケールアウト。"
+      },
+      "ERA_03": {
+        "TAG": "ERA 03 // PRESENT",
+        "BADGE": "AI_HARNESS",
+        "TITLE": "仕様主導型AIエンジニアリング",
+        "DESCRIPTION": "厳選されたコンテキスト境界、形式的な振る舞い仕様、自動検証ハーネスを用いて、AIを単なる自動補完から再現性のある工学手法へと昇華。"
+      }
+    }
+  },
+  "CAPABILITIES": {
+    "EYEBROW": "コア・ケイパビリティ",
+    "SUBTITLE": "AI支援ワークフロー、フロントエンド設計、分散バックエンド、クラウド基盤における実践的な技術力。",
+    "PILLARS": {
+      "AI": {
+        "TITLE": "AI支援エンジニアリング＆ハーネス",
+        "SUBTITLE": "仕様駆動AI開発（Spec-Driven AI）",
+        "DESCRIPTION": "OpenSpec、カスタムエージェントハーネス、構造化されたリポジトリコンテキスト、自動テスト検証を組み合わせた決定論的なAI開発ワークフローの構築。"
+      },
+      "FRONTEND": {
+        "TITLE": "フロントエンド・アーキテクチャ",
+        "SUBTITLE": "リアクティブ＆スケーラブルUI",
+        "DESCRIPTION": "モダンAngular（Signals、Standalone）、React、Vue.js、TypeScript、モジュール化されたSCSS設計による高速でアクセシブルなSPA開発。"
+      },
+      "BACKEND": {
+        "TITLE": "バックエンド＆分散システム",
+        "SUBTITLE": "マイクロサービス＆高並行API",
+        "DESCRIPTION": "Node.js、Golang、Kotlin、.NET/C# を用い、イベント駆動およびマイクロサービスパターンに基づいた堅牢なAPI・サービス設計。"
+      },
+      "CLOUD": {
+        "TITLE": "クラウド・データ・DevOps",
+        "SUBTITLE": "データ永続化・キャッシュ・CI/CD",
+        "DESCRIPTION": "RDBおよびNoSQL（PostgreSQL、MySQL、SQL Server、MongoDB、DynamoDB）、Redisキャッシュ、Dockerコンテナ、CI/CDパイプラインの運用。"
+      }
+    }
   },
   "RESUME": {
-    "EXPERIENCE": "経験",
-    "EDUCATION": "教育",
-    "SKILLS": "スキル",
+    "EYEBROW": "キャリア経歴",
+    "EXPERIENCE": "職務経歴",
+    "EDUCATION": "学歴",
+    "SKILLS": "ケイパビリティ",
     "TIME_LINE": {
       "EXPERIENCE": {
         "2020": {
-          "TITLE": "1月 2020 - ニュース",
-          "POSITION": "フリーランサー",
-          "COMPANY": "独立",
-          "DETAIL": "Freelancer.com、Upwork、Fiveer、PeoplePerHour、Skyword、Guru.comなどの一部のプラットフォームで興味深いプロジェクトに取り組む。"
+          "TITLE": "2020年1月 - 現在",
+          "POSITION": "シニアフルスタック＆AIソフトウェアエンジニア",
+          "COMPANY": "独立 / コンサルティング",
+          "DETAIL": "海外クライアント向けにフルスタックWebプラットフォームおよびクラウドサービスを設計・提供。仕様駆動AIエンジニアリング、エージェントハーネス、モダンAngular/React、スケーラブルなNode.js/Goバックエンドを統合。"
         },
         "2017_2019": {
-          "TITLE": "2月 2017 - 12月 2019",
+          "TITLE": "2017年2月 - 2019年12月",
           "POSITION": "フルスタック開発者",
           "COMPANY": "Rappi",
-          "DETAIL": "Angular、VueJs、React、バックエンド（Nodejs（express、adonisjs）、Kotlin、Golang、SQL DB（Postgres、MySql）、NoSql DB（MongoDB、DynamoDB）など）のようなフロントエンドテクノロジーを使用して、内部Rappiプロジェクトに挑戦するフルスタック開発者 キャッシュ（Redis、MemCached）、コンテナ（Docker、作成）CI / CDパイプ（Jenkins）マイクロサービスアーキテクチャを適用するすべてのもの。"
+          "DETAIL": "RappiにてAngular、Vue.js、Reactを用いたフロントエンドと、Node.js（Express、AdonisJS）、Kotlin、Golangを用いたマイクロサービスを開発。PostgreSQL、MySQL、MongoDB、DynamoDB、Redis/Memcached、Docker、Jenkins CI/CDを活用。"
         },
         "2014_2016": {
-          "TITLE": "7月 2014 - 8月 2016",
-          "POSITION": "ジュニア開発者",
+          "TITLE": "2014年7月 - 2016年8月",
+          "POSITION": "ソフトウェア開発者",
           "COMPANY": "SINCOSOFT",
-          "DETAIL": "C＃、ASPX、js ajax、html、css、会社のERP（プロジェクト管理、会計モジュール）のjquery、SQL 2014サーバーおよびTransactSQLのデータレイヤー開発,.NETでのWebアプリケーションの開発 。プロジェクト全体は、アジャイル開発フレームワークであるSCRUMで管理。"
+          "DETAIL": "社内ERP（プロジェクト管理・会計モジュール）のWebアプリケーションを .NET、C#、ASPX、JavaScript、HTML/CSS で開発。SQL Server 2014 および Transact-SQL によるデータ層設計をSCRUM体制で推進。"
         },
         "2013_2014": {
-          "TITLE": "8月 2013 - 2月 2014",
+          "TITLE": "2013年8月 - 2014年2月",
           "POSITION": "開発エンジニア",
           "COMPANY": "Globalsoft Wigilabs",
-          "DETAIL": "asp.net MVC 4でのアプリケーションとWebサービスの開発、SQL Server 2012およびTransactSQLでのデータレイヤーの開発、Windows Azureでのアプリケーションサーバーの管理。 （ストレージ、データベース、Webサービス、Webアプリケーション）。"
+          "DETAIL": "ASP.NET MVC 4 によるWebアプリ・サービス開発、SQL Server 2012 / Transact-SQL データ層構築、および Windows Azure 上のクラウド基盤管理を担当。"
         },
         "2011_2013": {
-          "TITLE": "12月 2011 - 8月 2013",
-          "POSITION": "サポートアナリストおよびテスト要件",
-          "COMPANY": "National University of Colombia",
-          "DETAIL": "新規開発またはシステム調整の要件の作成、実行された開発のテスト、SQLステートメントによるシステムユーザーのサポート。 （ORACLEデータベースエンジン）"
+          "TITLE": "2011年12月 - 2013年8月",
+          "POSITION": "要件定義＆QAテストアナリスト",
+          "COMPANY": "コロンビア国立大学",
+          "DETAIL": "新規システム開発および改修の要件定義、機能・回帰テストの実施、Oracle SQL データベース環境での運用サポートを担当。"
         },
         "2010_2011": {
-          "TITLE": "10月 2010 - 10月 2011",
-          "POSITION": "情報システムアナリストおよび開発者",
+          "TITLE": "2010年10月 - 2011年10月",
+          "POSITION": "情報システムアナリスト＆開発者",
           "COMPANY": "Promacom Pak Ltda",
-          "DETAIL": "Microsoft Windows Server 2008 R2 Standardサーバー管理者。会社の技術インフラストラクチャサポート、html、css、js、flash、php、MySQLを使用したWebアプリケーションの開発を担当しています。"
+          "DETAIL": "Windows Server 2008 R2 サーバー管理およびインフラ保守、HTML、CSS、JavaScript、PHP、MySQL を用いた社内Webアプリケーション開発を担当。"
         }
       },
       "EDUCATION": {
         "JAN_2018_NOV_2018": {
-          "TITLE": "1月 2018 - 11月 2018",
-          "POSITION": "上中級英語",
+          "TITLE": "2018年1月 - 2018年11月",
+          "POSITION": "中上級英語課程",
           "COMPANY": "Seafield School of English",
-          "DETAIL": "ニュージーランド、オークランドでの一般英語学習."
+          "DETAIL": "ニュージーランド・オークランドでの英語研修。"
         },
         "JAN_2013_DEC_2016": {
-          "TITLE": "1月 2018 - 11月 2018",
-          "POSITION": "コンピューターシステムエンジニア",
+          "TITLE": "2013年1月 - 2016年12月",
+          "POSITION": "コンピュータシステムエンジニア",
           "COMPANY": "Politecnico Grancolombiano",
-          "DETAIL": "コンピュータシステムエンジニアの学士号"
+          "DETAIL": "コンピュータシステム工学 学士号取得。"
         },
         "JAN_2009_DEC_2011": {
-          "TITLE": "1月 2009 - 11月 2011",
-          "POSITION": "情報システムの分析と開発の技術者",
+          "TITLE": "2009年1月 - 2011年11月",
+          "POSITION": "情報システム分析・開発テクノロジスト",
           "COMPANY": "National Learning Service (SENA)",
-          "DETAIL": "情報システムの分析と開発の技術者学士号"
+          "DETAIL": "情報システム分析およびソフトウェア開発の専門学位取得。"
         }
       }
     }
   },
+  "PORTFOLIO": {
+    "EYEBROW": "エンジニアリング事例",
+    "SUBTITLE": "実務のシステムアーキテクチャ、分散プラットフォーム、仕様駆動AIエンジニアリングのケーススタディ。",
+    "FILTERS": {
+      "ALL": "すべて",
+      "AI": "AI＆仕様ハーネス",
+      "DISTRIBUTED": "分散システム＆ERP",
+      "FULLSTACK": "フルスタック基盤"
+    },
+    "AI_SHOWCASE": {
+      "BADGE": "AIエンジニアリング手法",
+      "TITLE": "仕様駆動AIエンジニアリング＆エージェントハーネス",
+      "DESCRIPTION": "AIを単なるコード補完としてではなく、アーキテクチャのコンテキスト、仕様書、自動検証ゲートによって制御された「エージェントハーネス」として設計・運用しています。",
+      "STEPS": {
+        "CONTEXT": {
+          "TITLE": "コンテキストと制約定義",
+          "SUBTITLE": "リポジトリのコンテキストと制約条件",
+          "DESCRIPTION": "リポジトリ構造、スタイル予算、多言語ルール、モジュール境界を構造化コンテキストとして定義。"
+        },
+        "SPEC": {
+          "TITLE": "振る舞い仕様の策定",
+          "SUBTITLE": "SHALL/MUST規約とシナリオ",
+          "DESCRIPTION": "実装前に検証可能な要件と WHEN/THEN シナリオを策定し、期待される動作を明確化。"
+        },
+        "HARNESS": {
+          "TITLE": "エージェントハーネス実行",
+          "SUBTITLE": "範囲限定タスクのオーケストレーション",
+          "DESCRIPTION": "明確な設計契約とタスク分割に基づき、エージェントワークフローを段階的に実行。"
+        },
+        "VERIFY": {
+          "TITLE": "自動検証ゲート",
+          "SUBTITLE": "単体テストとサイズ予算の自動ゲート",
+          "DESCRIPTION": "ユニットテスト、厳格なTypeScript型検査、本番バンドル予算で各変更を検証。"
+        }
+      }
+    },
+    "LABELS": {
+      "PROBLEM": "課題",
+      "ARCHITECTURE": "アーキテクチャとアプローチ",
+      "IMPACT": "エンジニアリング成果",
+      "SOURCE": "リポジトリを見る"
+    },
+    "CASES": {
+      "AI_HARNESS": {
+        "BADGE": "AIエンジニアリング＆設計",
+        "TITLE": "仕様駆動AIエンジニアリング＆エージェントハーネス基盤",
+        "PROBLEM": "非構造的なプロンプトによる開発は、アーキテクチャの逸脱や回帰バグ、多言語リソースの不整合を引き起こします。",
+        "ARCHITECTURE": "OpenSpecベースのワークフロー（`config.yaml` コンテキストハーネス、仕様差分、技術設計、タスク追跡）と Angular 19 アーキテクチャを統合。",
+        "IMPACT": "段階的で確実なモダナイゼーション、4言語間の完全な翻訳パリティ、コンポーネントあたり6KB以下のスタイル予算を達成。"
+      },
+      "RAPPI_PLATFORM": {
+        "BADGE": "分散マイクロサービス",
+        "TITLE": "高並行社内オペレーション基盤（Rappi）",
+        "PROBLEM": "中南米全域で急拡大するオペレーションを支えるため、高負荷に耐える低遅延バックエンドと管理ツールが必要でした。",
+        "ARCHITECTURE": "Golang、Kotlin、Node.js（Express/AdonisJS）によるマイクロサービスと、Angular/React/Vue、Redis/Memcached、PostgreSQL/MongoDB/DynamoDB、Docker/Jenkins CI/CD を統合。",
+        "IMPACT": "高い耐障害性を持つ社内ツール群と継続的デリバリー基盤を構築し、高速な事業拡大を支援。"
+      },
+      "POLYGLOT_WEB": {
+        "BADGE": "フルスタックWeb設計",
+        "TITLE": "マルチクライアント対応リアクティブWeb＆多言語化基盤",
+        "PROBLEM": "グローバル向けWebアプリには高速な初期表示、レスポンシブ設計、シームレスな多言語切り替えが求められます。",
+        "ARCHITECTURE": "Angular、RxJS、ネイティブ IntersectionObserver アニメーションと、英・西・葡・日の4言語動的JSONローダーを組み合わせたモジュラー設計。",
+        "IMPACT": "リロードなしの言語切り替え、モバイルから大型ディスプレイまでの最適な表示、高い保守性を実現。"
+      },
+      "ENTERPRISE_ERP": {
+        "BADGE": "エンタープライズ基幹システム",
+        "TITLE": "プロジェクト管理・会計エンタープライズERP",
+        "PROBLEM": "複雑な財務・プロジェクト会計処理には厳격なトランザクション整合性と迅速なWebレポート機能が必要でした。",
+        "ARCHITECTURE": ".NET / C# マルチティアWebアーキテクチャと SQL Server / Transact-SQL ストアドプロシージャを組み合わせ、SCRUMで反復開発。",
+        "IMPACT": "信頼性の高いリレーショナルデータモデルにより、基幹会計およびプロジェクト追跡業務を効率化。"
+      }
+    }
+  },
   "CONTACT": {
-    "GET_IN_TOUCH": "連絡する",
-    "TOUCH_INFO": "お問い合わせは、次のオプションのいずれかを使用してください。",
-    "AVAILABLE": "フリーランス利用可能",
-    "FORM": "お問い合わせフォーム",
-    "CONTACTED_SUCCESS": "フォームは、正常に送信されました。 ありがとうございます。",
-    "EX_NAME": "例 Carlos Andres",
-    "EX_EMAIL": "例 cavargas40@gmail.com"
+    "GET_IN_TOUCH": "堅牢なソフトウェアを共に構築しましょう",
+    "TOUCH_INFO": "シニアフルスタック設計、分散システム、AI支援エンジニアリングに関するご相談・ご依頼を受け付けています。",
+    "AVAILABLE": "案件・ポジション相談可",
+    "COPY_EMAIL": "メールをコピー",
+    "COPIED": "コピーしました！"
+  },
+  "FOOTER": {
+    "TAGLINE": "シニアフルスタック＆AIソフトウェアエンジニア — Built with Angular & OpenSpec.",
+    "RIGHTS": "All rights reserved."
   },
   "COMMON": {
     "NAME": "名前",
-    "EMAIL": "Eメール",
+    "EMAIL": "メール",
     "MESSAGE": "メッセージ"
   },
   "BUTTON": {
-    "SEND_MESSAGE": "メッセージを送る"
-  },
-  "VALIDATORS": {
-    "NAME_REQUIRED": "名前は<strong>必須</ strong>です",
-    "EMAIL_INVALID": "<strong>有効な</ strong>メールアドレスを入力してください",
-    "EMAIL_REQUIRED": "メールは<strong>必須</ strong>です",
-    "MESSAGE_REQUIRED": "メッセージは<strong>必須</ strong>です"
+    "SEND_MESSAGE": "メールを送信"
   }
 }

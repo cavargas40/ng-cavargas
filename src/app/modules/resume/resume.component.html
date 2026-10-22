@@ -1,38 +1,54 @@
-<section class="resume">
-  <h1 class="heading-primary">
-    <span class="heading-primary--sub--light">
-      {{ 'MENU.RESUME' | translate }}
-    </span>
-  </h1>
-  <ul class="resume__tabs">
-    <li
-      (click)="selectTab('experience')"
-      [ngClass]="{ active: selectedTab === 'experience' }"
-    >
-      {{ 'RESUME.EXPERIENCE' | translate }}
-    </li>
-    <li
-      (click)="selectTab('education')"
-      [ngClass]="{ active: selectedTab === 'education' }"
-    >
-      {{ 'RESUME.EDUCATION' | translate }}
-    </li>
-    <li
-      (click)="selectTab('skills')"
-      [ngClass]="{ active: selectedTab === 'skills' }"
-    >
-      {{ 'RESUME.SKILLS' | translate }}
-    </li>
-  </ul>
-  <div class="resume__content">
-    <ng-container *ngIf="selectedTab === 'experience'">
-      <app-time-line [timeline]="experienceTimeLine"></app-time-line>
-    </ng-container>
-    <ng-container *ngIf="selectedTab === 'education'">
-      <app-time-line [timeline]="educationTimeLine"></app-time-line>
-    </ng-container>
-    <ng-container *ngIf="selectedTab === 'skills'">
-      <app-skills></app-skills>
-    </ng-container>
+<section class="resume section-shell">
+  <div class="resume__header" appReveal>
+    <span class="section-eyebrow">{{ 'RESUME.EYEBROW' | translate }}</span>
+    <h2 class="heading-secondary">{{ 'MENU.RESUME' | translate }}</h2>
+    <p class="paragraph resume__subtitle">
+      {{ 'CAPABILITIES.SUBTITLE' | translate }}
+    </p>
+  </div>
+
+  <div class="resume__capabilities" appReveal>
+    <app-skills></app-skills>
+  </div>
+
+  <div class="resume__timeline-wrapper" appReveal>
+    <div class="resume__tabs" role="tablist">
+      <button
+        type="button"
+        class="resume__tab-btn"
+        (click)="selectTab('experience')"
+        [ngClass]="{ active: selectedTab === 'experience' }"
+      >
+        {{ 'RESUME.EXPERIENCE' | translate }}
+      </button>
+      <button
+        type="button"
+        class="resume__tab-btn"
+        (click)="selectTab('education')"
+        [ngClass]="{ active: selectedTab === 'education' }"
+      >
+        {{ 'RESUME.EDUCATION' | translate }}
+      </button>
+      <button
+        type="button"
+        class="resume__tab-btn"
+        (click)="selectTab('skills')"
+        [ngClass]="{ active: selectedTab === 'skills' }"
+      >
+        {{ 'RESUME.SKILLS' | translate }}
+      </button>
+    </div>
+
+    <div class="resume__content">
+      <ng-container *ngIf="selectedTab === 'experience'">
+        <app-time-line [timeline]="experienceTimeLine"></app-time-line>
+      </ng-container>
+      <ng-container *ngIf="selectedTab === 'education'">
+        <app-time-line [timeline]="educationTimeLine"></app-time-line>
+      </ng-container>
+      <ng-container *ngIf="selectedTab === 'skills'">
+        <app-skills></app-skills>
+      </ng-container>
+    </div>
   </div>
 </section>

@@ -1,4 +1,4 @@
-@import '~app/styles/abstracts/variables';
+@use 'app/styles/abstracts/variables' as *;
 
 .skill {
   background-color: rgba(#fff, 0.5);

@@ -1,20 +1,86 @@
-<div class="head">
-  <app-language-switcher></app-language-switcher>
-  <app-header></app-header>
-</div>
+<!-- Top Laser Scroll Progress Bar -->
+<div
+  id="top-progress-bar"
+  class="top-progress-bar"
+  [style.width.%]="scrollDepthPercent"
+></div>
 
-<div id="about-me" [ngsReveal]>
-  <app-about-me></app-about-me>
-</div>
+<!-- 1:1 Aspect Ratio HiDPI Matrix Rain Canvas -->
+<canvas id="matrix-canvas" #matrixCanvas class="matrix-canvas"></canvas>
+<div class="crt-overlay"></div>
 
-<div id="resume" [ngsReveal]>
-  <app-resume></app-resume>
-</div>
+<!-- Floating Right-Side Scroll Telemetry HUD -->
+<aside class="telemetry-hud" aria-label="Scroll telemetry">
+  <div class="terminal-card telemetry-hud__inner phosphor-border">
+    <div class="telemetry-hud__metric phosphor-text" id="hud-depth">
+      DEPTH // {{ formattedDepth }}%
+    </div>
+    <div class="telemetry-hud__metric text-muted" id="hud-velocity">
+      RAIN_WARP // {{ formattedWarp }}x
+    </div>
+    <div class="telemetry-hud__chapter phosphor-text" id="hud-chapter">
+      {{ activeChapterName }}
+    </div>
+    <div class="telemetry-hud__anchors">
+      <a
+        *ngFor="let ch of chapters"
+        [href]="'#' + ch.id"
+        (click)="scrollToChapter(ch.id, $event)"
+        class="telemetry-hud__link"
+        [class.is-active]="activeChapterId === ch.id"
+      >
+        [{{ ch.code }}] {{ ch.code === '00' ? 'INIT' : (ch.code === '01' ? 'EVOLUTION' : (ch.code === '02' ? 'AI_HARNESS' : (ch.code === '03' ? 'CASE_FILES' : 'CONNECT'))) }}
+      </a>
+    </div>
+  </div>
+</aside>
 
-<div id="portfolio" [ngsReveal]>
-  <app-portfolio></app-portfolio>
-</div>
+<div class="site-shell">
+  <app-nav></app-nav>
 
-<!-- <div id="contact" [ngsReveal]>
-  <app-contact></app-contact>
-</div> -->
+  <!-- Storytelling Main Container with Live Laser Spine -->
+  <main class="site-main" id="story-main">
+    <div class="story-spine-track">
+      <div class="story-spine-laser" [style.height.%]="scrollDepthPercent">
+        <div class="story-spine-pulse"></div>
+      </div>
+    </div>
+
+    <!-- Chapter 00: SIGNAL_INITIALIZATION -->
+    <div id="ch-00" data-chapter-name="CH_00: SIGNAL_INIT" class="head">
+      <div id="hero">
+        <app-header></app-header>
+      </div>
+    </div>
+
+    <!-- Chapter 01: THE_CRAFT_AND_EVOLUTION -->
+    <div id="ch-01" data-chapter-name="CH_01: CRAFT_EVOLUTION">
+      <div id="about-me">
+        <app-about-me></app-about-me>
+      </div>
+    </div>
+
+    <!-- Chapter 02: SPEC-DRIVEN_AI_HARNESS_ENGINE -->
+    <div id="ch-02" data-chapter-name="CH_02: AI_HARNESS">
+      <div id="portfolio">
+        <app-portfolio></app-portfolio>
+      </div>
+    </div>
+
+    <!-- Chapter 03: PRODUCTION_CASE_FILES -->
+    <div id="ch-03" data-chapter-name="CH_03: CASE_FILES">
+      <div id="resume">
+        <app-resume></app-resume>
+      </div>
+    </div>
+
+    <!-- Chapter 04: OPEN_TRANSMISSION_CHANNEL -->
+    <div id="ch-04" data-chapter-name="CH_04: TRANSMISSION">
+      <div id="contact">
+        <app-contact></app-contact>
+      </div>
+    </div>
+  </main>
+
+  <app-footer></app-footer>
+</div>

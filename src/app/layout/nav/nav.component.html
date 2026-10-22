@@ -1,1 +1,47 @@
-<p>nav works!</p>
+<nav class="navbar" aria-label="Main navigation">
+  <div class="navbar__inner">
+    <a
+      href="#hero"
+      class="navbar__brand font-mono-code"
+      (click)="scrollToSection('hero', $event)"
+    >
+      <span class="navbar__prompt phosphor-text">&gt;_</span>
+      <span class="navbar__brand-name">CAVARGAS</span>
+      <span class="navbar__pill phosphor-pill">MATRIX.NODE</span>
+    </a>
+
+    <div
+      class="navbar__menu"
+      [class.navbar__menu--open]="mobileMenuOpen"
+    >
+      <ul class="navbar__links">
+        <li *ngFor="let item of navItems" class="navbar__item">
+          <a
+            [href]="'#' + item.id"
+            class="navbar__link font-mono-code"
+            [class.navbar__link--active]="activeSection === item.id"
+            (click)="scrollToSection(item.id, $event)"
+          >
+            [{{ item.code }}. {{ item.labelKey | translate }}]
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar__actions">
+      <app-language-switcher></app-language-switcher>
+
+      <button
+        type="button"
+        class="navbar__toggle"
+        (click)="toggleMobileMenu()"
+        [attr.aria-expanded]="mobileMenuOpen"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+    </div>
+  </div>
+</nav>

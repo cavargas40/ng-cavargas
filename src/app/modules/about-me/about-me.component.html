@@ -1,104 +1,111 @@
-<section class="about-me">
-  <figure class="about-me__item">
-    <img
-      class="about-me__picture"
-      alt="Carlos Vargas Developing"
-      src="/assets/images/about-me.jpg"
-    />
-  </figure>
-  <div class="about-me__box">
-    <h1 class="heading-primary">
-      <span class="heading-primary--sub--secondary center-text">
-        {{ 'MENU.ABOUT_ME' | translate }}
-      </span>
-    </h1>
-    <p class="paragraph paragraph--dark mt-medium">
-      {{ 'ABOUT_ME.FIRSTLY' | translate }}
+<section class="story-chapter about-me section-shell" id="ch-01-about" appReveal>
+  <div class="chapter-node about-me__node"></div>
+
+  <div class="about-me__chapter-tag font-mono-code stagger-item">
+    {{ 'STORY.CHAPTER_01.TAG' | translate }}
+  </div>
+
+  <div class="about-me__header stagger-item">
+    <h2
+      class="about-me__title font-bold"
+      [appMatrixDecode]="'STORY.CHAPTER_01.TITLE' | translate"
+      [decodeDuration]="350"
+    >
+      {{ 'STORY.CHAPTER_01.TITLE' | translate }}
+    </h2>
+    <p class="about-me__subtitle">
+      {{ 'STORY.CHAPTER_01.SUBTITLE' | translate }}
     </p>
-    <p class="paragraph paragraph--dark">
-      {{ 'ABOUT_ME.SECONDLY' | translate }}
-    </p>
-    <ul class="about-me__info-list">
-      <li class="about-me__info-item">
-        <span class="about-me__title">{{ 'ABOUT_ME.AGE' | translate }}</span>
-        <span class="about-me__value">{{ age }}</span>
-      </li>
-      <!-- <li class="about-me__info-item">
-        <span class="about-me__title">
-          {{ 'ABOUT_ME.RESIDENCE' | translate }}
-        </span>
-        <span class="about-me__value">Bogota, Colombia</span>
-      </li> -->
-      <li class="about-me__info-item">
-        <span class="about-me__title">{{ 'ABOUT_ME.EMAIL' | translate }}</span>
-        <span class="about-me__value">
-          <a class="about-me__title link" href="mailto:email@example.com">
-            cavargas40@gmail.com
+  </div>
+
+  <!-- 3 Architectural Evolution Eras -->
+  <div class="about-me__eras">
+    <div
+      *ngFor="let era of eras"
+      class="terminal-card about-me__era-card stagger-item"
+      [class.phosphor-border]="era.highlight"
+    >
+      <div class="about-me__era-top font-mono-code">
+        <span class="phosphor-text font-bold">{{ era.tagKey | translate }}</span>
+        <span class="phosphor-pill">{{ era.badgeKey | translate }}</span>
+      </div>
+      <h3 class="about-me__era-heading">{{ era.titleKey | translate }}</h3>
+      <p class="about-me__era-desc">{{ era.descriptionKey | translate }}</p>
+    </div>
+  </div>
+
+  <!-- Profile & Highlights Grid -->
+  <div class="about-me__grid stagger-item">
+    <figure class="about-me__portrait-card terminal-card phosphor-border">
+      <div class="about-me__portrait-frame">
+        <img
+          class="about-me__picture"
+          alt="Carlos Vargas - Senior Software Engineer"
+          src="/assets/images/about-me.jpg"
+        />
+      </div>
+      <div class="about-me__connect font-mono-code">
+        <div class="about-me__email-block">
+          <span class="about-me__meta-label">{{ 'ABOUT_ME.EMAIL' | translate }}</span>
+          <a class="about-me__email-link" href="mailto:cavargas40@gmail.com">
+            cavargas40&#64;gmail.com
           </a>
-        </span>
-      </li>
-      <!-- <li class="about-me__info-item">
-        <span class="about-me__title">{{ 'ABOUT_ME.PHONE' | translate }}</span>
-        <span class="about-me__value">+57 301 352 77 74</span>
-      </li> -->
-    </ul>
-    <ul class="about-me__social-list">
-      <li>
-        <a
-          class="about-me__social-list-btn"
-          target="_blank"
-          href="https://www.linkedin.com/in/carlos-andres-vargas-lopez-459914105/"
-          title="LinkedIn"
-        >
-          <img
-            alt="My LinkedIn"
-            class="about-me__social-list-img"
-            src="assets/images/social-media/linkedin.svg"
-          />
-        </a>
-      </li>
-      <li>
-        <a
-          class="about-me__social-list-btn"
-          target="_blank"
-          href="https://github.com/cavargas40"
-          title="Github"
-        >
-          <img
-            alt="My Github"
-            class="about-me__social-list-img"
-            src="assets/images/social-media/github.svg"
-          />
-        </a>
-      </li>
-      <li>
-        <a
-          class="about-me__social-list-btn"
-          target="_blank"
-          href="https://www.facebook.com/CaVargasLo"
-          title="Facebook"
-        >
-          <img
-            alt="My Facebook"
-            class="about-me__social-list-img"
-            src="/assets/images/social-media/facebook.svg"
-          />
-        </a>
-      </li>
-    </ul>
+        </div>
+        <ul class="about-me__social-list">
+          <li>
+            <a
+              class="about-me__social-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/carlos-andres-vargas-lopez-459914105/"
+              title="LinkedIn"
+            >
+              <img
+                alt="LinkedIn"
+                class="about-me__social-img"
+                src="assets/images/social-media/linkedin.svg"
+              />
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="about-me__social-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/cavargas40"
+              title="GitHub"
+            >
+              <img
+                alt="GitHub"
+                class="about-me__social-img"
+                src="assets/images/social-media/github.svg"
+              />
+              <span>GitHub</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </figure>
+
+    <div class="about-me__content terminal-card">
+      <span class="about-me__profile-tag font-mono-code phosphor-text">
+        [PROFILE // SENIOR_FULLSTACK_ENGINEER]
+      </span>
+      <h3 class="about-me__profile-name">{{ 'NAME' | translate }}</h3>
+      <p class="paragraph mt-small">
+        {{ 'ABOUT_ME.FIRSTLY' | translate }}
+      </p>
+      <p class="paragraph">
+        {{ 'ABOUT_ME.SECONDLY' | translate }}
+      </p>
+
+      <ul class="about-me__highlights">
+        <li class="about-me__highlight-item terminal-card" *ngFor="let item of highlights">
+          <span class="about-me__highlight-label font-mono-code">{{ item.labelKey | translate }}</span>
+          <span class="about-me__highlight-value">{{ item.valueKey | translate }}</span>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
-
-<!--
-<ul class="social-links">
-  <li>
-    <a
-      class="tip social-button"
-      target="_blank"
-      href="https://twitter.com/cavargas40"
-      title="Twitter"
-    >
-      <img src="/assets/images/social-media/twitter.svg" />
-    </a>
-  </li>
-</ul> -->

@@ -1,3 +1,6 @@
+@use 'app/styles/abstracts/variables' as *;
+@use 'app/styles/abstracts/mixins' as *;
+
 *,
 *::after,
 *::before {
@@ -7,30 +10,34 @@
 }
 
 html {
-  //this defines what a rem is
-  font-size: 62.5%; //1rem is 10px    10px/16px = 62.5%
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+  box-sizing: border-box;
 
   @include responsive(tab-land) {
-    //width < 1200?
-    font-size: 56.25%; //1rem = 9px   9/16 = 56.25%
+    font-size: 56.25%;
   }
 
   @include responsive(tab-port) {
-    //width < 900?
-    font-size: 50%; //1rem = 8px   8/16 = 50%
+    font-size: 50%;
   }
 
-  // @include responsive(phone) {
-  //   //width < 600?
-  //   font-size: 30%; //1rem = 4.8px   4.8/16 = 30%
-  // }
-
   @include responsive(big-desktop) {
-    font-size: 75%; //1rem = 12px    12/16 = 75%
+    font-size: 75%;
   }
 }
 
+// IMPORTANT: Never apply perspective to body so position:fixed (100vw x 100vh) keeps 1:1 aspect ratio
 body {
-  background-image: linear-gradient(to left top, $color-secondary-dark, $color-tertiary);
-  background-repeat: no-repeat;
+  background-color: $surface-bg;
+  color: $text-primary;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: rgba($phosphor, 0.3);
+  color: $phosphor-head;
 }

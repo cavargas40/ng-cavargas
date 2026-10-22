@@ -1,54 +1,169 @@
-<div class="portfolio">
-  <h1 class="heading-primary mb-md">
-    <span class="heading-primary--sub--secondary">{{
-      'MENU.PORTFOLIO' | translate
-    }}</span>
-  </h1>
-  <section class="portfolio__container">
-    <figure class="portfolio__item portfolio__item--1">
-      <img src="assets/images/portfolio/spoty-app.png" alt="Portfolio Spoty App"
-      class="portfolio__img"
-      (click)="goToLink('http://ng-spoty-app.portfolio.cavargas.com')" />
-    </figure>
-    <figure class="portfolio__item portfolio__item--2">
-      <img src="assets/images/portfolio/burger-builder.png" alt="Portfolio
-      Burger Builder" class="portfolio__img"
-      (click)="goToLink('http://react-burger.portfolio.cavargas.com')" />
-    </figure>
-    <figure class="portfolio__item portfolio__item--3">
-      <img src="assets/images/portfolio/gugulkip.png" alt="Portfolio Gugulkip"
-      class="portfolio__img"
-      (click)="goToLink('http://ng-gugulkip.portfolio.cavargas.com')" />
-    </figure>
-    <figure class="portfolio__item portfolio__item--4">
-      <img src="assets/images/portfolio/mini-rappi.png" alt="Portfolio Mini
-      Rappi" class="portfolio__img"
-      (click)="goToLink('http://ng-mini-rappi.portfolio.cavargas.com')" />
-    </figure>
-    <figure class="portfolio__item portfolio__item--5">
-      <img src="assets/images/portfolio/natours.png" alt="Portfolio Natours"
-      class="portfolio__img"
-      (click)="goToLink('http://sass-natours.portfolio.cavargas.com')" />
-    </figure>
-    <figure class="portfolio__item portfolio__item--6">
-      <img src="assets/images/portfolio/nexter.png" alt="Portfolio Nexter"
-      class="portfolio__img"
-      (click)="goToLink('http://sass-nexter.portfolio.cavargas.com')" />
-    </figure>
-    <figure class="portfolio__item portfolio__item--7">
-      <img src="assets/images/portfolio/poke-app.png" alt="Portfolio Poke App"
-      class="portfolio__img"
-      (click)="goToLink('http://ng-pokeapp.portfolio.cavargas.com')" />
-    </figure>
-    <figure class="portfolio__item portfolio__item--8">
-      <img src="assets/images/portfolio/recipe-book.png" alt="Portfolio Recipe
-      Book" class="portfolio__img"
-      (click)="goToLink('http://ng-recipe-book.portfolio.cavargas.com')" />
-    </figure>
-    <figure class="portfolio__item portfolio__item--9">
-      <img src="assets/images/portfolio/trillo.png" alt="Portfolio Trillo"
-      class="portfolio__img"
-      (click)="goToLink('http://sass-trillo.portfolio.cavargas.com')" />
-    </figure>
-  </section>
-</div>
+<!-- CHAPTER 02: SPEC-DRIVEN AI HARNESS ENGINE -->
+<section class="story-chapter portfolio-chapter section-shell" id="ch-02-harness" appReveal>
+  <div class="chapter-node portfolio__node"></div>
+
+  <div class="portfolio__chapter-tag font-mono-code stagger-item">
+    {{ 'STORY.CHAPTER_02.TAG' | translate }}
+  </div>
+
+  <div class="portfolio__header stagger-item">
+    <h2
+      class="portfolio__title font-bold"
+      [appMatrixDecode]="'STORY.CHAPTER_02.TITLE' | translate"
+      [decodeDuration]="350"
+    >
+      {{ 'STORY.CHAPTER_02.TITLE' | translate }}
+    </h2>
+    <p class="portfolio__subtitle">
+      {{ 'STORY.CHAPTER_02.SUBTITLE' | translate }}
+    </p>
+  </div>
+
+  <!-- Interactive 4-Stage AI Harness Console -->
+  <div class="portfolio__harness-console stagger-item">
+    <div class="portfolio__pipeline">
+      <button
+        type="button"
+        *ngFor="let item of workflowSteps; let i = index"
+        class="portfolio__step terminal-card"
+        [class.phosphor-border]="selectedStepIndex === i"
+        (click)="selectStep(i)"
+      >
+        <div class="portfolio__step-header font-mono-code">
+          <span class="phosphor-text">STAGE {{ item.step }} // {{ item.artifact }}</span>
+          <span class="phosphor-pill">{{ item.badge }}</span>
+        </div>
+        <h4 class="portfolio__step-title">{{ item.titleKey | translate }}</h4>
+        <p class="portfolio__step-desc">{{ item.descriptionKey | translate }}</p>
+      </button>
+    </div>
+
+    <!-- Live Artifact & Spec Trace Inspector -->
+    <div class="portfolio__inspector terminal-card phosphor-border">
+      <div class="portfolio__inspector-top font-mono-code">
+        <span class="phosphor-text">{{ currentTrace.title }}</span>
+        <span class="text-muted">SPEC_TRACE</span>
+      </div>
+      <pre class="portfolio__inspector-code font-mono-code">{{ currentTrace.code }}</pre>
+      <div class="portfolio__inspector-bottom font-mono-code">
+        <span>{{ currentTrace.status }}</span>
+        <span class="phosphor-text">DETERMINISTIC = TRUE</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 Capability Pillars -->
+  <div class="portfolio__pillars stagger-item">
+    <div
+      *ngFor="let pillar of capabilityPillars"
+      class="portfolio__pillar-card terminal-card"
+      [class.phosphor-border]="pillar.highlight"
+    >
+      <div class="portfolio__pillar-top font-mono-code">
+        <span class="phosphor-text">[PILLAR // {{ pillar.icon }}]</span>
+        <span class="phosphor-pill">{{ pillar.subtitleKey | translate }}</span>
+      </div>
+      <h3 class="portfolio__pillar-title font-bold">{{ pillar.titleKey | translate }}</h3>
+      <p class="portfolio__pillar-desc">{{ pillar.descriptionKey | translate }}</p>
+      <div class="portfolio__pillar-tags font-mono-code">
+        <span class="phosphor-pill" *ngFor="let skill of pillar.skills">{{ skill }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER 03: PRODUCTION CASE FILES -->
+<section class="story-chapter portfolio-chapter section-shell" id="ch-03-cases" appReveal>
+  <div class="chapter-node portfolio__node"></div>
+
+  <div class="portfolio__chapter-tag font-mono-code stagger-item">
+    {{ 'STORY.CHAPTER_03.TAG' | translate }}
+  </div>
+
+  <div class="portfolio__header stagger-item">
+    <h2
+      class="portfolio__title font-bold"
+      [appMatrixDecode]="'STORY.CHAPTER_03.TITLE' | translate"
+      [decodeDuration]="350"
+    >
+      {{ 'STORY.CHAPTER_03.TITLE' | translate }}
+    </h2>
+    <p class="portfolio__subtitle">
+      {{ 'STORY.CHAPTER_03.SUBTITLE' | translate }}
+    </p>
+  </div>
+
+  <div class="portfolio__controls font-mono-code stagger-item">
+    <button
+      type="button"
+      class="portfolio__filter-btn"
+      *ngFor="let filter of filters"
+      (click)="selectCategory(filter.id)"
+      [ngClass]="{ active: selectedCategory === filter.id }"
+    >
+      {{ filter.labelKey | translate }}
+    </button>
+  </div>
+
+  <!-- Case Study Dossiers Grid -->
+  <div class="portfolio__grid stagger-item">
+    <article
+      class="portfolio__card terminal-card"
+      *ngFor="let study of filteredCaseStudies; let idx = index"
+      [class.phosphor-border]="study.category === 'ai'"
+    >
+      <div class="portfolio__card-top font-mono-code">
+        <span class="phosphor-text font-bold">
+          SYS_0{{ idx + 1 }} // {{ study.category | uppercase }}
+        </span>
+        <span class="phosphor-pill">{{ study.badgeKey | translate }}</span>
+      </div>
+
+      <h3 class="portfolio__card-title">{{ study.titleKey | translate }}</h3>
+
+      <div class="portfolio__card-sections">
+        <div class="portfolio__card-block">
+          <span class="portfolio__block-label font-mono-code text-muted">
+            &gt; {{ 'PORTFOLIO.LABELS.PROBLEM' | translate }}:
+          </span>
+          <p class="portfolio__block-text">
+            {{ study.problemKey | translate }}
+          </p>
+        </div>
+
+        <div class="portfolio__card-block">
+          <span class="portfolio__block-label font-mono-code text-muted">
+            &gt; {{ 'PORTFOLIO.LABELS.ARCHITECTURE' | translate }}:
+          </span>
+          <p class="portfolio__block-text">
+            {{ study.architectureKey | translate }}
+          </p>
+        </div>
+
+        <div class="portfolio__card-block portfolio__card-block--impact">
+          <span class="portfolio__block-label font-mono-code phosphor-text">
+            &gt; {{ 'PORTFOLIO.LABELS.IMPACT' | translate }}:
+          </span>
+          <p class="portfolio__block-text">
+            {{ study.impactKey | translate }}
+          </p>
+        </div>
+      </div>
+
+      <div class="portfolio__card-footer">
+        <ul class="portfolio__tags font-mono-code">
+          <li class="phosphor-pill" *ngFor="let tag of study.tags">{{ tag }}</li>
+        </ul>
+
+        <button
+          *ngIf="study.repoUrl"
+          type="button"
+          class="portfolio__repo-btn btn btn--ghost font-mono-code"
+          (click)="goToLink(study.repoUrl)"
+        >
+          &gt; {{ 'PORTFOLIO.LABELS.SOURCE' | translate }} &nearr;
+        </button>
+      </div>
+    </article>
+  </div>
+</section>

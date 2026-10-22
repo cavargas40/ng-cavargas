@@ -5,22 +5,19 @@ import * as EFFECT from '../effects/anaglyph-effect';
 @Injectable({
   providedIn: 'root',
 })
-export class EngineService {
+export class EngineService implements OnDestroy {
   private canvas: HTMLCanvasElement;
   private renderer: THREE.WebGLRenderer;
   private camera: THREE.PerspectiveCamera;
   private scene: THREE.Scene;
-  private light: THREE.AmbientLight;
   private effect: any;
-  private spheres = [];
+  private spheres: THREE.Mesh[] = [];
 
   private mouseX = 0;
   private mouseY = 0;
 
   private windowHalfX = window.innerWidth / 2;
   private windowHalfY = window.innerHeight / 2;
-
-  private cube: THREE.Mesh;
 
   private frameId: number = null;
 
@@ -34,6 +31,7 @@ export class EngineService {
 
   public init(canvas: ElementRef<HTMLCanvasElement>) {
     this.canvas = canvas.nativeElement;
+    this.spheres = [];
 
     this.camera = new THREE.PerspectiveCamera(
       60,
@@ -60,7 +58,6 @@ export class EngineService {
     this.scene.background = textureCube;
     const geometry = new THREE.SphereGeometry(0.1, 32, 16);
     const material = new THREE.MeshBasicMaterial({
-      // color: 0x00ff00,
       envMap: textureCube,
     });
 
@@ -74,23 +71,19 @@ export class EngineService {
       mesh.scale.x = mesh.scale.y = mesh.scale.z = Math.random() * 3 + 1;
 
       this.scene.add(mesh);
-
       this.spheres.push(mesh);
-
-      this.renderer = new THREE.WebGLRenderer({
-        canvas: this.canvas,
-        // alpha: true, // transparent background
-        // antialias: true, // smooth edges
-      });
-
-      this.renderer.setPixelRatio(window.devicePixelRatio);
-
-      const width = window.innerWidth - 10 || 2;
-      const height = window.innerHeight - 10 || 2;
-
-      this.effect = new EFFECT.AnaglyphEffect(this.renderer);
-      this.effect.setSize(width, height);
     }
+
+    this.renderer = new THREE.WebGLRenderer({
+      canvas: this.canvas,
+    });
+    this.renderer.setPixelRatio(window.devicePixelRatio);
+
+    const width = window.innerWidth - 10 || 2;
+    const height = window.innerHeight - 10 || 2;
+
+    this.effect = new EFFECT.AnaglyphEffect(this.renderer);
+    this.effect.setSize(width, height);
   }
 
   onWindowResize() {
@@ -109,8 +102,6 @@ export class EngineService {
   }
 
   public animate(): void {
-    // We have to run this outside angular zones,
-    // because it could trigger heavy changeDetection cycles.
     this.ngZone.runOutsideAngular(() => {
       if (document.readyState !== 'loading') {
         this.render();
@@ -122,12 +113,11 @@ export class EngineService {
 
       window.addEventListener('mousemove', (event) => {
         this.onDocumentMouseMove(event);
-      })
+      });
 
       window.addEventListener('resize', () => {
         this.onWindowResize();
       });
-
     });
   }
 
@@ -152,78 +142,4 @@ export class EngineService {
 
     this.effect.render(this.scene, this.camera);
   }
-
-  /*
-  public createScene(canvas: ElementRef<HTMLCanvasElement>): void {
-    // The first step is to get the reference of the canvas element from our HTML document
-    this.canvas = canvas.nativeElement;
-
-    this.renderer = new THREE.WebGLRenderer({
-      canvas: this.canvas,
-      alpha: true, // transparent background
-      antialias: true, // smooth edges
-    });
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
-
-    // create the scene
-    this.scene = new THREE.Scene();
-
-    this.camera = new THREE.PerspectiveCamera(
-      75,
-      window.innerWidth / window.innerHeight,
-      0.1,
-      1000
-    );
-    this.camera.position.z = 5;
-    this.scene.add(this.camera);
-
-    // soft white light
-    this.light = new THREE.AmbientLight(0x404040);
-    this.light.position.z = 10;
-    this.scene.add(this.light);
-
-    const geometry = new THREE.BoxGeometry(1, 1, 1);
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    this.cube = new THREE.Mesh(geometry, material);
-    this.scene.add(this.cube);
-  }
-
-  public animate(): void {
-    // We have to run this outside angular zones,
-    // because it could trigger heavy changeDetection cycles.
-    this.ngZone.runOutsideAngular(() => {
-      if (document.readyState !== 'loading') {
-        this.render();
-      } else {
-        window.addEventListener('DOMContentLoaded', () => {
-          this.render();
-        });
-      }
-
-      window.addEventListener('resize', () => {
-        this.resize();
-      });
-    });
-  }
-
-  public render(): void {
-    this.frameId = requestAnimationFrame(() => {
-      this.render();
-    });
-
-    this.cube.rotation.x += 0.01;
-    this.cube.rotation.y += 0.01;
-    this.renderer.render(this.scene, this.camera);
-  }
-
-  public resize(): void {
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-
-    this.camera.aspect = width / height;
-    this.camera.updateProjectionMatrix();
-
-    this.renderer.setSize(width, height);
-  }
-  */
 }

@@ -1,11 +1,9 @@
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'abstracts/variables';
 
-@import 'base/base';
-@import 'base/typography';
-@import 'base/animations';
-@import 'base/utilities';
+@use 'base/base';
+@use 'base/typography';
+@use 'base/animations';
+@use 'base/utilities';
 
-@import 'components/bg-video';
-@import 'components/button';
-@import 'components/ng-select';
+@use 'components/button';

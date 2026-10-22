@@ -1,3 +1,32 @@
-<div class="skills">
-  <app-skill-bar *ngFor="let skill of skills" [skill]="skill"> </app-skill-bar>
+<div class="capabilities-grid">
+  <article
+    class="capabilities-card terminal-card"
+    *ngFor="let pillar of pillars"
+    [class.phosphor-border]="pillar.highlight"
+  >
+    <div class="capabilities-card__header font-mono-code">
+      <span class="capabilities-card__badge phosphor-pill">[{{ pillar.icon }}]</span>
+      <div class="capabilities-card__titles">
+        <span class="capabilities-card__subtitle phosphor-text">
+          {{ pillar.subtitleKey | translate }}
+        </span>
+        <h3 class="capabilities-card__title">
+          {{ pillar.titleKey | translate }}
+        </h3>
+      </div>
+    </div>
+
+    <p class="capabilities-card__description">
+      {{ pillar.descriptionKey | translate }}
+    </p>
+
+    <ul class="capabilities-card__tags font-mono-code">
+      <li
+        class="phosphor-pill"
+        *ngFor="let skill of pillar.skills"
+      >
+        {{ skill }}
+      </li>
+    </ul>
+  </article>
 </div>

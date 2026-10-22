@@ -1,27 +1,57 @@
-//Colors:
-$color-primary: #202040;
-$color-primary-light: #543864;
-$color-primary-dark: #35263d;
+// Legacy Color Variables (preserved for /crypto and backward compatibility)
+$color-primary: #020503;
+$color-primary-light: #05110a;
+$color-primary-dark: #010402;
 
-$color-secondary: #ff6363;
-$color-secondary-light: #f37b7b;
-$color-secondary-dark: #9b3b3b;
+$color-secondary: #00ff66;
+$color-secondary-light: #86efac;
+$color-secondary-dark: #15803d;
 
-$color-tertiary: #34495e;
-$color-tertiary-light: #506e8d;
-$color-tertiary-dark: #34495e;
+$color-tertiary: #040e08;
+$color-tertiary-light: #0a1f13;
+$color-tertiary-dark: #020503;
 
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
+$color-grey-light-1: #f8fafc;
+$color-grey-light-2: #e2e8f0;
 
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
+$color-grey-dark: #94a3b8;
+$color-grey-dark-2: #64748b;
+$color-grey-dark-3: #334155;
 
-$color-white: #fff;
-$color-black: #000;
+$color-white: #ffffff;
+$color-black: #000000;
 
-//Grid:
+// Phosphor Matrix (#00FF66) Engineering Design Tokens
+$matrix-void: #020503;
+$matrix-phosphor: #00ff66;
+$matrix-head: #ffffff;
+$matrix-soft: #86efac;
+$matrix-dim: #15803d;
+$matrix-muted: #528c69;
 
-//Font:
-$default-font-size: 1.5rem;
+$surface-bg: #020503;
+$surface-elevated: #05110a;
+$surface-card: rgba(3, 12, 7, 0.82);
+$surface-card-hover: rgba(5, 18, 11, 0.92);
+$surface-border: rgba(0, 255, 102, 0.22);
+$surface-border-accent: rgba(0, 255, 102, 0.78);
+
+$accent-cyan: #00ff66;
+$accent-indigo: #34d399;
+$accent-emerald: #00ff66;
+
+$phosphor: #00ff66;
+$phosphor-head: #ffffff;
+$phosphor-soft: #86efac;
+$phosphor-dim: #15803d;
+
+$text-primary: #ecfdf3;
+$text-secondary: #86efac;
+$text-muted: #528c69;
+
+// Layout & Sizing
+$default-font-size: 1.6rem;
+$max-container-width: 120rem;
+$radius-md: 0.8rem;
+$radius-lg: 1.2rem;
+$radius-pill: 99.9rem;

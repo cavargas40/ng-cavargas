@@ -1,78 +1,173 @@
+@use 'app/styles/abstracts/variables' as *;
+@use 'app/styles/abstracts/mixins' as *;
+
 body {
-  font-family: Roboto, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, sans-serif;
   font-weight: 400;
-  line-height: 1.7;
-  font-size: 2rem;
+  line-height: 1.65;
+  font-size: $default-font-size;
+  color: $text-primary;
+}
+
+.font-mono-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: $phosphor;
+  background: rgba($phosphor, 0.1);
+  border: 1px solid rgba($phosphor, 0.28);
+  padding: 0.4rem 1.2rem;
+  border-radius: $radius-pill;
+  margin-bottom: 1.4rem;
+}
+
+.section-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: $text-primary;
+  margin-bottom: 1.4rem;
+
+  @include responsive(phone) {
+    font-size: 2.8rem;
+  }
+}
+
+.section-subtitle {
+  font-size: 1.6rem;
+  color: $text-muted;
+  max-width: 68rem;
+  line-height: 1.6;
 }
 
 .heading-primary {
-  color: $color-white;
-  text-transform: uppercase;
-
-  backface-visibility: hidden;
+  color: $text-primary;
 
   &--main {
     display: block;
-    font-size: 4rem;
-    font-weight: 600;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+    font-size: 4.8rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
 
     @include responsive(phone) {
-      letter-spacing: 1rem;
-      font-size: 5rem;
-    }
-
-    &--dark {
-      color: $color-tertiary;
-    }
-
-    &--secondary {
-      color: $color-secondary;
+      font-size: 3.4rem;
     }
   }
 
   &--sub {
     display: block;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
-    letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-out;
+    color: $phosphor;
+    margin-top: 1rem;
+  }
+}
 
-    @include responsive(phone) {
-      letter-spacing: 0.5rem;
-    }
+.heading-secondary {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: $text-primary;
+  line-height: 1.25;
 
-    &--dark {
-      color: $color-tertiary;
-    }
-
-    &--secondary {
-      color: $color-secondary;
-    }
-
-    &--light {
-      color: $color-white;
-    }
+  @include responsive(phone) {
+    font-size: 2.6rem;
   }
 }
 
 .paragraph {
   font-size: $default-font-size;
-  font-weight: 200;
+  font-weight: 400;
+  color: $text-primary;
+  line-height: 1.75;
 
   &:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 1.6rem;
   }
 
-  &--white {
-    color: $color-white;
+  &--dim {
+    color: $text-muted;
+  }
+}
+
+.terminal-card,
+.bento-card {
+  position: relative;
+  overflow: hidden;
+  background: $surface-card;
+  border: 1px solid $surface-border;
+  border-radius: $radius-lg;
+  padding: 2.8rem;
+  backdrop-filter: blur(10px);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &:hover {
+    border-color: $surface-border-accent;
+    box-shadow: 0 0 2.8rem rgba($phosphor, 0.25);
+    transform: translateY(-3px);
   }
 
-  &--dark {
-    color: $color-tertiary;
-    font-weight: 300;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba($phosphor, 0.12), transparent);
+    transform: skewX(-20deg);
+    transition: left 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+  }
+}
+
+.story-chapter.is-active .terminal-card::after,
+.story-chapter.is-active .bento-card::after {
+  left: 160%;
+}
+
+.phosphor-text {
+  color: $phosphor;
+  text-shadow: 0 0 1.4rem rgba($phosphor, 0.45);
+}
+
+.phosphor-border {
+  border-color: $surface-border-accent !important;
+  box-shadow: 0 0 2.4rem rgba($phosphor, 0.25);
+}
+
+.phosphor-pill,
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 1rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: $phosphor;
+  background: rgba($phosphor, 0.12);
+  border: 1px solid $surface-border;
+  border-radius: $radius-pill;
+  transition: border-color 0.2s ease, color 0.2s ease;
+
+  &--ai {
+    border-color: $surface-border-accent;
+    background: rgba($phosphor, 0.18);
+  }
+
+  &:hover {
+    border-color: $surface-border-accent;
   }
 }

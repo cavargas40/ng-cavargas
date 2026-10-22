@@ -2,6 +2,7 @@ import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular
 import { EngineService } from './engine.service';
 
 @Component({
+  standalone: false,
   selector: 'app-engine',
   templateUrl: './engine.component.html',
   styleUrls: ['./engine.component.scss']

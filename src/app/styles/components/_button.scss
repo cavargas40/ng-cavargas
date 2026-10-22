@@ -1,84 +1,69 @@
+@use 'app/styles/abstracts/variables' as *;
+@use 'app/styles/abstracts/mixins' as *;
+
 .btn {
   &,
   &:link,
   &:visited {
-    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all 0.2s;
-    position: relative;
-    font-size: $default-font-size;
-
-    //change for the <button> element
-    border: none;
+    padding: 1.1rem 2.4rem;
+    border-radius: 4px;
+    font-size: 1.35rem;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 0.2s ease,
+      background-color 0.2s ease,
+      border-color 0.2s ease,
+      color 0.2s ease;
+    border: 1px solid transparent;
     cursor: pointer;
   }
 
-  &:hover {
-    &:not(:disabled) {
-      transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-
-      &::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0;
-      }
-    }
+  &:hover:not(:disabled) {
+    transform: translateY(-2px);
   }
 
-  /* click */
   &:active,
-  &:focus {
+  &:focus-visible {
     outline: none;
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
   }
 
-  &--white {
-    background-color: $color-white;
-    color: $color-grey-dark;
-
-    &::after {
-      background-color: $color-white;
-    }
-  }
-
+  &--primary,
   &--secondary {
-    background-color: $color-secondary;
-    color: $color-white;
+    background: $matrix-phosphor;
+    color: $matrix-void;
+    box-shadow: 0 0 20px rgba($matrix-phosphor, 0.35);
 
-    &::after {
-      background-color: $color-secondary;
+    &:hover:not(:disabled) {
+      background: #1aff75;
+      box-shadow: 0 0 30px rgba($matrix-phosphor, 0.6);
     }
   }
 
-  &::after {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
-  }
+  &--ghost,
+  &--white {
+    background: rgba($matrix-void, 0.75);
+    color: $matrix-soft;
+    border-color: rgba($matrix-phosphor, 0.3);
 
-  &--animated {
-    animation: moveInBottom 0.5s ease-out 0.75s;
-    animation-fill-mode: backwards;
+    &:hover:not(:disabled) {
+      border-color: rgba($matrix-phosphor, 0.7);
+      color: $matrix-phosphor;
+      background: rgba(0, 255, 102, 0.08);
+      box-shadow: 0 0 15px rgba($matrix-phosphor, 0.25);
+    }
   }
 
   &:disabled {
-    background-color: $color-grey-light-2;
-    transition: none;
+    opacity: 0.4;
     cursor: not-allowed;
-
-    &::after {
-      background-color: $color-grey-light-2;
-    }
   }
 }
