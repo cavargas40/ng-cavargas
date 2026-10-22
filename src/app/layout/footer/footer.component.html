@@ -1,1 +1,36 @@
-<p>footer works!</p>
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="footer__name">{{ 'NAME' | translate }}</span>
+      <p class="footer__tagline">{{ 'FOOTER.TAGLINE' | translate }}</p>
+    </div>
+
+    <div class="footer__meta">
+      <div class="footer__links">
+        <a
+          href="https://github.com/cavargas40"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__link"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/carlos-andres-vargas-lopez-459914105/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__link"
+        >
+          LinkedIn
+        </a>
+        <a routerLink="/crypto" class="footer__link">Crypto Utility</a>
+        <a routerLink="/3d" class="footer__link">3D Lab</a>
+      </div>
+
+      <p class="footer__copy">
+        &copy; {{ currentYear }} {{ 'NAME' | translate }}.
+        {{ 'FOOTER.RIGHTS' | translate }}
+      </p>
+    </div>
+  </div>
+</footer>

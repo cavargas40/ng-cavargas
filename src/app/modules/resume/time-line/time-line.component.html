@@ -1,18 +1,38 @@
-<div class="timeline-container">
-  <div class="timeline">
-    <ng-container *ngFor="let time of formattedTimeline">
-      <h2 class="timeline__item timeline__item--year">
+<div class="timeline">
+  <article
+    class="timeline__card terminal-card"
+    *ngFor="let time of formattedTimeline"
+  >
+    <div class="timeline__meta font-mono-code">
+      <span class="timeline__period phosphor-text font-bold">
         {{ timeline[time].title | translate }}
-      </h2>
+      </span>
+      <span class="timeline__company text-muted">
+        {{ timeline[time].data.company | translate }}
+      </span>
+    </div>
 
-      <div class="timeline__item pointer">
-        <h4 class="timeline__position">
-          {{ timeline[time].data.position | translate }}
-        </h4>
-        <span class="timeline__company">{{
-          timeline[time].data.company | translate
-        }}</span>
-      </div>
-    </ng-container>
-  </div>
+    <div class="timeline__body">
+      <h3 class="timeline__position">
+        {{ timeline[time].data.position | translate }}
+      </h3>
+      <p
+        class="timeline__description"
+        *ngIf="timeline[time].data.description"
+      >
+        {{ timeline[time].data.description | translate }}
+      </p>
+      <ul
+        class="timeline__tags font-mono-code"
+        *ngIf="timeline[time].data.tags && timeline[time].data.tags.length"
+      >
+        <li
+          class="phosphor-pill"
+          *ngFor="let tag of timeline[time].data.tags"
+        >
+          {{ tag }}
+        </li>
+      </ul>
+    </div>
+  </article>
 </div>

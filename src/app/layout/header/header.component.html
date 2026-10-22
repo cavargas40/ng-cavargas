@@ -1,21 +1,99 @@
-<header class="header">
-  <div class="bg-video">
-    <video class="bg-video__content" autoplay muted loop>
-      <source src="assets/videos/coding.mp4" type="video/mp4" />
-      <source src="assets/videos/coding.webm" type="video/webm" />
-      Your Browser is not supported
-    </video>
+<section class="story-chapter is-active hero" id="ch-00-hero">
+  <div class="chapter-node is-lit hero__node"></div>
+
+  <div class="hero__chapter-tag font-mono-code stagger-item">
+    <span class="phosphor-text">{{ 'STORY.CHAPTER_00.TAG' | translate }}</span>
+    <span class="text-muted">─── CARRIER: LOCKED</span>
   </div>
 
-  <div class="header__text-box">
-    <h1 class="heading-primary">
-      <span class="heading-primary--main">{{ 'NAME' | translate }}</span>
-      <span class="heading-primary--sub">{{ 'CAREER' | translate }}</span>
-    </h1>
-    <img
-      src="https://www.gravatar.com/avatar/492ca92542544781f657115eefeab50e"
-      alt="{{ 'NAME' | translate }}"
-      class="header__profile-picture"
-    />
+  <div class="hero__grid">
+    <div class="hero__content stagger-item">
+      <div class="hero__badge font-mono-code">
+        <span class="hero__status-dot"></span>
+        <span>{{ 'CAREER' | translate }}</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span
+          class="phosphor-text hero__name"
+          [appMatrixDecode]="'NAME' | translate"
+          [decodeDuration]="400"
+        >
+          {{ 'NAME' | translate }}
+        </span>
+        <span class="cursor-blink"></span>
+      </h1>
+
+      <p class="hero__summary">
+        {{ 'HERO.SUMMARY' | translate }}
+      </p>
+
+      <div class="hero__cta-group font-mono-code">
+        <a href="#about-me" class="btn btn--primary">
+          &gt; ENTER_THE_MATRIX_TRACE() &darr;
+        </a>
+        <a href="#portfolio" class="btn btn--ghost">
+          &gt; INSPECT_AI_HARNESS
+        </a>
+      </div>
+
+      <div class="hero__stack font-mono-code">
+        <span *ngFor="let item of coreStack" class="phosphor-pill">
+          {{ item }}
+        </span>
+      </div>
+    </div>
+
+    <!-- Live Terminal Telemetry Card -->
+    <div class="hero__visual stagger-item">
+      <div class="terminal-card hero__terminal phosphor-border">
+        <div class="hero__terminal-header font-mono-code">
+          <span class="phosphor-text">{{ 'STORY.CHAPTER_00.COMMAND_PROMPT' | translate }}</span>
+          <span class="text-muted">TTY // ACTIVE</span>
+        </div>
+
+        <div class="hero__terminal-body font-mono-code">
+          <div class="text-muted">// INITIALIZING SPEC_DRIVEN AI HARNESS</div>
+          <div class="hero__terminal-metrics">
+            <div class="hero__metric-row">
+              <span class="text-muted">&gt; NODE_STATE:</span>
+              <span class="phosphor-text">READY_FOR_DEPLOYMENT</span>
+            </div>
+            <div class="hero__metric-row">
+              <span class="text-muted">&gt; CARRIER_FREQUENCY:</span>
+              <span>432.00 MHz</span>
+            </div>
+            <div class="hero__metric-row">
+              <span class="text-muted">&gt; SPEC_COMPLIANCE:</span>
+              <span class="phosphor-text">100% (STRICT_MODE)</span>
+            </div>
+            <div class="hero__metric-row">
+              <span class="text-muted">&gt; UNIT_TESTS:</span>
+              <span class="phosphor-text">35/35 PASSED</span>
+            </div>
+          </div>
+
+          <!-- Pipeline Trace Steps -->
+          <div class="hero__pipeline-box">
+            <div class="text-muted hero__pipeline-label">// AI HARNESS PIPELINE EXECUTION</div>
+            <div class="hero__pipeline-list">
+              <div
+                *ngFor="let item of workflowSteps"
+                class="hero__pipeline-step"
+              >
+                <span class="phosphor-text font-bold">[{{ item.step }}]</span>
+                <span class="hero__pipeline-title">{{ item.titleKey | translate }}</span>
+                <span class="hero__pipeline-badge phosphor-pill">{{ item.artifact }}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__terminal-footer font-mono-code">
+            <span class="text-muted">ENCRYPT: AES_256_GCM</span>
+            <span class="phosphor-text font-bold">&bull; ONLINE</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</header>
+</section>

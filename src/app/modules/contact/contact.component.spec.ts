@@ -1,64 +1,24 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
-import {
-  FormsModule,
-  ReactiveFormsModule,
-  FormBuilder,
-  Validators,
-} from '@angular/forms';
-
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { MockModule } from 'ng-mocks';
-import { NgxCaptchaModule } from 'ngx-captcha';
+import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { ContactComponent } from './contact.component';
-import { CommonModule } from '@angular/common';
-import { ContactService } from 'app/data/service/contact.service';
-import { of } from 'rxjs';
+import { SharedModule } from 'app/shared/shared.module';
 
 describe('ContactComponent', () => {
   let component: ContactComponent;
   let fixture: ComponentFixture<ContactComponent>;
-  const formBuilder: FormBuilder = new FormBuilder();
-
-  let contactServiceStub: Partial<ContactService>;
-
-  contactServiceStub = {
-    sendMessage: () => of([]),
-  };
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ContactComponent],
-      imports: [
-        CommonModule,
-        FormsModule,
-        ReactiveFormsModule,
-        HttpClientTestingModule,
-        TranslateModule.forRoot(),
-        MockModule(NgxCaptchaModule),
-      ],
-      providers: [
-        TranslateService,
-        {
-          provide: ContactService,
-          useValue: contactServiceStub,
-        },
-      ],
+      imports: [CommonModule, SharedModule, TranslateModule.forRoot()],
     }).compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ContactComponent);
     component = fixture.componentInstance;
-
-    component.formGroup = formBuilder.group({
-      name: [null, [Validators.required]],
-      email: [null, [Validators.required, Validators.email]],
-      message: [null, [Validators.required]],
-      recaptcha: ['', [Validators.required]],
-    });
-
     fixture.detectChanges();
   });
 
@@ -66,73 +26,21 @@ describe('ContactComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render input elements', () => {
-    const compiled = fixture.debugElement.nativeElement;
-    const nameInput = compiled.querySelector('input[id="name"]');
-    const emailInput = compiled.querySelector('input[id="email"]');
+  it('should render direct mailto link and social links without recaptcha', () => {
+    const compiled = fixture.debugElement.nativeElement as HTMLElement;
+    const mailtoLink = compiled.querySelector(
+      'a[href="mailto:cavargas40@gmail.com"]'
+    );
+    const socialLinks = compiled.querySelectorAll('.contact__social-link');
 
-    expect(nameInput).toBeTruthy();
-    expect(emailInput).toBeTruthy();
+    expect(mailtoLink).toBeTruthy();
+    expect(socialLinks.length).toBe(2);
+    expect(compiled.querySelector('ngx-recaptcha2')).toBeNull();
   });
 
-  it('should test form validity', () => {
-    const form = component.formGroup;
-    expect(form.valid).toBeFalsy();
-
-    const nameInput = form.controls.name;
-    const emailInput = form.controls.email;
-    const messageInput = form.controls.message;
-    const recaptchaInput = form.controls.recaptcha;
-
-    nameInput.setValue('Carlos Vargas');
-    emailInput.setValue('cavargas40@gmail.com');
-    messageInput.setValue('New message to contact with Myself');
-    recaptchaInput.setValue('348765378hdkfghifdgh447568934hfjdgj=');
-
-    expect(form.valid).toBeTruthy();
-  });
-
-  it('should test input errors', () => {
-    const nameInput = component.formGroup.controls.name;
-
-    expect(nameInput.errors.required).toBeTruthy();
-
-    nameInput.setValue('Carlos Vargas');
-
-    expect(nameInput.errors).toBeNull();
-  });
-
-  it('should update the language in the component', () => {
-    const lang = 'es';
-    const translateService = TestBed.inject(TranslateService);
-
-    translateService.use(lang);
-
-    expect(component.lang).toBe(lang);
-  });
-
-  it('should try to contact', () => {
-    const form = component.formGroup;
-    expect(form.valid).toBeFalsy();
-
-    const nameInput = form.controls.name;
-    const emailInput = form.controls.email;
-    const messageInput = form.controls.message;
-    const recaptchaInput = form.controls.recaptcha;
-
-    nameInput.setValue('Carlos Vargas');
-    emailInput.setValue('cavargas40@gmail.com');
-    messageInput.setValue('New message to contact with Myself');
-    recaptchaInput.setValue('348765378hdkfghifdgh447568934hfjdgj=');
-
-    component.contactMe();
-
-    expect(component.contacted).toBe(true);
-  });
-
-  it('should fail the contact ', () => {
-    component.contactMe();
-
-    expect(component.contacted).toBe(false);
+  it('should set copied state when copyEmail is triggered', () => {
+    expect(component.copied).toBe(false);
+    component.copyEmail();
+    expect(component.copied).toBe(true);
   });
 });

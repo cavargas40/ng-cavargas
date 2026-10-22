@@ -1,3 +1,6 @@
+@use 'app/styles/abstracts/variables' as *;
+@use 'app/styles/abstracts/mixins' as *;
+
 .center-text {
   text-align: center !important;
 }
@@ -35,4 +38,8 @@
 
 .mt-huge {
   margin-top: 10rem !important;
+}
+
+.section-shell {
+  scroll-margin-top: 8rem;
 }

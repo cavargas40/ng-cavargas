@@ -1,88 +1,249 @@
-@import '~app/styles/abstracts/variables';
-@import '~app/styles/abstracts/mixins';
+@use 'app/styles/abstracts/variables' as *;
+@use 'app/styles/abstracts/mixins' as *;
 
 .about-me {
   position: relative;
-  padding: 10rem;
-  background-color: #fff;
-
-  display: flex;
+  min-height: 75vh;
+  padding: 6rem 0 6rem 4rem;
 
   @include responsive(phone) {
-    padding: 4rem;
-    flex-direction: column;
+    padding: 4rem 0 4rem 2rem;
   }
 
-  &__item {
-    height: auto;
-    margin-top: 4rem;
-    flex: 1 1 50%;
-  }
+  &__node {
+    position: absolute;
+    left: -2.3rem;
+    top: 6rem;
 
-  &__box {
-    padding: 4rem;
-  }
-
-  &__picture {
-    flex: 1;
-    align-self: center;
-    justify-self: center;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    transition: all 0.2s;
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-
-    &:hover {
-      transform: scale(1.1) rotate(2deg);
+    @include responsive(tab-port) {
+      left: -1.3rem;
     }
   }
 
-  &__info-list {
-    list-style: none;
-    padding: 3rem;
-    font-size: $default-font-size;
-
-    display: flex;
-    flex-wrap: wrap;
+  &__chapter-tag {
+    font-size: 1.15rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $matrix-phosphor;
+    margin-bottom: 0.8rem;
   }
 
-  &__info-item {
-    flex: 1 0 50%;
-    justify-content: space-between;
-    margin-bottom: 0.7rem;
+  &__header {
+    margin-bottom: 3.2rem;
   }
 
   &__title {
-    color: $color-secondary;
+    font-size: 3.2rem;
+    line-height: 1.15;
+    color: $text-primary;
+    margin-bottom: 0.8rem;
+
+    @include responsive(phone) {
+      font-size: 2.4rem;
+    }
   }
 
-  &__value {
-    margin-left: 1rem;
-    color: $color-tertiary;
+  &__subtitle {
+    font-size: 1.35rem;
+    color: $matrix-muted;
+    line-height: 1.6;
+    max-width: 65rem;
+  }
+
+  &__eras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3.6rem;
+
+    @include responsive(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__era-card {
+    padding: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: rgba($matrix-void, 0.85);
+  }
+
+  &__era-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.15rem;
+  }
+
+  &__era-heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $text-primary;
+    line-height: 1.3;
+  }
+
+  &__era-desc {
+    font-size: 1.3rem;
+    color: rgba($text-primary, 0.82);
+    line-height: 1.6;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: minmax(28rem, 34rem) 1fr;
+    gap: 3.2rem;
+    align-items: stretch;
+
+    @include responsive(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__portrait-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    background: rgba($matrix-void, 0.85);
+  }
+
+  &__portrait-frame {
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid rgba($matrix-phosphor, 0.25);
+  }
+
+  &__picture {
+    width: 100%;
+    height: 28rem;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  &__connect {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  &__email-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1.2rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba($matrix-phosphor, 0.2);
+  }
+
+  &__meta-label {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $matrix-muted;
+  }
+
+  &__email-link {
+    font-size: 1.3rem;
+    color: $matrix-phosphor;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__social-list {
-    display: block;
     list-style: none;
-
     display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__social-btn {
+    display: inline-flex;
     align-items: center;
-    justify-content: flex-start;
+    gap: 0.8rem;
+    padding: 0.8rem 1.4rem;
+    border-radius: 4px;
+    background: rgba($matrix-phosphor, 0.06);
+    border: 1px solid rgba($matrix-phosphor, 0.25);
+    color: $text-primary;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: border-color 0.2s ease, transform 0.2s ease;
 
-    &-btn {
-      margin: 0.5rem;
+    &:hover {
+      border-color: $matrix-phosphor;
+      transform: translateY(-2px);
     }
+  }
 
-    &-img {
-      width: 3rem;
-      transition: all 0.2s;
+  &__social-img {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
 
-      &:hover {
-        transform: scale(1.3);
-      }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.8rem;
+    background: rgba($matrix-void, 0.85);
+  }
+
+  &__profile-tag {
+    font-size: 1.15rem;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.05em;
+  }
+
+  &__profile-name {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 1.4rem;
+  }
+
+  &__highlights {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    margin-top: 2.4rem;
+
+    @include responsive(phone) {
+      grid-template-columns: 1fr;
     }
+  }
+
+  &__highlight-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.4rem;
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba($matrix-phosphor, 0.2);
+  }
+
+  &__highlight-label {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $matrix-soft;
+  }
+
+  &__highlight-value {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: $text-primary;
+    line-height: 1.4;
   }
 }

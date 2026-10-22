@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'app-m3d',
   templateUrl: './m3d.component.html',
   styleUrls: ['./m3d.component.scss']

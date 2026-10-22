@@ -1,0 +1,133 @@
+@use 'app/styles/abstracts/variables' as *;
+@use 'app/styles/abstracts/mixins' as *;
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba($matrix-void, 0.88);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba($matrix-phosphor, 0.18);
+
+  &__inner {
+    max-width: $max-container-width;
+    margin: 0 auto;
+    padding: 1.2rem 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    @include responsive(tab-port) {
+      flex-wrap: wrap;
+      padding: 1rem 1.6rem;
+    }
+  }
+
+  &__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    color: $text-primary;
+    font-size: 1.4rem;
+    letter-spacing: 0.08em;
+    flex-shrink: 0;
+  }
+
+  &__prompt {
+    font-weight: 800;
+  }
+
+  &__brand-name {
+    font-weight: 700;
+    color: $text-primary;
+  }
+
+  &__pill {
+    font-size: 1.05rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+
+    @include responsive(tab-port) {
+      display: none;
+      order: 3;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 1.2rem;
+      border-top: 1px solid rgba($matrix-phosphor, 0.12);
+      margin-top: 0.8rem;
+
+      &--open {
+        display: flex;
+      }
+    }
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    @include responsive(tab-port) {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      gap: 0.8rem;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 0.6rem 1.1rem;
+    border-radius: 4px;
+    color: $matrix-muted;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 0.04em;
+    transition: color 0.2s ease, background-color 0.2s ease;
+
+    &:hover,
+    &--active {
+      color: $matrix-phosphor;
+      background: rgba($matrix-phosphor, 0.08);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    flex-shrink: 0;
+  }
+
+  &__toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid rgba($matrix-phosphor, 0.3);
+    border-radius: 4px;
+    padding: 0.8rem;
+    cursor: pointer;
+
+    @include responsive(tab-port) {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+  }
+
+  &__toggle-bar {
+    width: 2rem;
+    height: 2px;
+    background: $matrix-phosphor;
+    display: block;
+  }
+}

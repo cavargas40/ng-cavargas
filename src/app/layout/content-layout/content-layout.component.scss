@@ -1,6 +1,111 @@
-@import '~app/styles/abstracts/variables';
+@use 'app/styles/abstracts/variables' as *;
+@use 'app/styles/abstracts/mixins' as *;
 
-.head {
-  background-image: linear-gradient(to left top, $color-secondary-dark, $color-tertiary);
-  background-repeat: no-repeat;
+.top-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: $matrix-phosphor;
+  box-shadow: 0 0 12px $matrix-phosphor;
+  z-index: 100;
+  transition: width 0.08s linear;
+  pointer-events: none;
+}
+
+.matrix-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.crt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(circle at center, transparent 65%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+.telemetry-hud {
+  position: fixed;
+  right: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+  display: none;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 1.1rem;
+
+  @include responsive(tab-land) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__inner {
+    padding: 1.2rem 1.6rem;
+    text-align: right;
+    min-width: 17rem;
+    background: rgba($matrix-void, 0.88);
+  }
+
+  &__metric {
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.05em;
+  }
+
+  &__chapter {
+    font-size: 1.05rem;
+    font-weight: 600;
+    opacity: 0.95;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid rgba($matrix-phosphor, 0.2);
+    padding-bottom: 0.6rem;
+  }
+
+  &__anchors {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: flex-end;
+  }
+
+  &__link {
+    color: $matrix-muted;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 1.05rem;
+
+    &.is-active,
+    &:hover {
+      color: $matrix-phosphor;
+      font-weight: 700;
+    }
+  }
+}
+
+.site-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.site-main {
+  flex: 1;
+  position: relative;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
 }

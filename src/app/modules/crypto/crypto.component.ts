@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as CryptoJS from 'crypto-js';
 
 @Component({
+  standalone: false,
   selector: 'app-crypto',
   templateUrl: './crypto.component.html',
   styleUrls: ['./crypto.component.scss'],

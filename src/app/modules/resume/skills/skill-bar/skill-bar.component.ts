@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'app-skill-bar',
   templateUrl: './skill-bar.component.html',
   styleUrls: ['./skill-bar.component.scss']

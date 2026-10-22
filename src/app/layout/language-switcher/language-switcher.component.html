@@ -1,15 +1,13 @@
-<section class="language-switcher">
-  <div class="navigation__icon">
-    <ng-select
-      [items]="languages"
-      bindLabel="name"
-      bindValue="id"
-      [(ngModel)]="selectedLanguage"
-      [clearable]="false"
-      (change)="changeLanguage()"
-      appearance="outline"
-      [searchable]="false"
-    >
-    </ng-select>
-  </div>
-</section>
+<div class="language-switcher" role="group" aria-label="Language switcher">
+  <button
+    *ngFor="let lang of languages"
+    type="button"
+    class="language-switcher__btn"
+    [class.language-switcher__btn--active]="selectedLanguage === lang.id"
+    (click)="selectLanguage(lang.id)"
+    [attr.aria-pressed]="selectedLanguage === lang.id"
+    [title]="lang.name"
+  >
+    {{ lang.id | uppercase }}
+  </button>
+</div>

@@ -1,8 +1,10 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-
 import { TranslateModule } from '@ngx-translate/core';
 
 import { ResumeComponent } from './resume.component';
+import { TimeLineComponent } from './time-line/time-line.component';
+import { SkillsComponent } from './skills/skills.component';
+import { SharedModule } from 'app/shared/shared.module';
 
 describe('ResumeComponent', () => {
   let component: ResumeComponent;
@@ -10,8 +12,8 @@ describe('ResumeComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ResumeComponent],
-      imports: [TranslateModule.forRoot()],
+      declarations: [ResumeComponent, TimeLineComponent, SkillsComponent],
+      imports: [SharedModule, TranslateModule.forRoot()],
     }).compileComponents();
   }));
 
@@ -27,7 +29,6 @@ describe('ResumeComponent', () => {
 
   it('should change the tab', () => {
     component.selectTab('education');
-
     expect(component.selectedTab).toBe('education');
   });
 });

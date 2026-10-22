@@ -1,8 +1,69 @@
-.skills {
-  width: 100%;
+@use 'app/styles/abstracts/variables' as *;
+@use 'app/styles/abstracts/mixins' as *;
 
+.capabilities-grid {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 6rem;
-  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+
+  @include responsive(tab-port) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.capabilities-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.8rem;
+  padding: 2.4rem;
+  background: rgba($matrix-void, 0.85);
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.4rem;
+  }
+
+  &__badge {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.4rem 0.8rem;
+  }
+
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  &__subtitle {
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin: 0;
+  }
+
+  &__description {
+    font-size: 1.35rem;
+    line-height: 1.6;
+    color: rgba($text-primary, 0.82);
+    margin: 0;
+  }
+
+  &__tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 0;
+    padding: 0;
+  }
 }

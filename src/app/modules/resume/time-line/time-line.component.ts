@@ -1,18 +1,16 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { TimelineMap } from 'app/core/constants/resume.constants';
 
 @Component({
+  standalone: false,
   selector: 'app-time-line',
   templateUrl: './time-line.component.html',
-  styleUrls: ['./time-line.component.scss']
+  styleUrls: ['./time-line.component.scss'],
 })
-export class TimeLineComponent implements OnInit {
-  @Input() timeline: any = {};
+export class TimeLineComponent {
+  @Input() timeline: TimelineMap = {};
 
-  constructor() {}
-
-  ngOnInit(): void {}
-
-  get formattedTimeline() {
-    return Object.keys(this.timeline);
+  get formattedTimeline(): string[] {
+    return Object.keys(this.timeline || {});
   }
 }

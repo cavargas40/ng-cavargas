@@ -1,95 +1,262 @@
 {
   "NAME": "Carlos Vargas",
-  "CAREER": "Desarrollador Web Fullstack",
+  "CAREER": "Ingeniero de Software Senior Fullstack e IA",
   "LANGUAGE": "Idioma",
+  "STORY": {
+    "CHAPTER_00": {
+      "TAG": "CAPÍTULO 00 // INICIALIZACIÓN_DE_SEÑAL",
+      "TITLE": "Carlos Vargas // Ingeniero Senior Fullstack y de Sistemas de IA",
+      "SUBTITLE": "Arquitectura de plataformas web resilientes, microservicios de alta concurrencia y arneses deterministas de IA.",
+      "COMMAND_PROMPT": "cavargas@matrix-core:~/harness",
+      "SYSTEM_READY": "ESTADO: TODOS LOS SISTEMAS OPERATIVOS",
+      "SCROLL_HINT": "DESPLAZARSE PARA INICIALIZAR LA SEÑAL"
+    },
+    "CHAPTER_01": {
+      "TAG": "CAPÍTULO 01 // EL_OFICIO_Y_EVOLUCIÓN",
+      "TITLE": "Oficio de Ingeniería y Evolución Arquitectónica",
+      "SUBTITLE": "Más de una década de evolución ingenieril: desde núcleos transaccionales relacionales hasta servicios políglotas a hiper-escala y arneses de IA guiados por especificaciones."
+    },
+    "CHAPTER_02": {
+      "TAG": "CAPÍTULO 02 // MOTOR_DE_ARNESES_DE_IA_GUIADO_POR_SPECS",
+      "TITLE": "Ingeniería con Arneses de IA y Especificaciones",
+      "SUBTITLE": "Seleccione cualquier etapa en el arnés de ejecución inferior para inspeccionar cómo las especificaciones gobiernan la generación de código."
+    },
+    "CHAPTER_03": {
+      "TAG": "CAPÍTULO 03 // EXPEDIENTES_DE_CASOS_DE_PRODUCCIÓN",
+      "TITLE": "Expedientes de Casos de Producción y Sistemas Probados",
+      "SUBTITLE": "Dossiers de sistemas de misión crítica diseñados para escala, precisión transaccional y aumento con IA."
+    },
+    "CHAPTER_04": {
+      "TAG": "CAPÍTULO 04 // CANAL_DE_TRANSMISIÓN_ABIERTO",
+      "TITLE": "Transmisión Directa Abierta",
+      "SUBTITLE": "Sin formularios heredados ni captchas. Copie mi dirección de señal directa o inicie una transmisión abajo.",
+      "COPY_CMD": "$ copy cavargas40@gmail.com",
+      "LAUNCH_CMD": "> LAUNCH_MAIL_CLIENT()",
+      "CONFIRM_COPIED": "SEÑAL COPIADA AL PORTAPAPELES"
+    }
+  },
+  "HERO": {
+    "BADGE": "Ingeniero de Software Senior • IA y Sistemas Distribuidos",
+    "SUMMARY": "Arquitectura de plataformas web resilientes, microservicios de alta concurrencia y flujos de ingeniería asistidos por IA guiados por especificaciones y arneses de agentes (agent harnesses).",
+    "CTA_WORK": "Ver Casos de Ingeniería",
+    "CTA_CONTACT": "Contactar",
+    "ARCH_TITLE": "Arnés de Ingeniería con IA Guiado por Especificaciones",
+    "ARCH_SUBTITLE": "Contexto -> Especificación -> Ejecución con Agentes -> Verificación"
+  },
   "MENU": {
     "HOME": "Inicio",
-    "ABOUT_ME": "Acerca de Mi",
-    "RESUME": "Currículum",
+    "ABOUT_ME": "Perfil",
+    "RESUME": "Experiencia y Capacidades",
     "CONTACT": "Contacto",
-    "PORTFOLIO": "Portafolio"
+    "PORTFOLIO": "Ingeniería e IA"
   },
   "ABOUT_ME": {
-    "FIRSTLY": "Soy un desarrollador de software experimentado con habilidades en desarrollo frontend y backend, he pasado los últimos 10 años mejorando mis habilidades. Me encanta resolver problemas desafiantes creando herramientas que faciliten la vida de las personas.",
-    "SECONDLY": "Además, soy ingeniero en sistemas informáticos, con experiencia en proyectos de ingeniería de software bajo metodologías PMI y SCRUM. Muy comprometido con las tareas que me corresponden, de excelente carácter y trabajo en equipo sin problemas, me destaco en el desarrollo de aplicaciones web (Fullstack Developer) con sólidos conocimientos en diferentes tecnologías que he conocido a lo largo de mi carrera.",
-    "AGE": "Edad",
-    "RESIDENCE": "Residencia",
+    "EYEBROW": "Perfil de Ingeniería",
+    "FIRSTLY": "Soy Ingeniero de Software Senior Fullstack con más de una década de experiencia diseñando, construyendo y escalando aplicaciones web en producción y servicios backend distribuidos. Me enfoco en transformar problemas complejos en arquitecturas limpias y mantenibles.",
+    "SECONDLY": "Como Ingeniero de Sistemas con sólida trayectoria en metodologías ágiles, combino bases profundas en desarrollo fullstack (Angular, React, Node.js, Golang, SQL/NoSQL) con ingeniería aumentada por IA: utilizando especificaciones estructuradas, ingeniería de contexto y arneses de agentes para entregar software confiable y verificado.",
     "EMAIL": "Correo Electrónico",
-    "PHONE": "Teléfono"
+    "EXPERIENCE_LABEL": "Trayectoria",
+    "EXPERIENCE_VALUE": "14+ Años en Ingeniería de Software",
+    "FOCUS_LABEL": "Especialidad",
+    "FOCUS_VALUE": "Arquitectura Fullstack, Microservicios e Ingeniería con IA",
+    "METHODOLOGY_LABEL": "Metodología",
+    "METHODOLOGY_VALUE": "Desarrollo Guiado por Specs, Arneses de IA y Calidad Automatizada",
+    "ERAS": {
+      "ERA_01": {
+        "TAG": "ERA 01 // 2010–2016",
+        "BADGE": "RIGOR_CENTRAL",
+        "TITLE": "Fundamentos Empresariales y Relacionales",
+        "DESCRIPTION": "Ingeniero de Sistemas capacitado en estricta integridad transaccional, .NET/C#, SQL Server y Windows Azure, diseñando sistemas ERP y contables donde cada consulta cuenta."
+      },
+      "ERA_02": {
+        "TAG": "ERA 02 // 2017–2022",
+        "BADGE": "HIPER_ESCALA",
+        "TITLE": "Microservicios Políglotas y Web Reactiva",
+        "DESCRIPTION": "Escalabilidad de servicios distribuidos de alta concurrencia en Golang, Node.js y Kotlin junto con plataformas Angular, React y Vue para operaciones de hipercrecimiento en Rappi LATAM."
+      },
+      "ERA_03": {
+        "TAG": "ERA 03 // PRESENTE",
+        "BADGE": "ARNÉS_IA",
+        "TITLE": "Ingeniería de IA Guiada por Especificaciones",
+        "DESCRIPTION": "Transformación de la IA de un autocompletado impredecible a una disciplina de ingeniería utilizando límites de contexto seleccionados, especificaciones de comportamiento formales y arneses de verificación automatizados."
+      }
+    }
+  },
+  "CAPABILITIES": {
+    "EYEBROW": "Competencias Clave",
+    "SUBTITLE": "Capacidades probadas en producción en flujos de trabajo con IA, arquitectura frontend, sistemas distribuidos e infraestructura cloud.",
+    "PILLARS": {
+      "AI": {
+        "TITLE": "Ingeniería Aumentada por IA y Arneses",
+        "SUBTITLE": "Desarrollo Guiado por Especificaciones",
+        "DESCRIPTION": "Diseño de flujos de programación deterministas con IA mediante OpenSpec, arneses de agentes (agent harnesses), contexto técnico curado y verificación automatizada."
+      },
+      "FRONTEND": {
+        "TITLE": "Arquitectura Frontend",
+        "SUBTITLE": "Interfaces Web Reactivas y Escalables",
+        "DESCRIPTION": "Construcción de aplicaciones SPA accesibles y de alto rendimiento con Angular moderno (Signals, Standalone), React, Vue.js, TypeScript y sistemas de diseño SCSS."
+      },
+      "BACKEND": {
+        "TITLE": "Backend y Sistemas Distribuidos",
+        "SUBTITLE": "Microservicios y APIs de Alta Concurrencia",
+        "DESCRIPTION": "Diseño de servicios resilientes y APIs utilizando Node.js, Golang, Kotlin y .NET/C# bajo patrones orientados a eventos y microservicios."
+      },
+      "CLOUD": {
+        "TITLE": "Cloud, Datos y DevOps",
+        "SUBTITLE": "Persistencia, Caché y Entrega Continua",
+        "DESCRIPTION": "Operación de bases de datos SQL y NoSQL (PostgreSQL, MySQL, SQL Server, MongoDB, DynamoDB), caché con Redis, contenedores Docker y pipelines CI/CD."
+      }
+    }
   },
   "RESUME": {
+    "EYEBROW": "Trayectoria Profesional",
     "EXPERIENCE": "Experiencia",
     "EDUCATION": "Educación",
-    "SKILLS": "Habilidades",
+    "SKILLS": "Capacidades",
     "TIME_LINE": {
       "EXPERIENCE": {
         "2020": {
           "TITLE": "Ene 2020 - Actualidad",
-          "POSITION": "Freelancer",
-          "COMPANY": "Independiente",
-          "DETAIL": "Trabajando para proyectos interesantes en algunas plataformas como Freelancer.com, Upwork, Fiveer, PeoplePerHour, Skyword, Guru.com"
+          "POSITION": "Ingeniero de Software Senior Fullstack e IA",
+          "COMPANY": "Independiente / Consultoría",
+          "DETAIL": "Arquitectura y entrega de plataformas web fullstack y servicios cloud para clientes internacionales, integrando flujos de ingeniería con IA basados en especificaciones, arneses de agentes, frontends modernos en Angular/React y backends escalables en Node.js/Go."
         },
         "2017_2019": {
           "TITLE": "Feb 2017 - Dic 2019",
           "POSITION": "Desarrollador Fullstack",
           "COMPANY": "Rappi",
-          "DETAIL": "Desarrollador Fullstack para proyectos internos desafiantes de Rappi, utilizando tecnologías frontend como Angular, VueJs, React y backend como (Nodejs (express, adonisjs), Kotlin, Golang, SQL DBs (Postgres, MySql), NoSql DBs (MongoDB, DynamoDB) ) administrador de caché (Redis, MemCached), Contenedores (Docker, Compose) Canalizaciones CI / CD (Jenkins) todo lo que aplica arquitecturas de micro servicios."
+          "DETAIL": "Desarrollo de plataformas internas de alta concurrencia y microservicios en Rappi utilizando Angular, Vue.js y React en frontend, y Node.js (Express, AdonisJS), Kotlin y Golang en backend, junto con PostgreSQL, MySQL, MongoDB, DynamoDB, Redis/Memcached, Docker y Jenkins CI/CD."
         },
         "2014_2016": {
           "TITLE": "Jul 2014 - Ago 2016",
-          "POSITION": "Desarrollador Junior",
+          "POSITION": "Desarrollador de Software",
           "COMPANY": "SINCOSOFT",
-          "DETAIL": "Desarrollo de aplicaciones web en .NET en C #, ASPX, js ajax, html, css, jquery para el ERP (Gestión de proyectos, Módulo de contabilidad) de la compañía, Desarrollo de la capa de datos en el servidor Sql 2014 y TransactSQL., Todo el proyecto gestionado desde marco de desarrollo ágil, SCRUM."
+          "DETAIL": "Desarrollo de aplicaciones web en .NET, C#, ASPX, JavaScript y HTML/CSS para el ERP empresarial (Gestión de Proyectos y Contabilidad), y desarrollo de la capa de datos en SQL Server 2014 y Transact-SQL bajo SCRUM."
         },
         "2013_2014": {
           "TITLE": "Ago 2013 - Feb 2014",
           "POSITION": "Ingeniero Desarrollador",
           "COMPANY": "Globalsoft Wigilabs",
-          "DETAIL": "Desarrollo de aplicaciones y servicios web en asp.net MVC 4, Desarrollo de la capa de datos en SQL Server 2012 y TransactSQL, Administración del servidor de aplicaciones en Windows Azure. (almacenamiento, bases de datos, servicios web, aplicaciones web)."
+          "DETAIL": "Desarrollo de aplicaciones y servicios web en ASP.NET MVC 4, capa de datos en SQL Server 2012 y Transact-SQL, y administración de servicios y bases de datos en Windows Azure."
         },
         "2011_2013": {
           "TITLE": "Dic 2011 - Ago 2013",
-          "POSITION": "Analista de Soporte y Requisitos de Pruebas",
+          "POSITION": "Analista de Requisitos y Pruebas QA",
           "COMPANY": "Universidad Nacional de Colombia",
-          "DETAIL": "Creación de requisitos para nuevos desarrollos o ajustes del sistema, Pruebas de los desarrollos realizados, Soporte para usuarios del sistema con sentencias SQL. (Motor de base de datos ORACLE)"
+          "DETAIL": "Definición de requerimientos para nuevos desarrollos, ejecución de pruebas funcionales y soporte técnico sobre bases de datos Oracle SQL."
         },
         "2010_2011": {
           "TITLE": "Oct 2010 - Oct 2011",
           "POSITION": "Analista de Sistemas de Información y Desarrollador",
           "COMPANY": "Promacom Pak Ltda",
-          "DETAIL": "Microsoft Windows Server 2008 R2 Administrador de servidor estándar, a cargo del soporte de infraestructura técnica de la compañía, desarrollo de aplicaciones web con html, css, js, flash, php y MySQL."
+          "DETAIL": "Administración de servidores Microsoft Windows Server 2008 R2 y desarrollo de aplicaciones web internas con HTML, CSS, JavaScript, PHP y MySQL."
         }
       },
       "EDUCATION": {
         "JAN_2018_NOV_2018": {
           "TITLE": "Ene 2018 - Nov 2018",
-          "POSITION": "Inglés intermedio alto",
+          "POSITION": "Inglés Intermedio Alto",
           "COMPANY": "Seafield School of English",
-          "DETAIL": "Estudios de inglés general en Nueva Zelanda, Auckland."
+          "DETAIL": "Estudios de inglés general y académico en Auckland, Nueva Zelanda."
         },
         "JAN_2013_DEC_2016": {
-          "TITLE": "Ene 2018 - Nov 2018",
+          "TITLE": "Ene 2013 - Dic 2016",
           "POSITION": "Ingeniero de Sistemas",
-          "COMPANY": "Politecnico Grancolombiano",
-          "DETAIL": "Título de Ingreniero de Sistemas"
+          "COMPANY": "Politécnico Grancolombiano",
+          "DETAIL": "Título profesional de Ingeniero de Sistemas."
         },
         "JAN_2009_DEC_2011": {
           "TITLE": "Ene 2009 - Nov 2011",
           "POSITION": "Tecnólogo en Análisis y Desarrollo de Sistemas de Información",
           "COMPANY": "Servicio Nacional de Aprendizaje (SENA)",
-          "DETAIL": "Título de Tecnólogo en Análisis y Desarrollo de Sistemas de Información"
+          "DETAIL": "Título de Tecnólogo en Análisis y Desarrollo de Sistemas de Información."
         }
       }
     }
   },
+  "PORTFOLIO": {
+    "EYEBROW": "Casos de Estudio de Ingeniería",
+    "SUBTITLE": "Arquitectura de sistemas reales, plataformas distribuidas e ingeniería de software asistida por IA con especificaciones.",
+    "FILTERS": {
+      "ALL": "Todos",
+      "AI": "IA y Arneses de Specs",
+      "DISTRIBUTED": "Distribuidos y ERP",
+      "FULLSTACK": "Plataformas Fullstack"
+    },
+    "AI_SHOWCASE": {
+      "BADGE": "Metodología de Ingeniería con IA",
+      "TITLE": "Ingeniería con IA Guiada por Especificaciones y Arneses de Agentes",
+      "DESCRIPTION": "En lugar de usar IA como simple autocompletado, diseño arneses de agentes estructurados donde el contexto arquitectónico, las especificaciones de comportamiento y las pruebas automatizadas gobiernan cada cambio.",
+      "STEPS": {
+        "CONTEXT": {
+          "TITLE": "Contexto y Reglas",
+          "SUBTITLE": "Límites y Restricciones del Repositorio",
+          "DESCRIPTION": "Codificación de arquitectura, presupuestos de estilos, reglas i18n y límites de módulos en contexto legible por agentes."
+        },
+        "SPEC": {
+          "TITLE": "Especificaciones de Comportamiento",
+          "SUBTITLE": "Contratos SHALL/MUST y Escenarios",
+          "DESCRIPTION": "Definición de requisitos verificables y escenarios WHEN/THEN antes de generar código de implementación."
+        },
+        "HARNESS": {
+          "TITLE": "Ejecución en Arnés de Agentes",
+          "SUBTITLE": "Orquestación de Tareas Delimitadas",
+          "DESCRIPTION": "Orquestación de tareas acotadas mediante flujos deterministas de agentes y contratos técnicos explícitos."
+        },
+        "VERIFY": {
+          "TITLE": "Verificación Automatizada",
+          "SUBTITLE": "Filtros Automatizados de Pruebas y Presupuesto",
+          "DESCRIPTION": "Validación de cada entrega con pruebas unitarias Jasmine/Karma, chequeo estricto de TypeScript y presupuestos de producción."
+        }
+      }
+    },
+    "LABELS": {
+      "PROBLEM": "Desafío",
+      "ARCHITECTURE": "Arquitectura y Enfoque",
+      "IMPACT": "Resultado de Ingeniería",
+      "SOURCE": "Ver Repositorio"
+    },
+    "CASES": {
+      "AI_HARNESS": {
+        "BADGE": "Ingeniería con IA y Arquitectura",
+        "TITLE": "Plataforma de Ingeniería con IA Guiada por Specs y Arneses",
+        "PROBLEM": "El uso de prompts sin estructura genera deriva arquitectónica, regresiones y desincronización entre traducciones en aplicaciones complejas.",
+        "ARCHITECTURE": "Implementación de un flujo basado en OpenSpec (arnés de contexto en `config.yaml`, specs delta, diseño técnico y tareas verificables) sobre Angular 19.",
+        "IMPACT": "Modernización determinista paso a paso, paridad total en 4 idiomas y cumplimiento estricto del presupuesto de 6KB por componente."
+      },
+      "RAPPI_PLATFORM": {
+        "BADGE": "Microservicios Distribuidos",
+        "TITLE": "Ecosistema de Operaciones Internas de Alta Concurrencia (Rappi)",
+        "PROBLEM": "El rápido crecimiento operativo en LATAM requería herramientas internas resilientes y microservicios de baja latencia.",
+        "ARCHITECTURE": "Microservicios políglotas en Golang, Kotlin y Node.js (Express/AdonisJS) junto a frontends en Angular/React/Vue, caché Redis/Memcached, PostgreSQL/MongoDB/DynamoDB y Docker/Jenkins CI/CD.",
+        "IMPACT": "Entrega de plataformas internas tolerantes a fallos y pipelines de despliegue continuo para equipos de alto rendimiento."
+      },
+      "POLYGLOT_WEB": {
+        "BADGE": "Arquitectura Web Fullstack",
+        "TITLE": "Aplicaciones Web Reactivas y Localización Multi-Idioma",
+        "PROBLEM": "Las aplicaciones globales requieren carga rápida, diseño adaptable y cambio de idioma instantáneo sin recargar la página.",
+        "ARCHITECTURE": "Arquitectura modular con Angular, RxJS, directivas nativas con IntersectionObserver y carga dinámica de traducciones JSON en inglés, español, portugués y japonés.",
+        "IMPACT": "Cambio de idioma fluido, experiencia accesible en móvil y escritorio, y módulos desacoplados fáciles de mantener."
+      },
+      "ENTERPRISE_ERP": {
+        "BADGE": "Sistemas Empresariales",
+        "TITLE": "ERP Empresarial de Gestión de Proyectos y Contabilidad",
+        "PROBLEM": "Los procesos financieros y contables exigían integridad transaccional estricta y reportes web ágiles.",
+        "ARCHITECTURE": "Arquitectura web multicapa en .NET / C# respaldada por SQL Server y procedimientos almacenados en Transact-SQL bajo metodología SCRUM.",
+        "IMPACT": "Optimización de operaciones contables y seguimiento de proyectos con modelado relacional robusto y despliegue en la nube."
+      }
+    }
+  },
   "CONTACT": {
-    "GET_IN_TOUCH": "Como contactarme?",
-    "TOUCH_INFO": "En caso de que necesites contactarme, usa una de las siguientes opciones:",
-    "AVAILABLE": "Freelance disponible",
-    "FORM": "Formulario de contacto",
-    "CONTACTED_SUCCESS": "Formulario de contacto enviado correctamente. ¡Gracias, me pondré en contacto con usted pronto!",
-    "EX_NAME": "Ej. Carlos Andres",
-    "EX_EMAIL": "Ej. cavargas40@gmail.com"
+    "GET_IN_TOUCH": "Construyamos Software Sólido",
+    "TOUCH_INFO": "Disponible para roles senior de arquitectura fullstack, sistemas distribuidos e ingeniería aumentada por IA o consultoría.",
+    "AVAILABLE": "Disponible para Proyectos",
+    "COPY_EMAIL": "Copiar Correo",
+    "COPIED": "¡Correo Copiado!"
+  },
+  "FOOTER": {
+    "TAGLINE": "Ingeniero de Software Senior Fullstack e IA — Construido con Angular y OpenSpec.",
+    "RIGHTS": "Todos los derechos reservados."
   },
   "COMMON": {
     "NAME": "Nombre",
@@ -97,12 +264,6 @@
     "MESSAGE": "Mensaje"
   },
   "BUTTON": {
-    "SEND_MESSAGE": "Enviar Mensaje"
-  },
-  "VALIDATORS": {
-    "NAME_REQUIRED": "Nombre es <strong>requerido</strong>",
-    "EMAIL_INVALID": "Por favor ingrese un correo electrónico <strong>valido</strong>",
-    "EMAIL_REQUIRED": "Correo electrónico es <strong>requerido</strong>",
-    "MESSAGE_REQUIRED": "Mensaje es <strong>requerido</strong>"
+    "SEND_MESSAGE": "Enviar Correo Directo"
   }
 }

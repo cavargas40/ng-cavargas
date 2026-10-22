@@ -1,0 +1,46 @@
+schema: spec-driven
+
+# Project context
+# Constraints and conventions that guide OpenSpec artifacts and workflows.
+context: |
+  Project: ng-cavargas — Personal portfolio, interactive resume, Matrix storytelling experience, and utility web application.
+  Tech Stack:
+    - Framework: Angular 19 (^19.2.0), TypeScript ~5.7.2, RxJS ~7.8.0
+    - UI & Styling: Dart Sass modern syntax (@use) with 7-1 architecture under src/app/styles/, Angular Material (^19.2.0), Phosphor Matrix design system (#00FF66)
+    - 3D & Directives: Three.js (^0.129.0) in m3d module, crypto-js (^4.2.0) in crypto module, custom MatrixDecodeDirective and RevealOnScrollDirective
+    - i18n: @ngx-translate/core (^16.0.4) & http-loader (^16.0.1) supporting 4 locales (en, es, pt, ja) in src/assets/i18n/
+    - Testing & Quality: Karma (~6.4.0) + Jasmine (~5.1.0), ng-mocks (^14.13.0), ChromeHeadlessCI, TypeScript compiler verification (npm run lint)
+
+  Architecture & Conventions:
+    - Module layout: Core singleton services/guards/constants in `src/app/core/`, shared modules/directives in `src/app/shared/`, layout shell components in `src/app/layout/`, and feature modules in `src/app/modules/`.
+    - Routing & Storytelling: Main portfolio chapters (00 Hero, 01 About, 02 AI Harness & Capabilities, 03 Case Files & Resume, 04 Transmission/Contact) render inside `ContentLayoutComponent` with dynamic telemetry HUD, live laser spine, and HiDPI Matrix rain canvas. Standalone utility modules (`crypto`, `3d`) are lazy-loaded in `AppRoutingModule`.
+    - TypeScript imports: `baseUrl` is `./src`, allowing `app/...` path imports (e.g., `app/core/...`, `app/shared/...`).
+    - Internationalization constraint: Every user-facing text change or new UI feature MUST update all four translation files (`src/assets/i18n/en.json`, `es.json`, `pt.json`, `ja.json`) and use `@ngx-translate` pipes/services rather than hardcoded strings.
+    - Styling constraint: Use modern Dart Sass `@use 'app/styles/abstracts/variables' as *;` and `@use 'app/styles/abstracts/mixins' as *;`. Never use deprecated `@import` or global Sass functions. Use design tokens (`$matrix-void`, `$matrix-phosphor`, `$matrix-head`, `$matrix-soft`, etc.) and the `@include responsive($breakpoint)` mixin (`phone`, `tab-port`, `tab-land`, `big-desktop`). Keep component styles within the Angular production budget (6KB warning / 10KB error per component).
+    - Code style & Quality: Strict typing, single quotes, semicolons required, `app-` kebab-case component selectors, `app` camelCase directive selectors. Zero compiler/linter errors (`npm run lint`), zero build warnings, and 100% test pass rate in headless Chrome.
+
+# Per-artifact rules
+rules:
+  proposal:
+    - Clearly identify which feature modules (`src/app/modules/*`), layout components (`src/app/layout/*`), or core/shared modules are affected.
+    - Explicitly state what is out of scope.
+    - Note any impact on localization (`src/assets/i18n/*.json`) or production bundle/style budgets.
+  specs:
+    - Define clear, testable acceptance criteria for UI behavior, responsive breakpoints, and i18n translations across `en`, `es`, `pt`, and `ja`.
+  design:
+    - Specify module boundaries (eagerly loaded in `ContentLayoutComponent` vs. lazy-loaded route in `AppRoutingModule`).
+    - Document component state flow, reactive forms validation (if applicable), and SCSS styling approach respecting the 10KB per-component style budget.
+  tasks:
+    - Break work into small, verifiable steps covering implementation, i18n locale updates (`en`, `es`, `pt`, `ja`), unit tests (`*.spec.ts` using Jasmine and `ng-mocks`), and linting (`npm run lint`).
+
+# Per-operation guidance
+operations:
+  apply:
+    guidance:
+      - Ensure all new or modified user-facing strings are added to `en.json`, `es.json`, `pt.json`, and `ja.json`.
+      - Write or update Jasmine unit tests (`*.spec.ts`) using `TestBed` and `ng-mocks` for affected components and services.
+      - Verify code adheres to TypeScript strict typing, Dart Sass @use syntax, and component SCSS stays under the 6KB/10KB budget.
+  archive:
+    guidance:
+      - Summarize the archived change, affected Angular modules, and verification status before finishing.
+
