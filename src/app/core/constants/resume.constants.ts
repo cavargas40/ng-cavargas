@@ -13,7 +13,7 @@ export interface TimelineEntry {
 export type TimelineMap = Record<string, TimelineEntry>;
 
 export interface CapabilityPillar {
-  id: 'ai' | 'frontend' | 'backend' | 'cloud';
+  id: 'ai' | 'systems' | 'backend' | 'cloud' | 'frontend';
   icon: string;
   titleKey: string;
   subtitleKey: string;
@@ -124,7 +124,7 @@ export interface AiWorkflowStep {
   trace: AiHarnessTrace;
 }
 
-export type CaseStudyCategory = 'all' | 'ai' | 'distributed' | 'fullstack';
+export type CaseStudyCategory = 'all' | 'ai' | 'distributed' | 'fullstack' | 'cloud';
 
 export interface CaseStudyItem {
   id: string;
@@ -247,28 +247,28 @@ export const CAPABILITY_PILLARS: CapabilityPillar[] = [
     subtitleKey: 'CAPABILITIES.PILLARS.AI.SUBTITLE',
     descriptionKey: 'CAPABILITIES.PILLARS.AI.DESCRIPTION',
     skills: [
-      'Spec-Driven Development (OpenSpec)',
+      'Spec-Driven Development',
       'Agent Harnesses & Guardrails',
       'Context Engineering',
-      'Agentic Coding Workflows',
+      'Agentic Coding (Claude Code, Cursor, Antigravity)',
       'LLM Prompt & Tool Design',
       'Automated Spec Verification',
     ],
     highlight: true,
   },
   {
-    id: 'frontend',
-    icon: 'FE',
-    titleKey: 'CAPABILITIES.PILLARS.FRONTEND.TITLE',
-    subtitleKey: 'CAPABILITIES.PILLARS.FRONTEND.SUBTITLE',
-    descriptionKey: 'CAPABILITIES.PILLARS.FRONTEND.DESCRIPTION',
+    id: 'systems',
+    icon: 'SYS',
+    titleKey: 'CAPABILITIES.PILLARS.SYSTEMS.TITLE',
+    subtitleKey: 'CAPABILITIES.PILLARS.SYSTEMS.SUBTITLE',
+    descriptionKey: 'CAPABILITIES.PILLARS.SYSTEMS.DESCRIPTION',
     skills: [
-      'Angular (Signals & Standalone)',
-      'TypeScript & RxJS',
-      'React & Vue.js',
-      'Responsive SCSS Architecture',
-      'Web Performance & Accessibility',
-      'Karma / Jasmine Unit Testing',
+      'Rust',
+      'Golang',
+      'TypeScript & Node.js',
+      'C# / .NET Enterprise Systems',
+      'Memory Safety & High Concurrency',
+      'Linux Systems & Shell Scripting',
     ],
   },
   {
@@ -278,12 +278,12 @@ export const CAPABILITY_PILLARS: CapabilityPillar[] = [
     subtitleKey: 'CAPABILITIES.PILLARS.BACKEND.SUBTITLE',
     descriptionKey: 'CAPABILITIES.PILLARS.BACKEND.DESCRIPTION',
     skills: [
-      'Node.js (Express / AdonisJS)',
-      'Golang & Kotlin',
-      'Microservices Architecture',
-      '.NET / C# Enterprise Systems',
-      'RESTful & Event-Driven APIs',
-      'High-Concurrency Systems',
+      'NestJS & Express',
+      'Apache Kafka (Event Streaming)',
+      'GraphQL & gRPC APIs',
+      'TypeORM & Prisma ORMs',
+      'PostgreSQL & Redis',
+      'Distributed Microservices Architecture',
     ],
   },
   {
@@ -293,12 +293,28 @@ export const CAPABILITY_PILLARS: CapabilityPillar[] = [
     subtitleKey: 'CAPABILITIES.PILLARS.CLOUD.SUBTITLE',
     descriptionKey: 'CAPABILITIES.PILLARS.CLOUD.DESCRIPTION',
     skills: [
-      'PostgreSQL, MySQL & SQL Server',
-      'MongoDB & DynamoDB',
-      'Redis & Memcached Caching',
-      'Docker & Containerization',
-      'CI/CD Pipelines (Jenkins)',
-      'AWS & Azure Infrastructure',
+      'AWS & Azure Cloud Platforms',
+      'Terraform & Azure Bicep IaC',
+      'DRY Reusable CI/CD Pipelines',
+      'GitHub Actions, ADO, Bitbucket Pipelines',
+      'Docker & Container Orchestration',
+      'Zero-Downtime Deployment & Observability',
+    ],
+  },
+  {
+    id: 'frontend',
+    icon: 'FE',
+    titleKey: 'CAPABILITIES.PILLARS.FRONTEND.TITLE',
+    subtitleKey: 'CAPABILITIES.PILLARS.FRONTEND.SUBTITLE',
+    descriptionKey: 'CAPABILITIES.PILLARS.FRONTEND.DESCRIPTION',
+    skills: [
+      'Angular (Signals & Standalone)',
+      'React & Vue.js',
+      'Accessibility (a11y / WCAG 2.1 AA)',
+      'Vite & Build Tooling',
+      'Playwright & Cypress E2E',
+      'Karma / Jasmine Unit Testing',
+      'Responsive SCSS & i18n Architectures',
     ],
   },
 ];
@@ -310,11 +326,11 @@ export const AI_HARNESS_WORKFLOW_STEPS: AiWorkflowStep[] = [
     titleKey: 'PORTFOLIO.AI_SHOWCASE.STEPS.CONTEXT.TITLE',
     subtitleKey: 'PORTFOLIO.AI_SHOWCASE.STEPS.CONTEXT.SUBTITLE',
     descriptionKey: 'PORTFOLIO.AI_SHOWCASE.STEPS.CONTEXT.DESCRIPTION',
-    artifact: 'openspec/config.yaml',
+    artifact: 'specs/config.yaml',
     trace: {
-      title: 'ARTIFACT // openspec/config.yaml',
+      title: 'ARTIFACT // specs/config.yaml',
       status: 'STATUS: CONTEXT_BOUNDARIES_LOCKED',
-      code: `schema: spec-driven\ncontext: |\n  Engineer: Carlos Vargas (Senior Fullstack & AI Systems Engineer)\n  Stack: Angular 19, TypeScript, RxJS, Three.js\n  i18n: Mandatory 4-locale parity (en, es, pt, ja)\n  Budgets: Component SCSS <= 6KB warning / 10KB error`,
+      code: `schema: spec-driven\ncontext: |\n  Role: Staff Fullstack & AI Systems Engineer\n  Domain: Distributed Systems, Resilient Web, a11y & AI Harnesses\n  Standards: WCAG 2.1 AA, Deterministic Execution, Zero Drift`,
     },
   },
   {
@@ -327,7 +343,7 @@ export const AI_HARNESS_WORKFLOW_STEPS: AiWorkflowStep[] = [
     trace: {
       title: 'ARTIFACT // specs/engineering-case-studies-and-ai/spec.md',
       status: 'STATUS: 4/4 SHALL REQUIREMENTS VERIFIED',
-      code: `### Requirement: Dedicated AI Engineering & Harnesses Showcase\nThe Portfolio SHALL display the Spec-Driven AI workflow.\n\n#### Scenario: Inspecting the AI Harness Pipeline\n- WHEN a user selects a workflow stage\n- THEN the console renders the deterministic engineering contract`,
+      code: `### Requirement: Deterministic AI Systems Workflow\nThe system SHALL enforce specification contracts prior to code generation.\n\n#### Scenario: Contract Verification\n- WHEN an agent executes a planned task\n- THEN verification gates validate architectural adherence`,
     },
   },
   {
@@ -338,22 +354,22 @@ export const AI_HARNESS_WORKFLOW_STEPS: AiWorkflowStep[] = [
     descriptionKey: 'PORTFOLIO.AI_SHOWCASE.STEPS.HARNESS.DESCRIPTION',
     artifact: 'design.md + tasks.md',
     trace: {
-      title: 'ARTIFACT // changes/matrix-storytelling-redesign/tasks.md',
+      title: 'ARTIFACT // changes/spec-driven-architecture/tasks.md',
       status: 'STATUS: DETERMINISTIC_EXECUTION_READY',
-      code: `- [x] 1.1 Discrete Matrix character-grid rain & scroll-warp canvas\n- [x] 1.2 Scroll-driven laser spine & 3D perspective chapter lock-in\n- [x] 1.3 Interactive AI Harness console & case study dossiers`,
+      code: `- [x] 1.1 Specification contract & domain boundary definition\n- [x] 1.2 Agent context engineering & guardrail configuration\n- [x] 1.3 Deterministic execution & automated regression verification`,
     },
   },
   {
     step: '04',
-    badge: 'CI / Karma',
+    badge: 'CI / Gates',
     titleKey: 'PORTFOLIO.AI_SHOWCASE.STEPS.VERIFY.TITLE',
     subtitleKey: 'PORTFOLIO.AI_SHOWCASE.STEPS.VERIFY.SUBTITLE',
     descriptionKey: 'PORTFOLIO.AI_SHOWCASE.STEPS.VERIFY.DESCRIPTION',
-    artifact: 'Karma/Jasmine + Build Gates',
+    artifact: 'CI Verification & Quality Gates',
     trace: {
-      title: 'ARTIFACT // verification/karma-build-gate.log',
+      title: 'ARTIFACT // verification/quality-gate.log',
       status: 'STATUS: ALL QUALITY GATES GREEN',
-      code: `$ npm run lint        -> 0 errors\n$ npm run build-prod  -> Initial bundle 538 KB (0 budget warnings)\n$ npx ng test         -> ChromeHeadlessCI: 35 of 35 SUCCESS`,
+      code: `$ spec-verify   -> 100% specification contracts validated\n$ test:suite    -> All test suites green (0 regressions)\n$ quality-gate  -> Zero architectural drift detected`,
     },
   },
 ];
@@ -368,12 +384,12 @@ export const ENGINEERING_CASE_STUDIES: CaseStudyItem[] = [
     architectureKey: 'PORTFOLIO.CASES.AI_HARNESS.ARCHITECTURE',
     impactKey: 'PORTFOLIO.CASES.AI_HARNESS.IMPACT',
     tags: [
-      'OpenSpec',
+      'Technical Specs',
       'Agent Harnesses',
       'Context Engineering',
-      'Angular 19',
-      'TypeScript',
-      'Jasmine',
+      'Multi-Model Guardrails',
+      'Quality Gates',
+      'Automated Verification',
     ],
     repoUrl: 'https://github.com/cavargas40/ng-cavargas',
   },
@@ -396,20 +412,40 @@ export const ENGINEERING_CASE_STUDIES: CaseStudyItem[] = [
     ],
   },
   {
-    id: 'polyglot-web-platforms',
+    id: 'cloud-iac-pipelines',
+    category: 'cloud',
+    badgeKey: 'PORTFOLIO.CASES.CLOUD_IAC.BADGE',
+    titleKey: 'PORTFOLIO.CASES.CLOUD_IAC.TITLE',
+    problemKey: 'PORTFOLIO.CASES.CLOUD_IAC.PROBLEM',
+    architectureKey: 'PORTFOLIO.CASES.CLOUD_IAC.ARCHITECTURE',
+    impactKey: 'PORTFOLIO.CASES.CLOUD_IAC.IMPACT',
+    tags: [
+      'AWS',
+      'Azure',
+      'Terraform',
+      'Bicep',
+      'GitHub Actions',
+      'Azure DevOps',
+      'Bitbucket Pipelines',
+    ],
+    repoUrl: 'https://github.com/cavargas40',
+  },
+  {
+    id: 'reactive-web-platforms',
     category: 'fullstack',
-    badgeKey: 'PORTFOLIO.CASES.POLYGLOT_WEB.BADGE',
-    titleKey: 'PORTFOLIO.CASES.POLYGLOT_WEB.TITLE',
-    problemKey: 'PORTFOLIO.CASES.POLYGLOT_WEB.PROBLEM',
-    architectureKey: 'PORTFOLIO.CASES.POLYGLOT_WEB.ARCHITECTURE',
-    impactKey: 'PORTFOLIO.CASES.POLYGLOT_WEB.IMPACT',
+    badgeKey: 'PORTFOLIO.CASES.REACTIVE_WEB.BADGE',
+    titleKey: 'PORTFOLIO.CASES.REACTIVE_WEB.TITLE',
+    problemKey: 'PORTFOLIO.CASES.REACTIVE_WEB.PROBLEM',
+    architectureKey: 'PORTFOLIO.CASES.REACTIVE_WEB.ARCHITECTURE',
+    impactKey: 'PORTFOLIO.CASES.REACTIVE_WEB.IMPACT',
     tags: [
       'Angular',
       'React',
       'Vue.js',
-      'MongoDB',
-      'DynamoDB',
-      'Jenkins CI/CD',
+      'Accessibility (a11y)',
+      'Vite',
+      'Playwright',
+      'Cypress',
     ],
     repoUrl: 'https://github.com/cavargas40',
   },

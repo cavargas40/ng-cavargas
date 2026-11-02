@@ -1,11 +1,18 @@
 @use 'app/styles/abstracts/variables' as *;
 @use 'app/styles/abstracts/mixins' as *;
 
+:host {
+  display: block;
+}
+
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
-  background: rgba($matrix-void, 0.88);
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba($matrix-void, 0.92);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba($matrix-phosphor, 0.18);
 

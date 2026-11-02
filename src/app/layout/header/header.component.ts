@@ -13,11 +13,12 @@ import {
 export class HeaderComponent {
   public readonly workflowSteps: AiWorkflowStep[] = AI_HARNESS_WORKFLOW_STEPS;
   public readonly coreStack: string[] = [
-    'Angular 19',
     'TypeScript',
-    'Node.js',
-    'Golang',
-    'OpenSpec AI Harnesses',
-    'Microservices',
+    'Rust',
+    'Go',
+    'Kafka',
+    'NestJS',
+    'Terraform',
+    'AI Harnesses',
   ];
 }

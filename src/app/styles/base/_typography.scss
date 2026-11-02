@@ -152,22 +152,24 @@ body {
 .tech-tag {
   display: inline-flex;
   align-items: center;
-  padding: 0.35rem 1rem;
+  padding: 0.35rem 0.85rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
+  line-height: 1.45;
   font-weight: 500;
   color: $phosphor;
-  background: rgba($phosphor, 0.12);
-  border: 1px solid $surface-border;
-  border-radius: $radius-pill;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  background: rgba($phosphor, 0.08);
+  border: 1px solid rgba($phosphor, 0.28);
+  border-radius: 4px;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 
   &--ai {
     border-color: $surface-border-accent;
-    background: rgba($phosphor, 0.18);
+    background: rgba($phosphor, 0.16);
   }
 
   &:hover {
     border-color: $surface-border-accent;
+    background: rgba($phosphor, 0.16);
   }
 }

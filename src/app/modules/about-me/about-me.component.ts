@@ -31,5 +31,13 @@ export class AboutMeComponent {
       labelKey: 'ABOUT_ME.METHODOLOGY_LABEL',
       valueKey: 'ABOUT_ME.METHODOLOGY_VALUE',
     },
+    {
+      labelKey: 'ABOUT_ME.AVAILABILITY_LABEL',
+      valueKey: 'ABOUT_ME.AVAILABILITY_VALUE',
+    },
+    {
+      labelKey: 'ABOUT_ME.TIMEZONE_LABEL',
+      valueKey: 'ABOUT_ME.TIMEZONE_VALUE',
+    },
   ];
 }

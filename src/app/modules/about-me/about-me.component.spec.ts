@@ -24,12 +24,22 @@ describe('AboutMeComponent', () => {
   it('should create without age calculation and render 3 evolution eras', () => {
     expect(component).toBeTruthy();
     expect((component as any).age).toBeUndefined();
-    expect(component.highlights.length).toBe(3);
+    expect(component.highlights.length).toBe(5);
     expect(component.eras.length).toBe(3);
 
     const compiled = fixture.nativeElement as HTMLElement;
     const eraCards = compiled.querySelectorAll('.about-me__era-card');
     expect(eraCards.length).toBe(3);
+  });
+
+  it('should render operator telemetry card without personal portrait image', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const portraitImg = compiled.querySelector('img[src*="about-me.jpg"]');
+    const operatorCard = compiled.querySelector('.about-me__operator-card');
+
+    expect(portraitImg).toBeNull();
+    expect(operatorCard).toBeTruthy();
+    expect(operatorCard?.textContent).toContain('ABOUT_ME.LOCATION_VALUE');
   });
 
   it('should render direct email link and omit Facebook link', () => {
