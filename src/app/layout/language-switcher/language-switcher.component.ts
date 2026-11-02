@@ -11,7 +11,6 @@ export class LanguageSwitcherComponent implements OnInit {
   public languages = [
     { id: 'en', name: 'English', flag: 'us' },
     { id: 'es', name: 'Español', flag: 'co' },
-    { id: 'pt', name: 'Português', flag: 'pt' },
     { id: 'ja', name: '日本語', flag: 'jp' },
   ];
 
@@ -30,7 +29,11 @@ export class LanguageSwitcherComponent implements OnInit {
 
   changeLanguage(): void {
     this.translateService.use(this.selectedLanguage);
-    localStorage.setItem('lang', this.selectedLanguage);
+    try {
+      localStorage.setItem('lang', this.selectedLanguage);
+    } catch {
+      // Ignore storage write error in private environments
+    }
     this.loadLanguage();
   }
 
@@ -49,6 +52,23 @@ export class LanguageSwitcherComponent implements OnInit {
   }
 
   loadLanguage(): void {
-    this.selectedLanguage = localStorage.getItem('lang') || 'en';
+    let storedLang: string | null = null;
+    try {
+      storedLang = localStorage.getItem('lang');
+    } catch {
+      storedLang = null;
+    }
+
+    const isValid = this.languages.some((lang) => lang.id === storedLang);
+    if (isValid && storedLang) {
+      this.selectedLanguage = storedLang;
+    } else {
+      this.selectedLanguage = 'en';
+      try {
+        localStorage.setItem('lang', 'en');
+      } catch {
+        // Ignore storage write error
+      }
+    }
   }
 }

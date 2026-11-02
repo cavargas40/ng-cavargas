@@ -100,7 +100,7 @@
     }
   }
 
-  &__portrait-card {
+  &__operator-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -109,22 +109,30 @@
     background: rgba($matrix-void, 0.85);
   }
 
-  &__portrait-frame {
-    overflow: hidden;
-    border-radius: 6px;
-    border: 1px solid rgba($matrix-phosphor, 0.25);
+  &__operator-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid rgba($matrix-phosphor, 0.2);
+    font-size: 1.15rem;
   }
 
-  &__picture {
-    width: 100%;
-    height: 28rem;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.35s ease;
+  &__operator-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    border-left: 2px solid $matrix-phosphor;
+  }
 
-    &:hover {
-      transform: scale(1.03);
-    }
+  &__operator-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
   }
 
   &__connect {

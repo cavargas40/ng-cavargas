@@ -7,10 +7,6 @@
     </p>
   </div>
 
-  <div class="resume__capabilities" appReveal>
-    <app-skills></app-skills>
-  </div>
-
   <div class="resume__timeline-wrapper" appReveal>
     <div class="resume__tabs" role="tablist">
       <button
@@ -40,15 +36,15 @@
     </div>
 
     <div class="resume__content">
-      <ng-container *ngIf="selectedTab === 'experience'">
+      <div *ngIf="selectedTab === 'experience'" class="resume__tab-pane">
         <app-time-line [timeline]="experienceTimeLine"></app-time-line>
-      </ng-container>
-      <ng-container *ngIf="selectedTab === 'education'">
+      </div>
+      <div *ngIf="selectedTab === 'education'" class="resume__tab-pane">
         <app-time-line [timeline]="educationTimeLine"></app-time-line>
-      </ng-container>
-      <ng-container *ngIf="selectedTab === 'skills'">
+      </div>
+      <div *ngIf="selectedTab === 'skills'" class="resume__tab-pane">
         <app-skills></app-skills>
-      </ng-container>
+      </div>
     </div>
   </div>
 </section>

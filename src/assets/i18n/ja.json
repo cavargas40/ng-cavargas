@@ -1,11 +1,11 @@
 {
   "NAME": "カルロス・バルガス",
-  "CAREER": "シニアフルスタック＆AIソフトウェアエンジニア",
+  "CAREER": "スタッフフルスタック＆AIシステムエンジニア",
   "LANGUAGE": "言語",
   "STORY": {
     "CHAPTER_00": {
       "TAG": "CHAPTER 00 // SIGNAL_INITIALIZATION",
-      "TITLE": "Carlos Vargas // シニアフルスタック＆AIシステムエンジニア",
+      "TITLE": "Carlos Vargas // スタッフフルスタック＆AIシステムエンジニア",
       "SUBTITLE": "高信頼なWebプラットフォーム、高並行マイクロサービス、仕様主導型AIハーネスの設計・構築。",
       "COMMAND_PROMPT": "cavargas@matrix-core:~/harness",
       "SYSTEM_READY": "STATUS: ALL SYSTEMS OPERATIONAL",
@@ -14,7 +14,7 @@
     "CHAPTER_01": {
       "TAG": "CHAPTER 01 // THE_CRAFT_AND_EVOLUTION",
       "TITLE": "エンジニアリングの軌跡と技術的進化",
-      "SUBTITLE": "トランザクション指向のリレーショナル基盤からハイパースケールな分散サービス、仕様主導型AIハーネスに至る10年以上の進化。"
+      "SUBTITLE": "トランザクション指向のリレーショナル基盤からハイパースケールな分散マイクロサービス、仕様主導型AIハーネスに至る10年以上の進化。"
     },
     "CHAPTER_02": {
       "TAG": "CHAPTER 02 // SPEC-DRIVEN_AI_HARNESS_ENGINE",
@@ -36,7 +36,8 @@
     }
   },
   "HERO": {
-    "BADGE": "シニアソフトウェアエンジニア • AI＆分散システム",
+    "BADGE": "スタッフフルスタック＆AIシステムエンジニア • 分散システム＆AI",
+    "LOGISTICS": "リモート勤務可（全世界） • ニュージーランド時間（UTC+12 / UTC+13）",
     "SUMMARY": "仕様駆動開発（Spec-Driven Development）とエージェントハーネスを活用し、堅牢なWebプラットフォーム、高並行マイクロサービス、再現性の高いAIエンジニアリングワークフローを構築します。",
     "CTA_WORK": "エンジニアリング事例を見る",
     "CTA_CONTACT": "お問い合わせ",
@@ -52,26 +53,34 @@
   },
   "ABOUT_ME": {
     "EYEBROW": "エンジニアリング・プロフィール",
-    "FIRSTLY": "10年以上にわたり本番環境のWebアプリケーションと分散バックエンドサービスの設計・構築・スケーリングを手掛けてきたシニアフルスタックエンジニアです。複雑なドメイン課題をクリーンで保守性の高いアーキテクチャへと落とし込むことを得意としています。",
-    "SECONDLY": "コンピュータシステムエンジニアとしてアジャイル開発の豊富な経験を持ち、フルスタック技術（Angular、React、Node.js、Golang、SQL/NoSQL）とAI支援エンジニアリングを融合。構造化された仕様書、コンテキストエンジニアリング、エージェントハーネスを用いて高品質なソフトウェアを提供します。",
+    "OPERATOR_TITLE": "OPERATOR // IDENTITY_RECORD",
+    "OPERATOR_ROLE": "スタッフフルスタック＆AIシステムエンジニア",
+    "FIRSTLY": "10年以上にわたり本番Webアプリケーション、分散マイクロサービス、自動化クラウド基盤の設計・構築・スケーリングを手掛けてきたスタッフフルスタック＆AIシステムエンジニアです。複雑なドメイン課題を高信頼かつ高性能なアーキテクチャへと落とし込むことを得意としています。",
+    "SECONDLY": "コンピュータシステムエンジニアとしてアジャイル開発と技術的卓越性を追求し、堅牢な基盤技術（TypeScript、Rust、Go、NestJS、Kafka、Angular、React）と仕様駆動型AIエンジニアリングを融合。厳密な仕様策定、コンテキストエンジニアリング、エージェントハーネスにより高信頼なソフトウェアを提供します。",
     "EMAIL": "メール",
     "EXPERIENCE_LABEL": "実務経験",
     "EXPERIENCE_VALUE": "ソフトウェアエンジニアリング歴 14年以上",
     "FOCUS_LABEL": "専門領域",
-    "FOCUS_VALUE": "フルスタック設計・マイクロサービス・AIエンジニアリング",
+    "FOCUS_VALUE": "分散システム・リアクティブWeb・AIエンジニアリング",
     "METHODOLOGY_LABEL": "開発手法",
     "METHODOLOGY_VALUE": "仕様駆動AIハーネス＆自動品質ゲート",
+    "AVAILABILITY_LABEL": "勤務形態",
+    "AVAILABILITY_VALUE": "リモート勤務可（全世界）",
+    "TIMEZONE_LABEL": "タイムゾーン",
+    "TIMEZONE_VALUE": "ニュージーランド時間（UTC+12 / UTC+13）",
+    "LOCATION_LABEL": "拠点",
+    "LOCATION_VALUE": "ニュージーランド",
     "ERAS": {
       "ERA_01": {
-        "TAG": "ERA 01 // 2010–2016",
+        "TAG": "ERA 01 // 2010-2016",
         "BADGE": "CORE_RIGOR",
         "TITLE": "エンタープライズとリレーショナルの基盤",
         "DESCRIPTION": "厳格なトランザクション整合性、.NET/C#、SQL Server、Windows Azureの専門教育を受けたコンピュータシステムエンジニアとして、高信頼なERPおよび会計システムを設計。"
       },
       "ERA_02": {
-        "TAG": "ERA 02 // 2017–2022",
+        "TAG": "ERA 02 // 2017-2022",
         "BADGE": "HYPER_SCALE",
-        "TITLE": "多言語マイクロサービスとリアクティブWeb",
+        "TITLE": "分散マイクロサービスとリアクティブWeb",
         "DESCRIPTION": "RappiのLATAM急成長期において、Golang、Node.js、Kotlinによる高並行分散サービスと、Angular、React、Vueプラットフォームを大規模にスケールアウト。"
       },
       "ERA_03": {
@@ -84,27 +93,32 @@
   },
   "CAPABILITIES": {
     "EYEBROW": "コア・ケイパビリティ",
-    "SUBTITLE": "AI支援ワークフロー、フロントエンド設計、分散バックエンド、クラウド基盤における実践的な技術力。",
+    "SUBTITLE": "AI支援ワークフロー、システムプログラミング、分散バックエンド、クラウド基盤、最新フロントエンドにおける実践的な技術力。",
     "PILLARS": {
       "AI": {
-        "TITLE": "AI支援エンジニアリング＆ハーネス",
-        "SUBTITLE": "仕様駆動AI開発（Spec-Driven AI）",
-        "DESCRIPTION": "OpenSpec、カスタムエージェントハーネス、構造化されたリポジトリコンテキスト、自動テスト検証を組み合わせた決定論的なAI開発ワークフローの構築。"
+        "TITLE": "AIシステム＆エージェントハーネス",
+        "SUBTITLE": "仕様駆動AIエンジニアリング",
+        "DESCRIPTION": "実行可能な仕様（Specs）、マルチモデルエージェントハーネス（Claude Code、Cursor、Antigravity）、コンテキスト制御、自動検証を組み合わせた再現性の高いAI開発ワークフローの構築。"
       },
-      "FRONTEND": {
-        "TITLE": "フロントエンド・アーキテクチャ",
-        "SUBTITLE": "リアクティブ＆スケーラブルUI",
-        "DESCRIPTION": "モダンAngular（Signals、Standalone）、React、Vue.js、TypeScript、モジュール化されたSCSS設計による高速でアクセシブルなSPA開発。"
+      "SYSTEMS": {
+        "TITLE": "システム＆コア言語",
+        "SUBTITLE": "高パフォーマンス＆高並行処理",
+        "DESCRIPTION": "Rust、Golang、TypeScript/Node.js、C# / .NET を用いたメモリ安全・低遅延・高並行システムの設計と実装。"
       },
       "BACKEND": {
-        "TITLE": "バックエンド＆分散システム",
-        "SUBTITLE": "マイクロサービス＆高並行API",
-        "DESCRIPTION": "Node.js、Golang、Kotlin、.NET/C# を用い、イベント駆動およびマイクロサービスパターンに基づいた堅牢なAPI・サービス設計。"
+        "TITLE": "バックエンド、API＆イベントストリーミング",
+        "SUBTITLE": "分散マイクロサービス＆イベントパイプライン",
+        "DESCRIPTION": "NestJS、Apache Kafka、GraphQL、gRPC、TypeORM、PostgreSQL、Redis を活用したイベント駆動型マイクロサービスと高スループットAPIの設計。"
       },
       "CLOUD": {
-        "TITLE": "クラウド・データ・DevOps",
-        "SUBTITLE": "データ永続化・キャッシュ・CI/CD",
-        "DESCRIPTION": "RDBおよびNoSQL（PostgreSQL、MySQL、SQL Server、MongoDB、DynamoDB）、Redisキャッシュ、Dockerコンテナ、CI/CDパイプラインの運用。"
+        "TITLE": "クラウド基盤、IaC＆CI/CD",
+        "SUBTITLE": "自動化インフラ＆共通パイプライン",
+        "DESCRIPTION": "AWSおよびAzureにおけるTerraform、BicepによるIaC設計と、GitHub Actions、Azure DevOps、Bitbucket PipelinesにまたがるDRY共通CI/CDライブラリの構築。"
+      },
+      "FRONTEND": {
+        "TITLE": "モダンフロントエンド＆テスト自動化",
+        "SUBTITLE": "リアクティブWebアーキテクチャ",
+        "DESCRIPTION": "モダンAngular（Signals、Standalone）、React、Vue.js、Vite、Playwright、Cypress、モジュール化SCSSによる高速でアクセシブル（a11y / WCAG準拠）なWebプラットフォームの構築。"
       }
     }
   },
@@ -117,7 +131,7 @@
       "EXPERIENCE": {
         "2020": {
           "TITLE": "2020年1月 - 現在",
-          "POSITION": "シニアフルスタック＆AIソフトウェアエンジニア",
+          "POSITION": "スタッフフルスタック＆AIシステムエンジニア",
           "COMPANY": "独立 / コンサルティング",
           "DETAIL": "海外クライアント向けにフルスタックWebプラットフォームおよびクラウドサービスを設計・提供。仕様駆動AIエンジニアリング、エージェントハーネス、モダンAngular/React、スケーラブルなNode.js/Goバックエンドを統合。"
         },
@@ -181,6 +195,7 @@
       "ALL": "すべて",
       "AI": "AI＆仕様ハーネス",
       "DISTRIBUTED": "分散システム＆ERP",
+      "CLOUD": "クラウド＆CI/CD",
       "FULLSTACK": "フルスタック基盤"
     },
     "AI_SHOWCASE": {
@@ -220,42 +235,49 @@
       "AI_HARNESS": {
         "BADGE": "AIエンジニアリング＆設計",
         "TITLE": "仕様駆動AIエンジニアリング＆エージェントハーネス基盤",
-        "PROBLEM": "非構造的なプロンプトによる開発は、アーキテクチャの逸脱や回帰バグ、多言語リソースの不整合を引き起こします。",
-        "ARCHITECTURE": "OpenSpecベースのワークフロー（`config.yaml` コンテキストハーネス、仕様差分、技術設計、タスク追跡）と Angular 19 アーキテクチャを統合。",
-        "IMPACT": "段階的で確実なモダナイゼーション、4言語間の完全な翻訳パリティ、コンポーネントあたり6KB以下のスタイル予算を達成。"
+        "PROBLEM": "非構造的なプロンプトによる開発は、アーキテクチャの逸脱、回帰バグ、および大規模な本番コードベースでの非決定的なコード生成を引き起こします。",
+        "ARCHITECTURE": "構造化コンテキストハーネス、実行可能な技術仕様、アーキテクチャ設計契約、追跡可能な決定論的タスクを備えた仕様駆動（Spec-driven）ワークフローを実装。",
+        "IMPACT": "複雑な移行における設計乖離の排除、100%の仕様準拠、および自動品質ゲートによる回帰バグゼロを達成。"
       },
       "RAPPI_PLATFORM": {
         "BADGE": "分散マイクロサービス",
         "TITLE": "高並行社内オペレーション基盤（Rappi）",
         "PROBLEM": "中南米全域で急拡大するオペレーションを支えるため、高負荷に耐える低遅延バックエンドと管理ツールが必要でした。",
-        "ARCHITECTURE": "Golang、Kotlin、Node.js（Express/AdonisJS）によるマイクロサービスと、Angular/React/Vue、Redis/Memcached、PostgreSQL/MongoDB/DynamoDB、Docker/Jenkins CI/CD を統合。",
-        "IMPACT": "高い耐障害性を持つ社内ツール群と継続的デリバリー基盤を構築し、高速な事業拡大を支援。"
+        "ARCHITECTURE": "Golang、Kotlin、Node.js（Express/AdonisJS）による分散マイクロサービスと、Angular/React/Vue、Redis/Memcached、PostgreSQL/MongoDB/DynamoDB、Docker/Jenkins CI/CD を統合。",
+        "IMPACT": "ミリ秒未満の注文状態伝播、販促ピーク時99.99%の稼働率、高い耐障害性を誇るオペレーションパイプラインを実現。"
       },
-      "POLYGLOT_WEB": {
-        "BADGE": "フルスタックWeb設計",
+      "CLOUD_IAC": {
+        "BADGE": "クラウド設計＆DevOps",
+        "TITLE": "クラウド基盤＆統合共通CI/CDパイプライン",
+        "PROBLEM": "マルチクラウド環境における断片化したデプロイスクリプトがリリース速度低下と環境差分を引き起こしていました。",
+        "ARCHITECTURE": "モジュール化されたIaC（AWS向けTerraform、Azure向けBicep）を設計し、GitHub Actions、Azure DevOps、Bitbucket Pipelines共通のDRYパイプラインライブラリを構築。",
+        "IMPACT": "パイプライン保守工数を40%以上削減、デプロイ時間を65%短縮、ポリシー検査によるダウンタイムゼロの自動リリースを達成。"
+      },
+      "REACTIVE_WEB": {
+        "BADGE": "リアクティブWeb設計",
         "TITLE": "マルチクライアント対応リアクティブWeb＆多言語化基盤",
-        "PROBLEM": "グローバル向けWebアプリには高速な初期表示、レスポンシブ設計、シームレスな多言語切り替えが求められます。",
-        "ARCHITECTURE": "Angular、RxJS、ネイティブ IntersectionObserver アニメーションと、英・西・葡・日の4言語動的JSONローダーを組み合わせたモジュラー設計。",
-        "IMPACT": "リロードなしの言語切り替え、モバイルから大型ディスプレイまでの最適な表示、高い保守性を実現。"
+        "PROBLEM": "グローバル向けWebアプリには1秒未満の初期表示、レスポンシブ設計、シームレスな多言語切り替えが求められます。",
+        "ARCHITECTURE": "Angular、RxJS、ネイティブ IntersectionObserver アニメーションと、英・西・日の動的JSONローダーを組み合わせたモジュラー設計。",
+        "IMPACT": "1秒未満の高速初期レンダリング、リロードなしの多言語切り替え、アクセシブル（a11y / WCAG AA準拠）なレスポンシブ表示を実現。"
       },
       "ENTERPRISE_ERP": {
         "BADGE": "エンタープライズ基幹システム",
         "TITLE": "プロジェクト管理・会計エンタープライズERP",
-        "PROBLEM": "複雑な財務・プロジェクト会計処理には厳격なトランザクション整合性と迅速なWebレポート機能が必要でした。",
+        "PROBLEM": "複雑な財務・プロジェクト会計処理には厳格なトランザクション整合性と迅速なWebレポート機能が必要でした。",
         "ARCHITECTURE": ".NET / C# マルチティアWebアーキテクチャと SQL Server / Transact-SQL ストアドプロシージャを組み合わせ、SCRUMで反復開発。",
-        "IMPACT": "信頼性の高いリレーショナルデータモデルにより、基幹会計およびプロジェクト追跡業務を効率化。"
+        "IMPACT": "500名以上の同時接続企業ユーザーに対応した会計業務自動化、サブセコンドでの帳票生成、トランザクションデータ損失ゼロを達成。"
       }
     }
   },
   "CONTACT": {
     "GET_IN_TOUCH": "堅牢なソフトウェアを共に構築しましょう",
-    "TOUCH_INFO": "シニアフルスタック設計、分散システム、AI支援エンジニアリングに関するご相談・ご依頼を受け付けています。",
+    "TOUCH_INFO": "スタッフフルスタック＆AIシステムエンジニアのポジションに対応可能です。ニュージーランド時間でのグローバルリモート勤務に対応。",
     "AVAILABLE": "案件・ポジション相談可",
     "COPY_EMAIL": "メールをコピー",
     "COPIED": "コピーしました！"
   },
   "FOOTER": {
-    "TAGLINE": "シニアフルスタック＆AIソフトウェアエンジニア — Built with Angular & OpenSpec.",
+    "TAGLINE": "スタッフフルスタック＆AIシステムエンジニア - Built with Angular & Specs.",
     "RIGHTS": "All rights reserved."
   },
   "COMMON": {

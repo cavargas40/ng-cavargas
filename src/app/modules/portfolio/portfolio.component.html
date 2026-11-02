@@ -52,16 +52,20 @@
     </div>
   </div>
 
-  <!-- 4 Capability Pillars -->
+  <!-- 5 Capability Pillars -->
   <div class="portfolio__pillars stagger-item">
     <div
       *ngFor="let pillar of capabilityPillars"
       class="portfolio__pillar-card terminal-card"
       [class.phosphor-border]="pillar.highlight"
     >
-      <div class="portfolio__pillar-top font-mono-code">
-        <span class="phosphor-text">[PILLAR // {{ pillar.icon }}]</span>
-        <span class="phosphor-pill">{{ pillar.subtitleKey | translate }}</span>
+      <div class="portfolio__pillar-header font-mono-code">
+        <span class="portfolio__pillar-badge phosphor-text font-bold">
+          [PILLAR // {{ pillar.icon }}]
+        </span>
+        <span class="portfolio__pillar-subtitle">
+          {{ pillar.subtitleKey | translate }}
+        </span>
       </div>
       <h3 class="portfolio__pillar-title font-bold">{{ pillar.titleKey | translate }}</h3>
       <p class="portfolio__pillar-desc">{{ pillar.descriptionKey | translate }}</p>
@@ -109,7 +113,8 @@
   <div class="portfolio__grid stagger-item">
     <article
       class="portfolio__card terminal-card"
-      *ngFor="let study of filteredCaseStudies; let idx = index"
+      *ngFor="let study of caseStudies; let idx = index"
+      [class.is-filtered-out]="selectedCategory !== 'all' && study.category !== selectedCategory"
       [class.phosphor-border]="study.category === 'ai'"
     >
       <div class="portfolio__card-top font-mono-code">

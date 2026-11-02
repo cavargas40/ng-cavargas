@@ -1,11 +1,11 @@
 {
   "NAME": "Carlos Vargas",
-  "CAREER": "Senior Fullstack & AI-Augmented Software Engineer",
+  "CAREER": "Staff Fullstack & AI Systems Engineer",
   "LANGUAGE": "Language",
   "STORY": {
     "CHAPTER_00": {
       "TAG": "CHAPTER 00 // SIGNAL_INITIALIZATION",
-      "TITLE": "Carlos Vargas // Senior Fullstack & AI Systems Engineer",
+      "TITLE": "Carlos Vargas // Staff Fullstack & AI Systems Engineer",
       "SUBTITLE": "Architecting resilient web platforms, high-concurrency microservices, and deterministic AI harnesses.",
       "COMMAND_PROMPT": "cavargas@matrix-core:~/harness",
       "SYSTEM_READY": "STATUS: ALL SYSTEMS OPERATIONAL",
@@ -14,7 +14,7 @@
     "CHAPTER_01": {
       "TAG": "CHAPTER 01 // THE_CRAFT_AND_EVOLUTION",
       "TITLE": "Engineering Craft & Architectural Evolution",
-      "SUBTITLE": "Over a decade of engineering evolution—from transactional relational cores to hyper-scale polyglot services and spec-driven AI harnesses."
+      "SUBTITLE": "Over a decade of engineering evolution - from transactional relational cores to hyper-scale distributed microservices and spec-driven AI harnesses."
     },
     "CHAPTER_02": {
       "TAG": "CHAPTER 02 // SPEC-DRIVEN_AI_HARNESS_ENGINE",
@@ -36,7 +36,8 @@
     }
   },
   "HERO": {
-    "BADGE": "Senior Software Engineer • AI & Distributed Systems",
+    "BADGE": "Staff Fullstack & AI Systems Engineer • Distributed & AI Systems",
+    "LOGISTICS": "Open to Remote (Worldwide) • New Zealand Timezone (UTC+12 / UTC+13)",
     "SUMMARY": "Architecting resilient web platforms, high-concurrency microservices, and deterministic AI-augmented engineering workflows driven by specifications and agent harnesses.",
     "CTA_WORK": "Explore Engineering Work",
     "CTA_CONTACT": "Get in Touch",
@@ -52,26 +53,34 @@
   },
   "ABOUT_ME": {
     "EYEBROW": "Engineering Profile",
-    "FIRSTLY": "I am a Senior Fullstack Software Engineer with over a decade of hands-on experience designing, building, and scaling production web applications and distributed backend services. I focus on turning complex domain problems into clean, maintainable architectures.",
-    "SECONDLY": "As a Computer Systems Engineer experienced in agile delivery and modern software craftsmanship, I combine deep fullstack foundations (Angular, React, Node.js, Golang, SQL/NoSQL) with AI-augmented engineering—using structured specifications, context engineering, and agent harnesses to deliver reliable, well-tested software.",
+    "OPERATOR_TITLE": "OPERATOR // IDENTITY_RECORD",
+    "OPERATOR_ROLE": "Staff Fullstack & AI Systems Engineer",
+    "FIRSTLY": "I am a Staff Fullstack & AI Systems Engineer with over a decade of hands-on experience designing, building, and scaling production web applications, distributed microservices, and automated cloud platforms. I focus on turning complex domain problems into clean, high-performance systems.",
+    "SECONDLY": "As a Computer Systems Engineer experienced in agile delivery and modern software craftsmanship, I combine deep fullstack foundations (TypeScript, Rust, Go, NestJS, Kafka, Angular, React) with AI-augmented engineering - using structured specifications, context engineering, and agent harnesses to deliver reliable, well-tested software.",
     "EMAIL": "Email",
     "EXPERIENCE_LABEL": "Experience",
     "EXPERIENCE_VALUE": "14+ Years in Software Engineering",
     "FOCUS_LABEL": "Core Focus",
-    "FOCUS_VALUE": "Fullstack Architecture, Microservices & AI Engineering",
+    "FOCUS_VALUE": "Distributed Systems, Reactive Web & AI Engineering",
     "METHODOLOGY_LABEL": "Workflow",
     "METHODOLOGY_VALUE": "Spec-Driven AI Harnesses & Automated Quality Gates",
+    "AVAILABILITY_LABEL": "Availability",
+    "AVAILABILITY_VALUE": "Open to Remote (Worldwide)",
+    "TIMEZONE_LABEL": "Timezone",
+    "TIMEZONE_VALUE": "New Zealand Time (UTC+12 / UTC+13)",
+    "LOCATION_LABEL": "Location",
+    "LOCATION_VALUE": "New Zealand",
     "ERAS": {
       "ERA_01": {
-        "TAG": "ERA 01 // 2010–2016",
+        "TAG": "ERA 01 // 2010-2016",
         "BADGE": "CORE_RIGOR",
         "TITLE": "Enterprise & Relational Foundations",
-        "DESCRIPTION": "Computer Systems Engineer trained in strict transactional integrity, .NET/C#, SQL Server, and Windows Azure—architecting ERP and accounting systems where every query matters."
+        "DESCRIPTION": "Computer Systems Engineer trained in strict transactional integrity, .NET/C#, SQL Server, and Windows Azure - architecting ERP and accounting systems where every query matters."
       },
       "ERA_02": {
-        "TAG": "ERA 02 // 2017–2022",
+        "TAG": "ERA 02 // 2017-2022",
         "BADGE": "HYPER_SCALE",
-        "TITLE": "Polyglot Microservices & Reactive Web",
+        "TITLE": "Distributed Microservices & Reactive Web",
         "DESCRIPTION": "Scaled high-concurrency distributed services in Golang, Node.js, and Kotlin alongside Angular, React, and Vue platforms for hyper-growth LATAM operations at Rappi."
       },
       "ERA_03": {
@@ -84,27 +93,32 @@
   },
   "CAPABILITIES": {
     "EYEBROW": "Core Competencies",
-    "SUBTITLE": "Production-proven capabilities across AI-augmented workflows, frontend architecture, distributed backends, and cloud infrastructure.",
+    "SUBTITLE": "Production-proven capabilities across AI-augmented workflows, systems programming, distributed backends, cloud infrastructure, and modern frontend platforms.",
     "PILLARS": {
       "AI": {
-        "TITLE": "AI-Augmented Engineering & Harnesses",
-        "SUBTITLE": "Spec-Driven AI Development",
-        "DESCRIPTION": "Engineering deterministic AI coding workflows using OpenSpec, custom agent harnesses, curated repository context, and strict automated test verification."
+        "TITLE": "AI Systems & Agent Harnesses",
+        "SUBTITLE": "Spec-Driven AI Engineering",
+        "DESCRIPTION": "Engineering deterministic AI coding workflows using executable specs, custom multi-model agent harnesses (Claude Code, Cursor, Antigravity), context guardrails, and automated verification."
       },
-      "FRONTEND": {
-        "TITLE": "Frontend Architecture",
-        "SUBTITLE": "Reactive & Scalable Web UI",
-        "DESCRIPTION": "Building responsive, accessible single-page applications with modern Angular (Signals, Standalone), React, Vue.js, TypeScript, and modular SCSS design systems."
+      "SYSTEMS": {
+        "TITLE": "Systems & Core Languages",
+        "SUBTITLE": "High Performance & Concurrency",
+        "DESCRIPTION": "Crafting memory-safe, low-latency, and high-concurrency systems using Rust, Golang, TypeScript/Node.js, and C# / .NET."
       },
       "BACKEND": {
-        "TITLE": "Backend & Distributed Systems",
-        "SUBTITLE": "Microservices & High-Concurrency APIs",
-        "DESCRIPTION": "Designing resilient services and APIs using Node.js, Golang, Kotlin, and .NET/C#, backed by event-driven and microservice patterns."
+        "TITLE": "Backend, APIs & Event Streaming",
+        "SUBTITLE": "Distributed Microservices & Event Pipelines",
+        "DESCRIPTION": "Designing event-driven microservices and high-throughput APIs using NestJS, Apache Kafka, GraphQL, gRPC, TypeORM, PostgreSQL, and Redis."
       },
       "CLOUD": {
-        "TITLE": "Cloud, Data & DevOps",
-        "SUBTITLE": "Persistence, Caching & Delivery",
-        "DESCRIPTION": "Operating relational and NoSQL data stores (PostgreSQL, MySQL, SQL Server, MongoDB, DynamoDB), Redis caching layers, Docker containers, and CI/CD pipelines."
+        "TITLE": "Cloud Infrastructure, IaC & CI/CD",
+        "SUBTITLE": "Automated Infrastructure & DRY Pipelines",
+        "DESCRIPTION": "Architecting automated cloud infrastructure on AWS and Azure with Terraform and Bicep, featuring unified reusable CI/CD pipelines across GitHub Actions, Azure DevOps, and Bitbucket."
+      },
+      "FRONTEND": {
+        "TITLE": "Modern Frontend & Test Automation",
+        "SUBTITLE": "Reactive Web Architecture",
+        "DESCRIPTION": "Building responsive, accessible (a11y / WCAG compliant) web applications with modern Angular (Signals, Standalone), React, Vue.js, Vite, Playwright, Cypress, and modular SCSS design systems."
       }
     }
   },
@@ -117,7 +131,7 @@
       "EXPERIENCE": {
         "2020": {
           "TITLE": "Jan 2020 - Present",
-          "POSITION": "Senior Fullstack & AI-Augmented Software Engineer",
+          "POSITION": "Staff Fullstack & AI Systems Engineer",
           "COMPANY": "Independent / Consulting",
           "DETAIL": "Architecting and delivering fullstack web platforms and cloud-native services for international clients, integrating spec-driven AI engineering workflows, agent harnesses, modern Angular/React frontends, and scalable Node.js/Go backends."
         },
@@ -181,6 +195,7 @@
       "ALL": "All Systems",
       "AI": "AI & Spec Harnesses",
       "DISTRIBUTED": "Distributed & ERP",
+      "CLOUD": "Cloud & CI/CD",
       "FULLSTACK": "Fullstack Platforms"
     },
     "AI_SHOWCASE": {
@@ -220,42 +235,49 @@
       "AI_HARNESS": {
         "BADGE": "AI Engineering & Architecture",
         "TITLE": "Spec-Driven AI Engineering & Agent Harness Platform",
-        "PROBLEM": "Unstructured AI prompting leads to architectural drift, broken regressions, and inconsistent multi-locale updates across complex frontends.",
-        "ARCHITECTURE": "Implemented an OpenSpec-driven workflow (`config.yaml` context harness, delta specs, technical design docs, and tracked tasks) governing a modern Angular 19 architecture.",
-        "IMPACT": "Achieved deterministic multi-step modernization, 100% 4-locale i18n parity, and strict compliance with 6KB component style budgets."
+        "PROBLEM": "Unstructured AI prompting leads to architectural drift, broken regressions, and non-deterministic code generation across complex production codebases.",
+        "ARCHITECTURE": "Implemented a spec-driven engineering workflow with structured context harnesses, executable specifications, architectural design contracts, and tracked deterministic tasks.",
+        "IMPACT": "Eliminated architectural drift across complex migrations, guaranteed 100% spec adherence, and achieved zero regressions through automated quality gates."
       },
       "RAPPI_PLATFORM": {
         "BADGE": "Distributed Microservices",
         "TITLE": "High-Concurrency Internal Operations Ecosystem (Rappi)",
         "PROBLEM": "Rapidly scaling operations across LATAM required resilient internal tools and low-latency backend services capable of handling heavy real-time traffic.",
-        "ARCHITECTURE": "Polyglot microservices in Golang, Kotlin, and Node.js (Express/AdonisJS) paired with Angular/React/Vue frontends, Redis/Memcached caching, PostgreSQL/MongoDB/DynamoDB, and Docker/Jenkins CI/CD.",
-        "IMPACT": "Delivered fault-tolerant internal tooling and service pipelines supporting high-velocity engineering and operational teams."
+        "ARCHITECTURE": "Distributed microservices in Golang, Kotlin, and Node.js (Express/AdonisJS) paired with Angular/React/Vue frontends, Redis/Memcached caching, PostgreSQL/MongoDB/DynamoDB, and Docker/Jenkins CI/CD.",
+        "IMPACT": "Sub-second order state propagation, 99.99% uptime during peak promotional campaigns, and fault-tolerant operational pipelines."
       },
-      "POLYGLOT_WEB": {
-        "BADGE": "Fullstack Web Architecture",
+      "CLOUD_IAC": {
+        "BADGE": "Cloud Architecture & DevOps",
+        "TITLE": "Cloud Infrastructure & Unified Reusable CI/CD",
+        "PROBLEM": "Fragmented, redundant deployment scripts across multi-cloud environments caused slow release cycles and configuration drift.",
+        "ARCHITECTURE": "Engineered modular Infrastructure as Code (Terraform for AWS, Bicep for Azure) and created a centralized DRY pipeline library shared across GitHub Actions, Azure DevOps, and Bitbucket Pipelines.",
+        "IMPACT": "Reduced pipeline maintenance overhead by 40%+, slashed deployment cycle times by 65%, and achieved zero-downtime automated releases with policy-as-code guardrails."
+      },
+      "REACTIVE_WEB": {
+        "BADGE": "Reactive Web Architecture",
         "TITLE": "Multi-Client Reactive Web Applications & Internationalization",
-        "PROBLEM": "Global web applications require fast initial loads, responsive layouts across devices, and seamless runtime localization.",
-        "ARCHITECTURE": "Modular frontend architecture using Angular, RxJS, and native IntersectionObserver motion directives with dynamic JSON translation loaders across English, Spanish, Portuguese, and Japanese.",
-        "IMPACT": "Zero-reload locale switching, accessible responsive layouts from mobile to ultra-wide desktops, and maintainable module boundaries."
+        "PROBLEM": "Global web applications require sub-second initial loads, responsive layouts across devices, and seamless runtime localization.",
+        "ARCHITECTURE": "Modular frontend architecture using Angular, RxJS, and native IntersectionObserver motion directives with dynamic JSON translation loaders across English, Spanish, and Japanese.",
+        "IMPACT": "Sub-second initial render, zero-reload locale switching, and WCAG AA accessible (a11y) responsive layouts from mobile to ultra-wide desktops."
       },
       "ENTERPRISE_ERP": {
         "BADGE": "Enterprise Core Systems",
         "TITLE": "Enterprise Project Management & Accounting ERP",
         "PROBLEM": "Complex financial and project accounting workflows demanded strict transactional integrity and responsive web reporting.",
         "ARCHITECTURE": "Multi-tier .NET / C# web architecture backed by SQL Server and optimized Transact-SQL stored procedures, delivered iteratively under SCRUM.",
-        "IMPACT": "Streamlined core accounting and project tracking operations with reliable relational data modeling and cloud-ready deployment."
+        "IMPACT": "Automated mission-critical accounting for 500+ concurrent enterprise users with sub-second report generation and zero transactional data loss."
       }
     }
   },
   "CONTACT": {
     "GET_IN_TOUCH": "Let's Build Something Resilient",
-    "TOUCH_INFO": "Available for senior fullstack architecture, distributed systems, and AI-augmented engineering roles or consulting.",
+    "TOUCH_INFO": "Available for Staff Fullstack & AI Systems Engineer roles. Open to remote worldwide in New Zealand timezone.",
     "AVAILABLE": "Open to Opportunities",
     "COPY_EMAIL": "Click to Copy",
     "COPIED": "Copied to Clipboard!"
   },
   "FOOTER": {
-    "TAGLINE": "Senior Fullstack & AI-Augmented Software Engineer — Engineered with Angular & OpenSpec.",
+    "TAGLINE": "Staff Fullstack & AI Systems Engineer - Engineered with Angular & Specs.",
     "RIGHTS": "All rights reserved."
   },
   "COMMON": {

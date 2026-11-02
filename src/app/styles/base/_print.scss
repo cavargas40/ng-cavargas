@@ -1,0 +1,149 @@
+@media print {
+  @page {
+    margin: 1.5cm;
+    size: auto;
+  }
+
+  // Hide non-printable interactive animation and navigation elements
+  .matrix-canvas,
+  #matrix-canvas,
+  .crt-overlay,
+  .top-progress-bar,
+  .telemetry-hud,
+  .story-spine-track,
+  .chapter-node,
+  .cursor-blink,
+  .navbar,
+  app-nav,
+  .hero__cta-group,
+  .hero__terminal-footer,
+  .portfolio__controls,
+  .portfolio__repo-btn,
+  .btn,
+  app-footer {
+    display: none !important;
+  }
+
+  // Reset typography and backgrounds to crisp white document print
+  html,
+  body {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    font-size: 11pt !important;
+    line-height: 1.45 !important;
+    overflow: visible !important;
+  }
+
+  * {
+    color: #111111 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+    border-color: #d0d7de !important;
+  }
+
+  .site-shell,
+  .site-main {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .story-chapter {
+    padding: 1.5rem 0 !important;
+    min-height: auto !important;
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  // Headings & structural blocks
+  h1, h2, h3, h4, h5, h6 {
+    color: #000000 !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  .hero__name,
+  .about-me__title,
+  .portfolio__title {
+    color: #000000 !important;
+  }
+
+  .hero__grid {
+    display: block !important;
+  }
+
+  .hero__visual {
+    margin-top: 1.5rem !important;
+  }
+
+  // Cards and sections formatted to avoid awkward page breaks
+  .terminal-card,
+  .about-me__operator-card,
+  .about-me__era-card,
+  .portfolio__card,
+  .portfolio__pillar-card,
+  .capabilities-card,
+  .experience-card,
+  article {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    border: 1px solid #d0d7de !important;
+    background: #fafbfc !important;
+    margin-bottom: 1.2rem !important;
+    padding: 1.2rem !important;
+  }
+
+  .phosphor-pill {
+    border: 1px solid #c0c6cc !important;
+    background: #f0f2f5 !important;
+    color: #333333 !important;
+    padding: 0.2rem 0.5rem !important;
+  }
+
+  .phosphor-text,
+  .hero__logistics {
+    color: #0969da !important;
+    font-weight: 600 !important;
+  }
+
+  .text-muted {
+    color: #57606a !important;
+  }
+
+  a {
+    text-decoration: underline !important;
+    color: #0969da !important;
+  }
+
+  // Grid adaptations for standard paper width
+  .portfolio__pillars {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  .portfolio__grid {
+    display: block !important;
+  }
+
+  .portfolio__card,
+  .portfolio__card.is-filtered-out {
+    display: block !important;
+  }
+
+  .about-me__grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .about-me__eras {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1rem !important;
+  }
+}

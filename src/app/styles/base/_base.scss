@@ -37,6 +37,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+// Fixed-header clearance for programmatic scrollIntoView and anchor navigation
+[id],
+.story-chapter,
+section {
+  scroll-margin-top: 7.2rem;
+
+  @include responsive(tab-port) {
+    scroll-margin-top: 6rem;
+  }
+}
+
 ::selection {
   background-color: rgba($phosphor, 0.3);
   color: $phosphor-head;

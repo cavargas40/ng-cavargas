@@ -6,11 +6,12 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'welcome',
+    component: ContentLayoutComponent,
   },
   {
     path: 'welcome',
-    component: ContentLayoutComponent,
+    redirectTo: '',
+    pathMatch: 'full',
   },
   {
     path: 'crypto',
@@ -24,7 +25,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'welcome',
+    redirectTo: '',
   },
 ];
 

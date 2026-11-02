@@ -28,5 +28,12 @@ describe('HeaderComponent', () => {
     expect(compiled.querySelectorAll('.hero__pipeline-step').length).toBe(4);
     expect(compiled.querySelector('.cursor-blink')).toBeTruthy();
     expect(compiled.querySelector('.hero__terminal')).toBeTruthy();
+    expect(compiled.querySelector('.hero__logistics')).toBeTruthy();
+    expect(component.coreStack).toContain('TypeScript');
+    expect(component.coreStack).toContain('Rust');
+    expect(component.coreStack).toContain('Go');
+    expect(component.coreStack).toContain('Kafka');
+    expect(component.coreStack).toContain('NestJS');
+    expect(component.coreStack).toContain('Terraform');
   });
 });

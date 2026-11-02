@@ -21,14 +21,16 @@ describe('PortfolioComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create and render AI workflow steps and engineering case studies without dead portfolio.cavargas.com links', () => {
+  it('should create and render AI workflow steps, 5 capability pillars, and 5 engineering case studies without dead links', () => {
     expect(component).toBeTruthy();
     expect(component.workflowSteps.length).toBe(4);
-    expect(component.caseStudies.length).toBe(4);
+    expect(component.capabilityPillars.length).toBe(5);
+    expect(component.caseStudies.length).toBe(5);
 
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelectorAll('.portfolio__step').length).toBe(4);
-    expect(compiled.querySelectorAll('.portfolio__card').length).toBe(4);
+    expect(compiled.querySelectorAll('.portfolio__pillar-card').length).toBe(5);
+    expect(compiled.querySelectorAll('.portfolio__card').length).toBe(5);
     expect(compiled.innerHTML).not.toContain('portfolio.cavargas.com');
   });
 
@@ -53,9 +55,14 @@ describe('PortfolioComponent', () => {
     expect(component.filteredCaseStudies.length).toBe(1);
     expect(component.filteredCaseStudies[0].id).toBe('spec-driven-ai-harness');
 
+    component.selectCategory('cloud');
+    fixture.detectChanges();
+    expect(component.filteredCaseStudies.length).toBe(1);
+    expect(component.filteredCaseStudies[0].id).toBe('cloud-iac-pipelines');
+
     component.selectCategory('all');
     fixture.detectChanges();
-    expect(component.filteredCaseStudies.length).toBe(4);
+    expect(component.filteredCaseStudies.length).toBe(5);
   });
 
   it('should open a link', () => {

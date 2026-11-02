@@ -29,6 +29,7 @@ export class PortfolioComponent {
     { id: 'all', labelKey: 'PORTFOLIO.FILTERS.ALL' },
     { id: 'ai', labelKey: 'PORTFOLIO.FILTERS.AI' },
     { id: 'distributed', labelKey: 'PORTFOLIO.FILTERS.DISTRIBUTED' },
+    { id: 'cloud', labelKey: 'PORTFOLIO.FILTERS.CLOUD' },
     { id: 'fullstack', labelKey: 'PORTFOLIO.FILTERS.FULLSTACK' },
   ];
   public selectedCategory: CaseStudyCategory = 'all';

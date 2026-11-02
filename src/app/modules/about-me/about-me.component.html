@@ -36,14 +36,31 @@
 
   <!-- Profile & Highlights Grid -->
   <div class="about-me__grid stagger-item">
-    <figure class="about-me__portrait-card terminal-card phosphor-border">
-      <div class="about-me__portrait-frame">
-        <img
-          class="about-me__picture"
-          alt="Carlos Vargas - Senior Software Engineer"
-          src="/assets/images/about-me.jpg"
-        />
+    <div class="about-me__operator-card terminal-card phosphor-border">
+      <div class="about-me__operator-header font-mono-code">
+        <span class="phosphor-text font-bold">{{ 'ABOUT_ME.OPERATOR_TITLE' | translate }}</span>
+        <span class="phosphor-pill">ACTIVE // NODE</span>
       </div>
+
+      <div class="about-me__operator-body font-mono-code">
+        <div class="about-me__operator-row">
+          <span class="text-muted">&gt; ROLE:</span>
+          <span class="phosphor-text">{{ 'ABOUT_ME.OPERATOR_ROLE' | translate }}</span>
+        </div>
+        <div class="about-me__operator-row">
+          <span class="text-muted">&gt; AVAILABILITY:</span>
+          <span>{{ 'ABOUT_ME.AVAILABILITY_VALUE' | translate }}</span>
+        </div>
+        <div class="about-me__operator-row">
+          <span class="text-muted">&gt; TIMEZONE:</span>
+          <span>{{ 'ABOUT_ME.TIMEZONE_VALUE' | translate }}</span>
+        </div>
+        <div class="about-me__operator-row">
+          <span class="text-muted">&gt; LOCATION:</span>
+          <span>{{ 'ABOUT_ME.LOCATION_VALUE' | translate }}</span>
+        </div>
+      </div>
+
       <div class="about-me__connect font-mono-code">
         <div class="about-me__email-block">
           <span class="about-me__meta-label">{{ 'ABOUT_ME.EMAIL' | translate }}</span>
@@ -86,11 +103,11 @@
           </li>
         </ul>
       </div>
-    </figure>
+    </div>
 
     <div class="about-me__content terminal-card">
       <span class="about-me__profile-tag font-mono-code phosphor-text">
-        [PROFILE // SENIOR_FULLSTACK_ENGINEER]
+        [PROFILE // STAFF_FULLSTACK_ENGINEER]
       </span>
       <h3 class="about-me__profile-name">{{ 'NAME' | translate }}</h3>
       <p class="paragraph mt-small">

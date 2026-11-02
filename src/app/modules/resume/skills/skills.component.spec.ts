@@ -20,15 +20,15 @@ describe('SkillsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create and render 4 capability pillars including AI-Augmented Engineering without percentages', () => {
+  it('should create and render 5 capability pillars including AI-Augmented Engineering without percentages', () => {
     expect(component).toBeTruthy();
-    expect(component.pillars.length).toBe(4);
+    expect(component.pillars.length).toBe(5);
     expect(component.pillars[0].id).toBe('ai');
 
     const compiled = fixture.nativeElement as HTMLElement;
     const cards = compiled.querySelectorAll('.capabilities-card');
-    expect(cards.length).toBe(4);
-    expect(compiled.textContent).toContain('Spec-Driven Development (OpenSpec)');
+    expect(cards.length).toBe(5);
+    expect(compiled.textContent).toContain('Spec-Driven Development');
     expect(compiled.textContent).toContain('Agent Harnesses & Guardrails');
     expect(compiled.textContent).not.toContain('100%');
   });

@@ -8,7 +8,7 @@
   height: 3px;
   background: $matrix-phosphor;
   box-shadow: 0 0 12px $matrix-phosphor;
-  z-index: 100;
+  z-index: 1001;
   transition: width 0.08s linear;
   pointer-events: none;
 }
@@ -106,6 +106,10 @@
   position: relative;
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 6.8rem 2rem 0;
   width: 100%;
+
+  @include responsive(tab-port) {
+    padding-top: 5.6rem;
+  }
 }
